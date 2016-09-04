@@ -32,6 +32,13 @@
 			remoteGlobalIDString = 0550BF2A1D7B88DC00B33888;
 			remoteInfo = KGModels;
 		};
+		0559FA101D7BFAFE00EF56B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0550BF221D7B88DC00B33888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D767B91D7BCCCA0088C86A;
+			remoteInfo = UTModels;
+		};
 		0577FDA61D7BCB30003096BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0550BF221D7B88DC00B33888 /* Project object */;
@@ -86,6 +93,7 @@
 		0550BF2B1D7B88DC00B33888 /* KGModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0550BF2E1D7B88DC00B33888 /* KGModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGModels.h; sourceTree = "<group>"; };
 		0550BF2F1D7B88DC00B33888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		0559FA0A1D7BFA6400EF56B1 /* unit_test.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unit_test.mk; sourceTree = "<group>"; };
 		0577FDA01D7BCB27003096BB /* UTModels.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UTModels.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0577FDA21D7BCB27003096BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05D767BA1D7BCCCA0088C86A /* UTModels */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UTModels; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +195,7 @@
 		05D767BB1D7BCCCA0088C86A /* UTModels */ = {
 			isa = PBXGroup;
 			children = (
+				0559FA0A1D7BFA6400EF56B1 /* unit_test.mk */,
 				05D767BC1D7BCCCA0088C86A /* main.swift */,
 				05260D431D7BD071006556B1 /* UTSpace.swift */,
 			);
@@ -221,6 +230,21 @@
 			name = Install;
 			passBuildSettingsInEnvironment = 1;
 			productName = Install;
+		};
+		0559FA0C1D7BFAF400EF56B1 /* Check */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../UnitTest/UTModels/unit_test.mk";
+			buildConfigurationList = 0559FA0D1D7BFAF400EF56B1 /* Build configuration list for PBXLegacyTarget "Check" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				0559FA111D7BFAFE00EF56B1 /* PBXTargetDependency */,
+			);
+			name = Check;
+			passBuildSettingsInEnvironment = 1;
+			productName = Check;
 		};
 /* End PBXLegacyTarget section */
 
@@ -301,6 +325,11 @@
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
+					0559FA0C1D7BFAF400EF56B1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TR2DNF3P93;
+						ProvisioningStyle = Automatic;
+					};
 					0577FD9F1D7BCB27003096BB = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TR2DNF3P93;
@@ -329,6 +358,7 @@
 				05410F5F1D7B9C5300611DF5 /* Install */,
 				0577FD9F1D7BCB27003096BB /* UTModelsBundle */,
 				05D767B91D7BCCCA0088C86A /* UTModels */,
+				0559FA0C1D7BFAF400EF56B1 /* Check */,
 			);
 		};
 /* End PBXProject section */
@@ -389,6 +419,11 @@
 			isa = PBXTargetDependency;
 			target = 0550BF2A1D7B88DC00B33888 /* KGModels */;
 			targetProxy = 05410F631D7B9C5D00611DF5 /* PBXContainerItemProxy */;
+		};
+		0559FA111D7BFAFE00EF56B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D767B91D7BCCCA0088C86A /* UTModels */;
+			targetProxy = 0559FA101D7BFAFE00EF56B1 /* PBXContainerItemProxy */;
 		};
 		0577FDA71D7BCB30003096BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -579,6 +614,31 @@
 			};
 			name = Release;
 		};
+		0559FA0E1D7BFAF400EF56B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0559FA0F1D7BFAF400EF56B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0577FDA31D7BCB27003096BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -662,6 +722,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		0559FA0D1D7BFAF400EF56B1 /* Build configuration list for PBXLegacyTarget "Check" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0559FA0E1D7BFAF400EF56B1 /* Debug */,
+				0559FA0F1D7BFAF400EF56B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		0577FDA51D7BCB27003096BB /* Build configuration list for PBXNativeTarget "UTModelsBundle" */ = {
 			isa = XCConfigurationList;
