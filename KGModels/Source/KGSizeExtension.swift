@@ -1,6 +1,6 @@
 /**
  * @file	CNSozeExtension.swift
- * @brief	Define CNSizeExtension class
+ * @brief	Extend CGSize class
  * @par Copyright
  *   Copyright (C) 2016 Steel Wheels Project
  */

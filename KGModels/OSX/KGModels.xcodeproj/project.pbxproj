@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		051EC27E1D7BCD340034C70E /* KGModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0550BF2B1D7B88DC00B33888 /* KGModels.framework */; };
 		051EC27F1D7BCE280034C70E /* KGModels.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0550BF2B1D7B88DC00B33888 /* KGModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05260D441D7BD071006556B1 /* UTSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05260D431D7BD071006556B1 /* UTSpace.swift */; };
+		05260D461D7BE0A3006556B1 /* KGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05260D451D7BE0A3006556B1 /* KGRectExtension.swift */; };
 		05410F511D7B992C00611DF5 /* KGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F501D7B992C00611DF5 /* KGLine.swift */; };
 		05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F521D7B993700611DF5 /* KGPointExtension.swift */; };
 		05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F541D7B993700611DF5 /* KGSizeExtension.swift */; };
@@ -70,6 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05260D431D7BD071006556B1 /* UTSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTSpace.swift; sourceTree = "<group>"; };
+		05260D451D7BE0A3006556B1 /* KGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGRectExtension.swift; sourceTree = "<group>"; };
 		05410F501D7B992C00611DF5 /* KGLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGLine.swift; sourceTree = "<group>"; };
 		05410F521D7B993700611DF5 /* KGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPointExtension.swift; sourceTree = "<group>"; };
 		05410F541D7B993700611DF5 /* KGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGSizeExtension.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				05410F551D7B993700611DF5 /* KGVelocity.swift */,
 				05410F521D7B993700611DF5 /* KGPointExtension.swift */,
 				05410F541D7B993700611DF5 /* KGSizeExtension.swift */,
+				05260D451D7BE0A3006556B1 /* KGRectExtension.swift */,
 			);
 			name = Source;
 			path = ../Source;
@@ -183,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				05D767BC1D7BCCCA0088C86A /* main.swift */,
+				05260D431D7BD071006556B1 /* UTSpace.swift */,
 			);
 			path = UTModels;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 				05410F661D7B9CEF00611DF5 /* KGField.swift in Sources */,
 				05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */,
 				05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */,
+				05260D461D7BE0A3006556B1 /* KGRectExtension.swift in Sources */,
 				05410F591D7B993700611DF5 /* KGVelocity.swift in Sources */,
 				05410F511D7B992C00611DF5 /* KGLine.swift in Sources */,
 			);
@@ -371,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05D767BD1D7BCCCA0088C86A /* main.swift in Sources */,
+				05260D441D7BD071006556B1 /* UTSpace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = TR2DNF3P93;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/Frameworks";
 				INSTALL_PATH = "$(HOME)/Tools/bin";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/$(PRODUCT_NAME).bundle/Contents/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -616,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = TR2DNF3P93;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/Frameworks";
 				INSTALL_PATH = "$(HOME)/Tools/bin";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,12 +8,13 @@
  */
 
 import Foundation
+import Canary
 
-public struct KGSpace {
+public struct KGSpace: CNSerializerProtocol
+{
 	private let mPartitionResolution: Int = 4		/* Partitioned into "r" x "r" spaces		*/
 
 	private var mField:			KGField
-
 	private var mPartitionDepth:		Int
 	private var mPartitionNum:		Array<Int>	/* Number of partitions for each depth		*/
 
@@ -69,5 +70,32 @@ public struct KGSpace {
 		let v3 = (v2 | (v2<<2)) & 0x33333333
 		let v4 = (v3 | (v3<<1)) & 0x55555555
 		return v4
+	}
+
+	public func serialize() -> Dictionary<String, AnyObject> {
+		var dict: Dictionary<String, AnyObject> = [:]
+		dict["field"] = NSDictionary(dictionary: mField.serialize())
+		dict["depth"] = NSNumber(value: Int(mPartitionDepth))
+		return dict
+	}
+
+	static public func unserialize(dictionary d: Dictionary<String, AnyObject>) -> KGSpace? {
+		var field: KGField
+		if let fdict = d["field"] as? Dictionary<String, AnyObject> {
+			if let fval = KGField.unserialize(dictionary: fdict) {
+				field = fval
+			} else {
+				return nil
+			}
+		} else {
+			return nil
+		}
+		var depth: Int
+		if let dval = d["depth"] as? NSNumber {
+			depth = dval.intValue
+		} else {
+			return nil
+		}
+		return KGSpace(field: field, partitionDepth: depth)
 	}
 }
