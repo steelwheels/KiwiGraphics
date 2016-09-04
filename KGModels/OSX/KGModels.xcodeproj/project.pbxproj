@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		051EC27E1D7BCD340034C70E /* KGModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0550BF2B1D7B88DC00B33888 /* KGModels.framework */; };
+		051EC27F1D7BCE280034C70E /* KGModels.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0550BF2B1D7B88DC00B33888 /* KGModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05410F511D7B992C00611DF5 /* KGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F501D7B992C00611DF5 /* KGLine.swift */; };
 		05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F521D7B993700611DF5 /* KGPointExtension.swift */; };
 		05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F541D7B993700611DF5 /* KGSizeExtension.swift */; };
@@ -16,6 +18,8 @@
 		05410F681D7BA01B00611DF5 /* KGSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F671D7BA01B00611DF5 /* KGSpace.swift */; };
 		05410F6A1D7BAB6D00611DF5 /* KGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F691D7BAB6D00611DF5 /* KGModel.swift */; };
 		0550BF301D7B88DC00B33888 /* KGModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0550BF2E1D7B88DC00B33888 /* KGModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05D767B51D7BCC760088C86A /* Canary.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05410F5B1D7B9A6900611DF5 /* Canary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05D767BD1D7BCCCA0088C86A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D767BC1D7BCCCA0088C86A /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +30,44 @@
 			remoteGlobalIDString = 0550BF2A1D7B88DC00B33888;
 			remoteInfo = KGModels;
 		};
+		0577FDA61D7BCB30003096BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0550BF221D7B88DC00B33888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05410F5F1D7B9C5300611DF5;
+			remoteInfo = Install;
+		};
+		05D767C11D7BCCD30088C86A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0550BF221D7B88DC00B33888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0577FD9F1D7BCB27003096BB;
+			remoteInfo = UTModelsBundle;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05D767B41D7BCC680088C86A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				051EC27F1D7BCE280034C70E /* KGModels.framework in CopyFiles */,
+				05D767B51D7BCC760088C86A /* Canary.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D767B81D7BCCCA0088C86A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		05410F501D7B992C00611DF5 /* KGLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGLine.swift; sourceTree = "<group>"; };
@@ -41,6 +82,10 @@
 		0550BF2B1D7B88DC00B33888 /* KGModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0550BF2E1D7B88DC00B33888 /* KGModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGModels.h; sourceTree = "<group>"; };
 		0550BF2F1D7B88DC00B33888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		0577FDA01D7BCB27003096BB /* UTModels.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UTModels.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0577FDA21D7BCB27003096BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D767BA1D7BCCCA0088C86A /* UTModels */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UTModels; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D767BC1D7BCCCA0088C86A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +94,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				05410F5C1D7B9A6900611DF5 /* Canary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0577FD9D1D7BCB27003096BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D767B71D7BCCCA0088C86A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051EC27E1D7BCD340034C70E /* KGModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +130,7 @@
 			children = (
 				05410F5A1D7B9A3A00611DF5 /* OSX */,
 				0550BF2D1D7B88DC00B33888 /* Source */,
+				05D767B21D7BCBD10088C86A /* UnitTest */,
 				0550BF2C1D7B88DC00B33888 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				0550BF2B1D7B88DC00B33888 /* KGModels.framework */,
+				0577FDA01D7BCB27003096BB /* UTModels.bundle */,
+				05D767BA1D7BCCCA0088C86A /* UTModels */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +159,32 @@
 			);
 			name = Source;
 			path = ../Source;
+			sourceTree = "<group>";
+		};
+		0577FDA11D7BCB27003096BB /* UTModelsBundle */ = {
+			isa = PBXGroup;
+			children = (
+				0577FDA21D7BCB27003096BB /* Info.plist */,
+			);
+			path = UTModelsBundle;
+			sourceTree = "<group>";
+		};
+		05D767B21D7BCBD10088C86A /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				05D767BB1D7BCCCA0088C86A /* UTModels */,
+				0577FDA11D7BCB27003096BB /* UTModelsBundle */,
+			);
+			name = UnitTest;
+			path = ../UnitTest;
+			sourceTree = SOURCE_ROOT;
+		};
+		05D767BB1D7BCCCA0088C86A /* UTModels */ = {
+			isa = PBXGroup;
+			children = (
+				05D767BC1D7BCCCA0088C86A /* main.swift */,
+			);
+			path = UTModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,12 +237,50 @@
 			productReference = 0550BF2B1D7B88DC00B33888 /* KGModels.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0577FD9F1D7BCB27003096BB /* UTModelsBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0577FDA51D7BCB27003096BB /* Build configuration list for PBXNativeTarget "UTModelsBundle" */;
+			buildPhases = (
+				0577FD9C1D7BCB27003096BB /* Sources */,
+				0577FD9D1D7BCB27003096BB /* Frameworks */,
+				0577FD9E1D7BCB27003096BB /* Resources */,
+				05D767B41D7BCC680088C86A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0577FDA71D7BCB30003096BB /* PBXTargetDependency */,
+			);
+			name = UTModelsBundle;
+			productName = UTModelsBundle;
+			productReference = 0577FDA01D7BCB27003096BB /* UTModels.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		05D767B91D7BCCCA0088C86A /* UTModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D767BE1D7BCCCA0088C86A /* Build configuration list for PBXNativeTarget "UTModels" */;
+			buildPhases = (
+				05D767B61D7BCCCA0088C86A /* Sources */,
+				05D767B71D7BCCCA0088C86A /* Frameworks */,
+				05D767B81D7BCCCA0088C86A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05D767C21D7BCCD30088C86A /* PBXTargetDependency */,
+			);
+			name = UTModels;
+			productName = UTModels;
+			productReference = 05D767BA1D7BCCCA0088C86A /* UTModels */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0550BF221D7B88DC00B33888 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Steel Wheels Project";
 				TargetAttributes = {
@@ -166,6 +293,16 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TR2DNF3P93;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					0577FD9F1D7BCB27003096BB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TR2DNF3P93;
+						ProvisioningStyle = Automatic;
+					};
+					05D767B91D7BCCCA0088C86A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TR2DNF3P93;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -184,12 +321,21 @@
 			targets = (
 				0550BF2A1D7B88DC00B33888 /* KGModels */,
 				05410F5F1D7B9C5300611DF5 /* Install */,
+				0577FD9F1D7BCB27003096BB /* UTModelsBundle */,
+				05D767B91D7BCCCA0088C86A /* UTModels */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0550BF291D7B88DC00B33888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0577FD9E1D7BCB27003096BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -213,6 +359,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0577FD9C1D7BCB27003096BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D767B61D7BCCCA0088C86A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D767BD1D7BCCCA0088C86A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -220,6 +381,16 @@
 			isa = PBXTargetDependency;
 			target = 0550BF2A1D7B88DC00B33888 /* KGModels */;
 			targetProxy = 05410F631D7B9C5D00611DF5 /* PBXContainerItemProxy */;
+		};
+		0577FDA71D7BCB30003096BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05410F5F1D7B9C5300611DF5 /* Install */;
+			targetProxy = 0577FDA61D7BCB30003096BB /* PBXContainerItemProxy */;
+		};
+		05D767C21D7BCCD30088C86A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0577FD9F1D7BCB27003096BB /* UTModelsBundle */;
+			targetProxy = 05D767C11D7BCCD30088C86A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,6 +571,58 @@
 			};
 			name = Release;
 		};
+		0577FDA31D7BCB27003096BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				INFOPLIST_FILE = ../UnitTest/UTModelsBundle/Info.plist;
+				INSTALL_PATH = "$(HOME)/Tools/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.UTModelsBundle";
+				PRODUCT_NAME = UTModels;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0577FDA41D7BCB27003096BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				INFOPLIST_FILE = ../UnitTest/UTModelsBundle/Info.plist;
+				INSTALL_PATH = "$(HOME)/Tools/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.UTModelsBundle";
+				PRODUCT_NAME = UTModels;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		05D767BF1D7BCCCA0088C86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				INSTALL_PATH = "$(HOME)/Tools/bin";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/$(PRODUCT_NAME).bundle/Contents/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		05D767C01D7BCCCA0088C86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				INSTALL_PATH = "$(HOME)/Tools/bin";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +633,7 @@
 				05410F621D7B9C5300611DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0550BF251D7B88DC00B33888 /* Build configuration list for PBXProject "KGModels" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +649,24 @@
 			buildConfigurations = (
 				0550BF341D7B88DC00B33888 /* Debug */,
 				0550BF351D7B88DC00B33888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0577FDA51D7BCB27003096BB /* Build configuration list for PBXNativeTarget "UTModelsBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0577FDA31D7BCB27003096BB /* Debug */,
+				0577FDA41D7BCB27003096BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D767BE1D7BCCCA0088C86A /* Build configuration list for PBXNativeTarget "UTModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D767BF1D7BCCCA0088C86A /* Debug */,
+				05D767C01D7BCCCA0088C86A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
