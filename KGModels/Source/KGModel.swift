@@ -11,14 +11,16 @@ import CoreGraphics
 
 open class KGModel
 {
-	private var mPosition:	CGPoint
-	private var mRadius:	CGFloat
-	private var mBounds:	CGRect
+	private var mPosition:		CGPoint
+	private var mRadius:		CGFloat
+	private var mBounds:		CGRect
+	private var mSpaceIndex:	KGSpaceIndex
 
 	public init(position p:CGPoint, radius r: CGFloat){
-		mPosition = p
-		mRadius	  = r
-		mBounds	  = KGModel.calcBounds(position: p, radius: r)
+		mPosition	= p
+		mRadius		= r
+		mBounds		= KGModel.calcBounds(position: p, radius: r)
+		mSpaceIndex	= KGSpaceIndex(depth: 0, index: 0)
 	}
 
 	private static func calcBounds(position p:CGPoint, radius r:CGFloat) -> CGRect {
@@ -33,5 +35,10 @@ open class KGModel
 
 	public var bounds: CGRect {
 		get { return mBounds }
+	}
+
+	public var spaceIndex: KGSpaceIndex {
+		get { return mSpaceIndex }
+		set(v) { mSpaceIndex = v }
 	}
 }

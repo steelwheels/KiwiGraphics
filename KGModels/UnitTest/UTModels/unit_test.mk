@@ -9,7 +9,7 @@ test_dir	= ../UnitTest/$(TEST_NAME)
 test_log	= $(BUILD_DIR)/$(CONFIGURATION)/$(TEST_NAME).log
 
 unit_test: dummy
-	test -f $(unit_test)
+	test -x $(unit_test)
 	(cd $(test_dir) ; \
 	 $(unit_test) 2>&1 | grep -v "Which one is undefined" > $(test_log) \
 	)

@@ -10,9 +10,15 @@
 import Foundation
 import Canary
 
+let DO_DEBUG: Bool		= false
+
+internal func hexString(_ value: UInt32) -> String {
+	return NSString(format: "0x%08x", value) as String
+}
+
 public struct KGSpace: CNSerializerProtocol
 {
-	private let mPartitionResolution: Int = 4		/* Partitioned into "r" x "r" spaces		*/
+	private let mPartitionResolution: Int	= 2		/* Partitioned into "r" x "r" spaces		*/
 
 	private var mField:			KGField
 	private var mPartitionDepth:		Int
@@ -28,48 +34,94 @@ public struct KGSpace: CNSerializerProtocol
 			mPartitionNum.append(partnum)
 			partnum = partnum * mPartitionResolution
 		}
+		if DO_DEBUG {
+			print("partitionNum=\(mPartitionNum)")
+		}
 	}
 
-	public func addObject(object o: KGModel){
+	public func addObject(object o: KGModel) {
 		/* Calculate morton index */
-		//let res    = CGFloat(mPartitionNum[mPartitionDepth-1])	/* Deepest resolution */
-		//let (ltidx, rbidx) = boundsToMotionIndexes(bounds: o.bounds, resolution: res)
+		let res      = CGFloat(mPartitionNum[mPartitionDepth-1])	/* Deepest resolution */
+		let usize    = CGSize(width: mField.bound.size.width / res, height: mField.bound.size.height / res)
+		let spaceidx = boundsToMotionIndexe(bounds: o.bounds, unitSize: usize)
+		o.spaceIndex = spaceidx
+		if DO_DEBUG {
+			print("addObject: depth=\(spaceidx.depth), idx=\(spaceidx.index)")
+		}
 	}
 
-	private func boundsToMotionIndexes(bounds b: CGRect, resolution r:CGFloat) -> (Int, UInt32) {
-		let ltidx  = positionToMortonIndex(x: b.minX, y: b.minY, resolution: r)
-		let rbidx  = positionToMortonIndex(x: b.maxX, y: b.maxY, resolution: r)
+	private func boundsToMotionIndexe(bounds b: CGRect, unitSize u:CGSize) -> KGSpaceIndex {
+		let ltidx  = KGSpace.positionToMortonIndex(x: b.minX, y: b.minY, unitSize: u)
+		let rbidx  = KGSpace.positionToMortonIndex(x: b.maxX, y: b.maxY, unitSize: u)
 
+		if DO_DEBUG {
+			let ltstr = KGSpace.index2string(index: ltidx, depth: mPartitionDepth)
+			let rbstr = KGSpace.index2string(index: rbidx, depth: mPartitionDepth)
+			print("ltidx=\(hexString(ltidx)):\(ltstr), rbidx=\(hexString(rbidx)):\(rbstr)")
+		}
+		
 		/* Get depth which has the given bounts in it */
-		let xoridx    = ltidx ^ rbidx
-		var depth     = 0
-		var depthmask = UInt32(0x3 << ((mPartitionDepth-1)*2))
-		while true {
-			if (xoridx & depthmask) == 0 {
-				depth     = depth + 1
-				depthmask = depthmask >> 2
-			} else {
-				break
-			}
+		let spaceidx = mergeIndexes(leftTopIndex: ltidx, rightBottomIndex: rbidx)
+
+		if DO_DEBUG {
+			let comstr = KGSpace.index2string(index: spaceidx.index, depth: mPartitionDepth)
+			print("depth=\(spaceidx.depth) comidx=\(hexString(spaceidx.index)):\(comstr)")
 		}
 
-		/* get common index */
-		let comidx = ltidx >> UInt32((mPartitionDepth - depth) * 2)
-		return (depth, comidx)
+		return spaceidx
 	}
 
-	private func positionToMortonIndex(x xpos:CGFloat, y ypos:CGFloat, resolution r:CGFloat) -> UInt32 {
-		let xpos = UInt32(xpos / r)
-		let ypos = UInt32(ypos / r)
-		return bitSeparate(bits: xpos) | (bitSeparate(bits: ypos)<<1)
+	private func mergeIndexes(leftTopIndex ltidx:UInt32, rightBottomIndex rbidx:UInt32) -> KGSpaceIndex {
+		let xoridx	= ltidx ^ rbidx
+		var depth	= mPartitionDepth
+		var newidx	= UInt32(0)
+		var newdepth	= 0
+		while depth > 0 {
+			let shifts = UInt32((depth - 1) * 2)
+			if ((xoridx >> shifts) & 0x3) != 0 {
+				break
+			}
+			newidx   = (newidx << 2) | ((ltidx >> shifts) & 0x3)
+			newdepth = newdepth + 1
+			depth    = depth - 1
+		}
+		return KGSpaceIndex(depth: newdepth-1, index: newidx)
 	}
 
-	private func bitSeparate(bits v0: UInt32) -> UInt32 {
+	private static func positionToMortonIndex(x xpos:CGFloat, y ypos:CGFloat, unitSize u:CGSize) -> UInt32 {
+		let xidx = UInt32(xpos / u.width)
+		let yidx = UInt32(ypos / u.height)
+		if DO_DEBUG {
+			print("uwidth=\(u.width), uheight=\(u.height) xpos=\(xpos), ypos=\(ypos) -> xidx=\(xidx), yidx=\(yidx)")
+		}
+
+		let xbits  = KGSpace.bitSeparate(bits: xidx)
+		let ybits  = KGSpace.bitSeparate(bits: yidx)
+		let result = xbits | (ybits << 1)
+		if DO_DEBUG {
+			print("xbits=\(hexString(xbits)), ybits=\(hexString(ybits)), result=\(hexString(result))")
+		}
+		return result
+	}
+
+	private static func bitSeparate(bits v0: UInt32) -> UInt32 {
 		let v1 = (v0 | (v0<<8)) & 0x00ff00ff
 		let v2 = (v1 | (v1<<4)) & 0x0f0f0f0f
 		let v3 = (v2 | (v2<<2)) & 0x33333333
 		let v4 = (v3 | (v3<<1)) & 0x55555555
 		return v4
+	}
+
+	private static func index2string(index i:UInt32, depth dep: Int) -> String {
+		var result = "{"
+		var depth:Int = dep - 1
+		while depth >= 0 {
+			let bits:UInt32 = UInt32(depth * 2)
+			let val         = (i >> bits) & 0x3
+			result = result + "\(val) "
+			depth = depth - 1
+		}
+		return result + "}"
 	}
 
 	public func serialize() -> Dictionary<String, AnyObject> {

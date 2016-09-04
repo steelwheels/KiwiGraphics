@@ -20,6 +20,7 @@
 		05410F681D7BA01B00611DF5 /* KGSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F671D7BA01B00611DF5 /* KGSpace.swift */; };
 		05410F6A1D7BAB6D00611DF5 /* KGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F691D7BAB6D00611DF5 /* KGModel.swift */; };
 		0550BF301D7B88DC00B33888 /* KGModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0550BF2E1D7B88DC00B33888 /* KGModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		056CF6131D7C4DD00092949E /* KGSpaceIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056CF6121D7C4DD00092949E /* KGSpaceIndex.swift */; };
 		05D767B51D7BCC760088C86A /* Canary.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05410F5B1D7B9A6900611DF5 /* Canary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05D767BD1D7BCCCA0088C86A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D767BC1D7BCCCA0088C86A /* main.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,7 @@
 		0550BF2E1D7B88DC00B33888 /* KGModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGModels.h; sourceTree = "<group>"; };
 		0550BF2F1D7B88DC00B33888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		0559FA0A1D7BFA6400EF56B1 /* unit_test.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unit_test.mk; sourceTree = "<group>"; };
+		056CF6121D7C4DD00092949E /* KGSpaceIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGSpaceIndex.swift; sourceTree = "<group>"; };
 		0577FDA01D7BCB27003096BB /* UTModels.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UTModels.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0577FDA21D7BCB27003096BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05D767BA1D7BCCCA0088C86A /* UTModels */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UTModels; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 				05410F691D7BAB6D00611DF5 /* KGModel.swift */,
 				05410F651D7B9CEF00611DF5 /* KGField.swift */,
 				05410F671D7BA01B00611DF5 /* KGSpace.swift */,
+				056CF6121D7C4DD00092949E /* KGSpaceIndex.swift */,
 				05410F501D7B992C00611DF5 /* KGLine.swift */,
 				05410F551D7B993700611DF5 /* KGVelocity.swift */,
 				05410F521D7B993700611DF5 /* KGPointExtension.swift */,
@@ -389,6 +392,7 @@
 				05410F6A1D7BAB6D00611DF5 /* KGModel.swift in Sources */,
 				05410F661D7B9CEF00611DF5 /* KGField.swift in Sources */,
 				05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */,
+				056CF6131D7C4DD00092949E /* KGSpaceIndex.swift in Sources */,
 				05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */,
 				05260D461D7BE0A3006556B1 /* KGRectExtension.swift in Sources */,
 				05410F591D7B993700611DF5 /* KGVelocity.swift in Sources */,
@@ -730,6 +734,7 @@
 				0559FA0F1D7BFAF400EF56B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0577FDA51D7BCB27003096BB /* Build configuration list for PBXNativeTarget "UTModelsBundle" */ = {
 			isa = XCConfigurationList;
