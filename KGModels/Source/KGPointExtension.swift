@@ -1,5 +1,5 @@
 /**
- * @file	CNPointExtension.h
+ * @file	CNPointExtension.swift
  * @brief	Define CNPointExtension class
  * @par Copyright
  *   Copyright (C) 2016 Steel Wheels Project

@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		05410F511D7B992C00611DF5 /* KGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F501D7B992C00611DF5 /* KGLine.swift */; };
 		05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F521D7B993700611DF5 /* KGPointExtension.swift */; };
-		05410F571D7B993700611DF5 /* KGQuadrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F531D7B993700611DF5 /* KGQuadrant.swift */; };
 		05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F541D7B993700611DF5 /* KGSizeExtension.swift */; };
 		05410F591D7B993700611DF5 /* KGVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F551D7B993700611DF5 /* KGVelocity.swift */; };
 		05410F5C1D7B9A6900611DF5 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05410F5B1D7B9A6900611DF5 /* Canary.framework */; };
 		05410F661D7B9CEF00611DF5 /* KGField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F651D7B9CEF00611DF5 /* KGField.swift */; };
+		05410F681D7BA01B00611DF5 /* KGSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F671D7BA01B00611DF5 /* KGSpace.swift */; };
+		05410F6A1D7BAB6D00611DF5 /* KGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F691D7BAB6D00611DF5 /* KGModel.swift */; };
 		0550BF301D7B88DC00B33888 /* KGModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0550BF2E1D7B88DC00B33888 /* KGModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -30,12 +31,13 @@
 /* Begin PBXFileReference section */
 		05410F501D7B992C00611DF5 /* KGLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGLine.swift; sourceTree = "<group>"; };
 		05410F521D7B993700611DF5 /* KGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPointExtension.swift; sourceTree = "<group>"; };
-		05410F531D7B993700611DF5 /* KGQuadrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGQuadrant.swift; sourceTree = "<group>"; };
 		05410F541D7B993700611DF5 /* KGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGSizeExtension.swift; sourceTree = "<group>"; };
 		05410F551D7B993700611DF5 /* KGVelocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGVelocity.swift; sourceTree = "<group>"; };
 		05410F5B1D7B9A6900611DF5 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = "/Users/tomoo/Application/Xcode-beta.app/Contents/Developer/../../../../Library/Frameworks/Canary.framework"; sourceTree = "<absolute>"; };
 		05410F5D1D7B9C3200611DF5 /* install.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install.mk; sourceTree = "<group>"; };
 		05410F651D7B9CEF00611DF5 /* KGField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGField.swift; sourceTree = "<group>"; };
+		05410F671D7BA01B00611DF5 /* KGSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGSpace.swift; sourceTree = "<group>"; };
+		05410F691D7BAB6D00611DF5 /* KGModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGModel.swift; sourceTree = "<group>"; };
 		0550BF2B1D7B88DC00B33888 /* KGModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0550BF2E1D7B88DC00B33888 /* KGModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGModels.h; sourceTree = "<group>"; };
 		0550BF2F1D7B88DC00B33888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
@@ -84,9 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				0550BF2E1D7B88DC00B33888 /* KGModels.h */,
+				05410F691D7BAB6D00611DF5 /* KGModel.swift */,
 				05410F651D7B9CEF00611DF5 /* KGField.swift */,
+				05410F671D7BA01B00611DF5 /* KGSpace.swift */,
 				05410F501D7B992C00611DF5 /* KGLine.swift */,
-				05410F531D7B993700611DF5 /* KGQuadrant.swift */,
 				05410F551D7B993700611DF5 /* KGVelocity.swift */,
 				05410F521D7B993700611DF5 /* KGPointExtension.swift */,
 				05410F541D7B993700611DF5 /* KGSizeExtension.swift */,
@@ -200,8 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05410F681D7BA01B00611DF5 /* KGSpace.swift in Sources */,
+				05410F6A1D7BAB6D00611DF5 /* KGModel.swift in Sources */,
 				05410F661D7B9CEF00611DF5 /* KGField.swift in Sources */,
-				05410F571D7B993700611DF5 /* KGQuadrant.swift in Sources */,
 				05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */,
 				05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */,
 				05410F591D7B993700611DF5 /* KGVelocity.swift in Sources */,

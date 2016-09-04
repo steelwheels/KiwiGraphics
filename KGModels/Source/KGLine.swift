@@ -1,5 +1,5 @@
 /**
- * @file	KGLine.h
+ * @file	KGLine.swift
  * @brief	Define KGLine data structure
  * @par Copyright
  *   Copyright (C) 2016 Steel Wheels Project
