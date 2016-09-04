@@ -7,10 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05410F511D7B992C00611DF5 /* KGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F501D7B992C00611DF5 /* KGLine.swift */; };
+		05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F521D7B993700611DF5 /* KGPointExtension.swift */; };
+		05410F571D7B993700611DF5 /* KGQuadrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F531D7B993700611DF5 /* KGQuadrant.swift */; };
+		05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F541D7B993700611DF5 /* KGSizeExtension.swift */; };
+		05410F591D7B993700611DF5 /* KGVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F551D7B993700611DF5 /* KGVelocity.swift */; };
+		05410F5C1D7B9A6900611DF5 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05410F5B1D7B9A6900611DF5 /* Canary.framework */; };
+		05410F661D7B9CEF00611DF5 /* KGField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F651D7B9CEF00611DF5 /* KGField.swift */; };
 		0550BF301D7B88DC00B33888 /* KGModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0550BF2E1D7B88DC00B33888 /* KGModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		05410F631D7B9C5D00611DF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0550BF221D7B88DC00B33888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0550BF2A1D7B88DC00B33888;
+			remoteInfo = KGModels;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		05410F501D7B992C00611DF5 /* KGLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGLine.swift; sourceTree = "<group>"; };
+		05410F521D7B993700611DF5 /* KGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPointExtension.swift; sourceTree = "<group>"; };
+		05410F531D7B993700611DF5 /* KGQuadrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGQuadrant.swift; sourceTree = "<group>"; };
+		05410F541D7B993700611DF5 /* KGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGSizeExtension.swift; sourceTree = "<group>"; };
+		05410F551D7B993700611DF5 /* KGVelocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGVelocity.swift; sourceTree = "<group>"; };
+		05410F5B1D7B9A6900611DF5 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = "/Users/tomoo/Application/Xcode-beta.app/Contents/Developer/../../../../Library/Frameworks/Canary.framework"; sourceTree = "<absolute>"; };
+		05410F5D1D7B9C3200611DF5 /* install.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install.mk; sourceTree = "<group>"; };
+		05410F651D7B9CEF00611DF5 /* KGField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGField.swift; sourceTree = "<group>"; };
 		0550BF2B1D7B88DC00B33888 /* KGModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0550BF2E1D7B88DC00B33888 /* KGModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGModels.h; sourceTree = "<group>"; };
 		0550BF2F1D7B88DC00B33888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
@@ -21,15 +46,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05410F5C1D7B9A6900611DF5 /* Canary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05410F5A1D7B9A3A00611DF5 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				0550BF2F1D7B88DC00B33888 /* Info.plist */,
+				05410F5D1D7B9C3200611DF5 /* install.mk */,
+				05410F5B1D7B9A6900611DF5 /* Canary.framework */,
+			);
+			name = OSX;
+			sourceTree = "<group>";
+		};
 		0550BF211D7B88DC00B33888 = {
 			isa = PBXGroup;
 			children = (
+				05410F5A1D7B9A3A00611DF5 /* OSX */,
 				0550BF2D1D7B88DC00B33888 /* Source */,
 				0550BF2C1D7B88DC00B33888 /* Products */,
 			);
@@ -47,7 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				0550BF2E1D7B88DC00B33888 /* KGModels.h */,
-				0550BF2F1D7B88DC00B33888 /* Info.plist */,
+				05410F651D7B9CEF00611DF5 /* KGField.swift */,
+				05410F501D7B992C00611DF5 /* KGLine.swift */,
+				05410F531D7B993700611DF5 /* KGQuadrant.swift */,
+				05410F551D7B993700611DF5 /* KGVelocity.swift */,
+				05410F521D7B993700611DF5 /* KGPointExtension.swift */,
+				05410F541D7B993700611DF5 /* KGSizeExtension.swift */,
 			);
 			name = Source;
 			path = ../Source;
@@ -65,6 +107,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		05410F5F1D7B9C5300611DF5 /* Install */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f install.mk";
+			buildConfigurationList = 05410F601D7B9C5300611DF5 /* Build configuration list for PBXLegacyTarget "Install" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05410F641D7B9C5D00611DF5 /* PBXTargetDependency */,
+			);
+			name = Install;
+			passBuildSettingsInEnvironment = 1;
+			productName = Install;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		0550BF2A1D7B88DC00B33888 /* KGModels */ = {
@@ -94,9 +154,15 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Steel Wheels Project";
 				TargetAttributes = {
+					05410F5F1D7B9C5300611DF5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TR2DNF3P93;
+						ProvisioningStyle = Automatic;
+					};
 					0550BF2A1D7B88DC00B33888 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TR2DNF3P93;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				0550BF2A1D7B88DC00B33888 /* KGModels */,
+				05410F5F1D7B9C5300611DF5 /* Install */,
 			);
 		};
 /* End PBXProject section */
@@ -133,12 +200,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05410F661D7B9CEF00611DF5 /* KGField.swift in Sources */,
+				05410F571D7B993700611DF5 /* KGQuadrant.swift in Sources */,
+				05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */,
+				05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */,
+				05410F591D7B993700611DF5 /* KGVelocity.swift in Sources */,
+				05410F511D7B992C00611DF5 /* KGLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		05410F641D7B9C5D00611DF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0550BF2A1D7B88DC00B33888 /* KGModels */;
+			targetProxy = 05410F631D7B9C5D00611DF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		05410F611D7B9C5300611DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05410F621D7B9C5300611DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0550BF311D7B88DC00B33888 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -238,6 +344,7 @@
 		0550BF341D7B88DC00B33888 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -245,14 +352,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_OPTIMIZATION_LEVEL = 2;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.KGModels";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				"SWIFT_OPTIMIZATION_LEVEL[arch=*]" = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -261,6 +372,7 @@
 		0550BF351D7B88DC00B33888 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -268,14 +380,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_OPTIMIZATION_LEVEL = 2;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.KGModels";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -283,6 +399,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05410F601D7B9C5300611DF5 /* Build configuration list for PBXLegacyTarget "Install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05410F611D7B9C5300611DF5 /* Debug */,
+				05410F621D7B9C5300611DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0550BF251D7B88DC00B33888 /* Build configuration list for PBXProject "KGModels" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
