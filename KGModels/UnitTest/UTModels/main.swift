@@ -21,5 +21,5 @@ internal func unitTest(name n:String, result r: Bool) -> Bool {
 	return r
 }
 
-let res0 = unitTest(name: "UTSpace", result: UTSpace())
+let res0 = unitTest(name: "UTSpatialMapper", result: UTSpatialMapper())
 
