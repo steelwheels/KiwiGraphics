@@ -16,7 +16,6 @@
 		05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F541D7B993700611DF5 /* KGSizeExtension.swift */; };
 		05410F591D7B993700611DF5 /* KGVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F551D7B993700611DF5 /* KGVelocity.swift */; };
 		05410F5C1D7B9A6900611DF5 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05410F5B1D7B9A6900611DF5 /* Canary.framework */; };
-		05410F661D7B9CEF00611DF5 /* KGField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F651D7B9CEF00611DF5 /* KGField.swift */; };
 		05410F681D7BA01B00611DF5 /* KGSpatialMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F671D7BA01B00611DF5 /* KGSpatialMapper.swift */; };
 		05410F6A1D7BAB6D00611DF5 /* KGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F691D7BAB6D00611DF5 /* KGModel.swift */; };
 		0550BF301D7B88DC00B33888 /* KGModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0550BF2E1D7B88DC00B33888 /* KGModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,7 +88,6 @@
 		05410F551D7B993700611DF5 /* KGVelocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGVelocity.swift; sourceTree = "<group>"; };
 		05410F5B1D7B9A6900611DF5 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = "/Users/tomoo/Application/Xcode-beta.app/Contents/Developer/../../../../Library/Frameworks/Canary.framework"; sourceTree = "<absolute>"; };
 		05410F5D1D7B9C3200611DF5 /* install.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install.mk; sourceTree = "<group>"; };
-		05410F651D7B9CEF00611DF5 /* KGField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGField.swift; sourceTree = "<group>"; };
 		05410F671D7BA01B00611DF5 /* KGSpatialMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGSpatialMapper.swift; sourceTree = "<group>"; };
 		05410F691D7BAB6D00611DF5 /* KGModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGModel.swift; sourceTree = "<group>"; };
 		0550BF2B1D7B88DC00B33888 /* KGModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,13 +163,12 @@
 			isa = PBXGroup;
 			children = (
 				0550BF2E1D7B88DC00B33888 /* KGModels.h */,
+				05410F501D7B992C00611DF5 /* KGLine.swift */,
+				05410F551D7B993700611DF5 /* KGVelocity.swift */,
 				05410F691D7BAB6D00611DF5 /* KGModel.swift */,
-				05410F651D7B9CEF00611DF5 /* KGField.swift */,
 				05CF30D91D7F13040027E6ED /* KGLayer.swift */,
 				05410F671D7BA01B00611DF5 /* KGSpatialMapper.swift */,
 				056CF6121D7C4DD00092949E /* KGSpaceIndex.swift */,
-				05410F501D7B992C00611DF5 /* KGLine.swift */,
-				05410F551D7B993700611DF5 /* KGVelocity.swift */,
 				05410F521D7B993700611DF5 /* KGPointExtension.swift */,
 				05410F541D7B993700611DF5 /* KGSizeExtension.swift */,
 				05260D451D7BE0A3006556B1 /* KGRectExtension.swift */,
@@ -393,7 +390,6 @@
 			files = (
 				05410F681D7BA01B00611DF5 /* KGSpatialMapper.swift in Sources */,
 				05410F6A1D7BAB6D00611DF5 /* KGModel.swift in Sources */,
-				05410F661D7B9CEF00611DF5 /* KGField.swift in Sources */,
 				05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */,
 				056CF6131D7C4DD00092949E /* KGSpaceIndex.swift in Sources */,
 				05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */,

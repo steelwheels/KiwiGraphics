@@ -21,7 +21,7 @@ public struct KGSpatialMapper
 		/* Calculate morton index */
 		let res      = CGFloat(layer.partitionNum) /* Deepest resolution */
 		let field    = layer.field
-		let usize    = CGSize(width: field.bound.size.width / res, height: field.bound.size.height / res)
+		let usize    = CGSize(width: field.size.width / res, height: field.size.height / res)
 		let spaceidx = boundsToIndexe(bounds: b, unitSize: usize, partitionDepth: layer.partitionDepth)
 		return spaceidx
 	}

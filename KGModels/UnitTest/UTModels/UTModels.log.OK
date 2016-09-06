@@ -1,5 +1,5 @@
 Hello, World!
-SPACE = Optional("{\n  \"depth\" : 4,\n  \"field\" : {\n    \"bound\" : {\n      \"origin\" : {\n        \"y\" : 0,\n        \"x\" : 0\n      },\n      \"size\" : {\n        \"width\" : 80,\n        \"height\" : 80\n      }\n    }\n  }\n}")
+SPACE = Optional("{\n  \"depth\" : 4,\n  \"field\" : {\n    \"origin\" : {\n      \"y\" : 0,\n      \"x\" : 0\n    },\n    \"size\" : {\n      \"width\" : 80,\n      \"height\" : 80\n    }\n  }\n}")
 addObject x:0.0 y:0.0
  -> index: (depth:3, index:0x00000000) -> OK
 addObject x:40.0 y:40.0

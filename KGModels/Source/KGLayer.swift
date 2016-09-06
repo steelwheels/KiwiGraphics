@@ -14,11 +14,11 @@ public struct KGLayer: CNSerializerProtocol
 {
 	public let partitionResolution: Int	= 2		/* Partitioned into "r" x "r" spaces		*/
 
-	private var mField:			KGField
+	private var mField:			CGRect
 	private var mPartitionDepth:		Int
 	private var mPartitionNum:		Array<Int>	/* Number of partitions for each depth		*/
 
-	public init(field f:KGField,  partitionDepth d: Int){
+	public init(field f:CGRect,  partitionDepth d: Int){
 		mField			= f
 		mPartitionDepth		= d
 
@@ -33,7 +33,7 @@ public struct KGLayer: CNSerializerProtocol
 		}
 	}
 
-	public var field: KGField {
+	public var field: CGRect {
 		get { return mField }
 	}
 
@@ -53,9 +53,9 @@ public struct KGLayer: CNSerializerProtocol
 	}
 
 	static public func unserialize(dictionary d: Dictionary<String, AnyObject>) -> KGLayer? {
-		var field: KGField
+		var field: CGRect
 		if let fdict = d["field"] as? Dictionary<String, AnyObject> {
-			if let fval = KGField.unserialize(dictionary: fdict) {
+			if let fval = CGRect.unserialize(dictionary: fdict) {
 				field = fval
 			} else {
 				return nil
