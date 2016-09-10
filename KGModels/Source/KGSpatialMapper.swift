@@ -8,7 +8,7 @@
  */
 
 import Foundation
-
+import Canary
 let DO_DEBUG: Bool		= false
 
 internal func hexString(_ value: UInt32) -> String {
@@ -19,16 +19,21 @@ public struct KGSpatialMapper
 {
 	public static func mapBounds(bounds b: CGRect,in layer: KGLayer) -> KGSpaceIndex {
 		/* Calculate morton index */
-		let res      = CGFloat(layer.partitionNum) /* Deepest resolution */
-		let field    = layer.field
+		let field    = layer.bounds
+		let res      = CGFloat(layer.resolution) /* Deepest resolution */
 		let usize    = CGSize(width: field.size.width / res, height: field.size.height / res)
-		let spaceidx = boundsToIndexe(bounds: b, unitSize: usize, partitionDepth: layer.partitionDepth)
+		let spaceidx = boundsToIndex(bounds: b, unitSize: usize, partitionDepth: layer.depth)
 		return spaceidx
 	}
 
-	private static func boundsToIndexe(bounds b: CGRect, unitSize u:CGSize, partitionDepth depth: Int) -> KGSpaceIndex {
-		let ltidx  = KGSpatialMapper.positionToMortonIndex(x: b.minX, y: b.minY, unitSize: u)
-		let rbidx  = KGSpatialMapper.positionToMortonIndex(x: b.maxX, y: b.maxY, unitSize: u)
+	private static func boundsToIndex(bounds b: CGRect, unitSize u:CGSize, partitionDepth depth: Int) -> KGSpaceIndex {
+		let x0 = b.origin.x
+		let y0 = b.origin.y
+		let x1 = x0 + b.size.width
+		let y1 = y0 + b.size.height
+
+		let ltidx  = KGSpatialMapper.positionToMortonIndex(x: x0, y: y0, unitSize: u)
+		let rbidx  = KGSpatialMapper.positionToMortonIndex(x: x1, y: y1, unitSize: u)
 
 		if DO_DEBUG {
 			let ltstr = KGSpatialMapper.index2string(index: ltidx, depth: depth)
@@ -65,8 +70,8 @@ public struct KGSpatialMapper
 	}
 
 	private static func positionToMortonIndex(x xpos:CGFloat, y ypos:CGFloat, unitSize u:CGSize) -> UInt32 {
-		let xidx = UInt32(xpos / u.width)
-		let yidx = UInt32(ypos / u.height)
+		let xidx = UInt32(max(xpos, 0,0) / u.width)
+		let yidx = UInt32(max(ypos, 0.0) / u.height)
 		if DO_DEBUG {
 			print("uwidth=\(u.width), uheight=\(u.height) xpos=\(xpos), ypos=\(ypos) -> xidx=\(xidx), yidx=\(yidx)")
 		}

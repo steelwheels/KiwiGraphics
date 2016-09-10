@@ -10,53 +10,47 @@
 import Foundation
 import Canary
 
+
 public struct KGLayer: CNSerializerProtocol
 {
 	public let partitionResolution: Int	= 2		/* Partitioned into "r" x "r" spaces		*/
 
-	private var mField:			CGRect
-	private var mPartitionDepth:		Int
-	private var mPartitionNum:		Array<Int>	/* Number of partitions for each depth		*/
+	private var mBounds:		CGRect
+	private var mDepth:		Int
 
-	public init(field f:CGRect,  partitionDepth d: Int){
-		mField			= f
-		mPartitionDepth		= d
+	public init(bounds b:CGRect,  partitionDepth d: Int){
+		//assert(d > 0)
+		mBounds		= b
+		mDepth		= d
+	}
 
-		mPartitionNum = [1]	/* level 0 has always 1, level 1 has 2, [1, 2, 4, 8] */
-		var partnum = partitionResolution
-		for _ in 1..<mPartitionDepth {
-			mPartitionNum.append(partnum)
-			partnum = partnum * partitionResolution
+	public var bounds: CGRect {
+		get { return mBounds }
+	}
+
+	public var depth: Int {
+		get { return mDepth }
+	}
+
+	public var resolution: Int {
+		get {
+			/* mDepth always bigger than 0 */
+			return pow(base: partitionResolution, power: UInt(mDepth)-1)
 		}
-		if DO_DEBUG {
-			print("partitionNum=\(mPartitionNum)")
-		}
-	}
-
-	public var field: CGRect {
-		get { return mField }
-	}
-
-	public var partitionDepth: Int {
-		get { return mPartitionDepth }
-	}
-
-	public var partitionNum: Int {
-		get { return mPartitionNum[mPartitionDepth-1] }
 	}
 
 	public func serialize() -> Dictionary<String, AnyObject> {
 		var dict: Dictionary<String, AnyObject> = [:]
-		dict["field"] = NSDictionary(dictionary: mField.serialize())
-		dict["depth"] = NSNumber(value: Int(mPartitionDepth))
+		dict["bounds"] = NSDictionary(dictionary: mBounds.serialize())
+		dict["depth"]  = NSNumber(value: Int(mDepth))
 		return dict
 	}
 
 	static public func unserialize(dictionary d: Dictionary<String, AnyObject>) -> KGLayer? {
-		var field: CGRect
-		if let fdict = d["field"] as? Dictionary<String, AnyObject> {
-			if let fval = CGRect.unserialize(dictionary: fdict) {
-				field = fval
+		var bounds: CGRect
+		if let bdict = d["bounds"] as? Dictionary<String, AnyObject> {
+			if let bval = CGRect.unserialize(dictionary: bdict) {
+				bounds = bval
 			} else {
 				return nil
 			}
@@ -69,6 +63,6 @@ public struct KGLayer: CNSerializerProtocol
 		} else {
 			return nil
 		}
-		return KGLayer(field: field, partitionDepth: depth)
+		return KGLayer(bounds: bounds, partitionDepth: depth)
 	}
 }

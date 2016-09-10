@@ -12,8 +12,8 @@ import Canary
 
 public func UTSpatialMapper() -> Bool
 {
-	let field  = CGRect(origin: CGPoint(x:0.0, y:0.0), size: CGSize(width: 80.0, height: 80.0))
-	let layer  = KGLayer(field: field, partitionDepth: 4)
+	let bounds = CGRect(origin: CGPoint(x:0.0, y:0.0), size: CGSize(width: 80.0, height: 80.0))
+	let layer  = KGLayer(bounds: bounds, partitionDepth: 4)
 	let res0   = dumpLayer(layer: layer)
 
 	let res1 = addObject(layer: layer, x:  0.0, y:  0.0, radius: 1.0, expectedIndex: KGSpaceIndex(depth: 3, index:  0))

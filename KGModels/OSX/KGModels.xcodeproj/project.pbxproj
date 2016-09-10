@@ -11,6 +11,7 @@
 		051EC27F1D7BCE280034C70E /* KGModels.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0550BF2B1D7B88DC00B33888 /* KGModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05260D441D7BD071006556B1 /* UTSpatialMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05260D431D7BD071006556B1 /* UTSpatialMapper.swift */; };
 		05260D461D7BE0A3006556B1 /* KGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05260D451D7BE0A3006556B1 /* KGRectExtension.swift */; };
+		0533FABA1D806B7F00B5DAED /* KGSpaceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0533FAB91D806B7F00B5DAED /* KGSpaceTable.swift */; };
 		05410F511D7B992C00611DF5 /* KGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F501D7B992C00611DF5 /* KGLine.swift */; };
 		05410F561D7B993700611DF5 /* KGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F521D7B993700611DF5 /* KGPointExtension.swift */; };
 		05410F581D7B993700611DF5 /* KGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05410F541D7B993700611DF5 /* KGSizeExtension.swift */; };
@@ -82,6 +83,7 @@
 /* Begin PBXFileReference section */
 		05260D431D7BD071006556B1 /* UTSpatialMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTSpatialMapper.swift; sourceTree = "<group>"; };
 		05260D451D7BE0A3006556B1 /* KGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGRectExtension.swift; sourceTree = "<group>"; };
+		0533FAB91D806B7F00B5DAED /* KGSpaceTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGSpaceTable.swift; sourceTree = "<group>"; };
 		05410F501D7B992C00611DF5 /* KGLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGLine.swift; sourceTree = "<group>"; };
 		05410F521D7B993700611DF5 /* KGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPointExtension.swift; sourceTree = "<group>"; };
 		05410F541D7B993700611DF5 /* KGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGSizeExtension.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				05CF30D91D7F13040027E6ED /* KGLayer.swift */,
 				05410F671D7BA01B00611DF5 /* KGSpatialMapper.swift */,
 				056CF6121D7C4DD00092949E /* KGSpaceIndex.swift */,
+				0533FAB91D806B7F00B5DAED /* KGSpaceTable.swift */,
 				05410F521D7B993700611DF5 /* KGPointExtension.swift */,
 				05410F541D7B993700611DF5 /* KGSizeExtension.swift */,
 				05260D451D7BE0A3006556B1 /* KGRectExtension.swift */,
@@ -397,6 +400,7 @@
 				05CF30DA1D7F13040027E6ED /* KGLayer.swift in Sources */,
 				05410F591D7B993700611DF5 /* KGVelocity.swift in Sources */,
 				05410F511D7B992C00611DF5 /* KGLine.swift in Sources */,
+				0533FABA1D806B7F00B5DAED /* KGSpaceTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +590,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.KGModels";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
-				"SWIFT_OPTIMIZATION_LEVEL[arch=*]" = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				"SWIFT_OPTIMIZATION_LEVEL[arch=*]" = "-O";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -614,6 +619,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.KGModels";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -681,6 +687,7 @@
 				INSTALL_PATH = "$(HOME)/Tools/bin";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/$(PRODUCT_NAME).bundle/Contents/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
