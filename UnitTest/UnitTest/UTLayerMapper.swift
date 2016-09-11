@@ -1,13 +1,13 @@
 //
 //  UTLayerMapper.swift
-//  KGModels
+//  KiwiGraphics
 //
 //  Created by Tomoo Hamada on 2016/09/04.
 //  Copyright © 2016年 Steel Wheels Project. All rights reserved.
 //
 
 import Foundation
-import KGModels
+import KiwiGraphics
 import Canary
 
 public func UTLayerMapper() -> Bool
@@ -41,10 +41,10 @@ private func dumpLayer(layer l: KGLayer) -> Bool
 
 private func addObject(layer l:KGLayer, x xpos:CGFloat, y ypos:CGFloat, radius r: CGFloat, expectedIndex expidx: KGLayerIndex) -> Bool
 {
-	let model   = KGModel(position: CGPoint(x:xpos, y:ypos), radius: r)
+	let model   = KGCircle(center: CGPoint(x:xpos, y:ypos), radius: r)
 	let realidx = KGLayerMapper.mapBounds(bounds: model.bounds, in: l)
 
-	print("addObject x:\(model.position.x) y:\(model.position.y)")
+	print("addObject \(model.description)")
 	if realidx == expidx {
 		print(" -> index: \(realidx.description) -> OK")
 		return true

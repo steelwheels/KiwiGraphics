@@ -8,7 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
+print("[UnitTest for KiwiGraphics]")
 
 internal func unitTest(name n:String, result r: Bool) -> Bool {
 	var resstr : String

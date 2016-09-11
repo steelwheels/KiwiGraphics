@@ -1,6 +1,6 @@
 //
 //  UTLayerCell.swift
-//  KGModels
+//  KiwiGraphics
 //
 //  Created by Tomoo Hamada on 2016/09/10.
 //  Copyright © 2016年 Steel Wheels Project. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 import Canary
-import KGModels
+import KiwiGraphics
 
 public func UTLayerCell() -> Bool
 {
