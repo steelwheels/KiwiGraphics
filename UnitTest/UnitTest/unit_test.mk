@@ -2,7 +2,7 @@
 # unittest.mk
 #
 
-TEST_NAME	= UTModels
+TEST_NAME	= UnitTest
 
 unit_test	= $(BUILD_DIR)/$(CONFIGURATION)/$(TEST_NAME)
 test_dir	= ../UnitTest/$(TEST_NAME)

@@ -10,6 +10,12 @@ import Canary
 
 extension CGRect : CNSerializerProtocol
 {
+	public var description: String {
+		let ostr = origin.description
+		let sstr = size.description
+		return "{origin:\(ostr) size:\(sstr)}"
+	}
+
 	public func serialize() -> Dictionary<String, AnyObject> {
 		let origin = NSDictionary(dictionary: self.origin.serialize())
 		let size   = NSDictionary(dictionary: self.size.serialize())

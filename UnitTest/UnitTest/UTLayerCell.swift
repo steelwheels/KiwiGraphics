@@ -36,12 +36,6 @@ private func cellTest(cellTable table: KGLayerCellTable, cellIndex index: KGLaye
 {
 	print("-- index: \(index.description)")
 	let cell = table.cell(atIndex: index)
-
-	let (str, err) = CNJSONFile.serialize(dictionary: cell.serialize())
-	if let e = err {
-		print("--- cell [Error] \(e.description)")
-	} else {
-		print("--- cell: \(str)")
-	}
-	return (err == nil)
+	print("--- cell \(cell.bounds.origin.description)")
+	return true
 }

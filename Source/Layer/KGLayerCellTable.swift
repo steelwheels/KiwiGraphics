@@ -74,9 +74,9 @@ public struct KGLayerCellTable: CNSerializerProtocol
 		let base = (pow(base: 4, power: UInt(idx.depth)) - 1) / 3
 		let addr = base + Int(idx.index)
 		assert(addr<mSpaceTable.count, "Invalid index")
-		print("assert \(addr) < \(mSpaceTable.count)")
 		return addr
 	}
+	
 	public func serialize() -> Dictionary<String, AnyObject> {
 		let dict: Dictionary<String, AnyObject> = [
 			"size"  : NSDictionary(dictionary: mSize.serialize()),
