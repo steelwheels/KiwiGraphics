@@ -21,5 +21,11 @@ internal func unitTest(name n:String, result r: Bool) -> Bool {
 	return r
 }
 
-let res0 = unitTest(name: "UTSpatialMapper", result: UTSpatialMapper())
+let res0 = unitTest(name: "UTLayerMapper",	result: UTLayerMapper())
+let res1 = unitTest(name: "UTLayerCell",	result: UTLayerCell())
 
+if res0 && res1 {
+	print("[SUMMARY] OK")
+} else {
+	print("[SUMMARY] NG")
+}

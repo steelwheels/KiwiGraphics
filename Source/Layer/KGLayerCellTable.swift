@@ -1,6 +1,6 @@
 /**
- * @file	KGSpaceTable.swift
- * @brief	Define KGSpaceTable data structure
+ * @file	KGLayerCellTable.swift
+ * @brief	Define KGLayerCellTable data structure
  * @par Reference
  *	http://marupeke296.com/COL_2D_No8_QuadTree.html
  * @par Copyright
@@ -10,45 +10,29 @@
 import Foundation
 import Canary
 
-public struct KGLayerCell {
-	public var mBounds: CGRect
-
-	public init(bounds b: CGRect){
-		mBounds	= b
-	}
-
-	public var bounds: CGRect {
-		get { return mBounds }
-	}
-}
-
-public struct KGSpaceTable: CNSerializerProtocol
+public struct KGLayerCellTable: CNSerializerProtocol
 {
-	private var mBounds	: CGRect
+	private var mSize	: CGSize
 	private var mDepth	: Int
 	private var mSpaceTable	: Array<KGLayerCell>
 
-	public init(bounds b:CGRect, depth d:Int){
-		mBounds = b
+	public init(size s:CGSize, depth d:Int){
+		mSize	= s
 		mDepth  = d
 
-		let origin = b.origin
-		let size   = b.size
-
 		/* Layer 0 */
-		mSpaceTable = [KGSpaceTable.allocateCell(origin: origin, size:size)]
+		mSpaceTable = [KGLayerCellTable.allocateCell(origin: CGPoint(x:0.0, y:0.0), size:s)]
 		/* Layer 1, 2, ... */
-		for curd in 1..<d-1 {
-			mSpaceTable.append(contentsOf: KGSpaceTable.allocateSpaces(origin: origin,
-			                                                           size:   size,
-			                                                           depth:  curd))
+		let origin = CGPoint(x: 0.0, y: 0.0)
+		for curd in 1..<d {
+			mSpaceTable.append(contentsOf: KGLayerCellTable.allocateSpaces(origin: origin, size: s, depth:  curd))
 		}
 	}
 
 	private static func allocateSpaces(origin o:CGPoint, size s:CGSize, depth d: Int) -> Array<KGLayerCell> {
 		var result: Array<KGLayerCell> = []
-		let w0 = s.width  / 4.0
-		let h0 = s.height / 4.0
+		let w0 = s.width  / 2.0
+		let h0 = s.height / 2.0
 		let s0 = CGSize(width: w0, height: h0)
 
 		let o0 = CGPoint(x: o.x,    y: o.y)
@@ -76,19 +60,36 @@ public struct KGSpaceTable: CNSerializerProtocol
 		return KGLayerCell(bounds: bounds)
 	}
 
+	public func cell(atIndex idx: KGLayerIndex) -> KGLayerCell {
+		let addr = cellAddress(atIndex: idx)
+		return mSpaceTable[addr]
+	}
+
+	public mutating func setCell(atIndex idx:KGLayerIndex, cell c:KGLayerCell){
+		let addr = cellAddress(atIndex: idx)
+		mSpaceTable[addr] = c
+	}
+
+	private func cellAddress(atIndex idx: KGLayerIndex) -> Int {
+		let base = (pow(base: 4, power: UInt(idx.depth)) - 1) / 3
+		let addr = base + Int(idx.index)
+		assert(addr<mSpaceTable.count, "Invalid index")
+		print("assert \(addr) < \(mSpaceTable.count)")
+		return addr
+	}
 	public func serialize() -> Dictionary<String, AnyObject> {
 		let dict: Dictionary<String, AnyObject> = [
-			"bounds" : NSDictionary(dictionary: mBounds.serialize()),
-			"depth"  : NSNumber(value: mDepth)
+			"size"  : NSDictionary(dictionary: mSize.serialize()),
+			"depth" : NSNumber(value: mDepth)
 		]
 		return dict
 	}
 
-	static public func unserialize(dictionary dict: Dictionary<String, AnyObject>) -> KGSpaceTable? {
-		var bounds: CGRect
-		if let bdict = dict["bounds"] as? Dictionary<String, AnyObject> {
-			if let bval = CGRect.unserialize(dictionary: bdict) {
-				bounds = bval
+	static public func unserialize(dictionary dict: Dictionary<String, AnyObject>) -> KGLayerCellTable? {
+		var size: CGSize
+		if let sdict = dict["size"] as? Dictionary<String, AnyObject> {
+			if let sval = CGSize.unserialize(dictionary: sdict) {
+				size = sval
 			} else {
 				return nil
 			}
@@ -101,6 +102,6 @@ public struct KGSpaceTable: CNSerializerProtocol
 		} else {
 			return nil
 		}
-		return KGSpaceTable(bounds: bounds, depth: depth)
+		return KGLayerCellTable(size: size, depth: depth)
 	}
 }

@@ -1,6 +1,6 @@
 /**
- * @file	KGSpaceIndex.swift
- * @brief	Define KGSpaceIndex data structure
+ * @file	KGLayerIndex.swift
+ * @brief	Define KGLayerIndex data structure
  * @par Reference
  *	http://marupeke296.com/COL_2D_No8_QuadTree.html
  * @par Copyright
@@ -9,7 +9,7 @@
 
 import Foundation
 
-public struct KGSpaceIndex {
+public struct KGLayerIndex {
 	public var depth	: Int
 	public var index	: UInt32
 
@@ -20,17 +20,17 @@ public struct KGSpaceIndex {
 
 	public var description: String {
 		let dstr = NSString(format: "%u", depth)
-		let istr = NSString(format: "0x%08x", index)
+		let istr = NSString(format: "%u", index)
 		return "(depth:\(dstr), index:\(istr))"
 	}
 }
 
-public func == (left: KGSpaceIndex, right: KGSpaceIndex) -> Bool
+public func == (left: KGLayerIndex, right: KGLayerIndex) -> Bool
 {
 	return (left.depth == right.depth) && (left.index == right.index)
 }
 
-public func != (left: KGSpaceIndex, right: KGSpaceIndex) -> Bool
+public func != (left: KGLayerIndex, right: KGLayerIndex) -> Bool
 {
 	return (left.depth != right.depth) || (left.index != right.index)
 }
