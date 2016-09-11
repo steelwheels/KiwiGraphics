@@ -13,6 +13,8 @@
 		0595664C1D84E27B00DA0C8C /* KGLayerIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566471D84E27B00DA0C8C /* KGLayerIndex.swift */; };
 		0595664D1D84E27B00DA0C8C /* KGLayerMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566481D84E27B00DA0C8C /* KGLayerMapper.swift */; };
 		05A23E1B1D84D9BC00DA705C /* KiwiGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 05A23E191D84D9BC00DA705C /* KiwiGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05B72B151D85200300F0448B /* KiwiGraphics.framework in Resources */ = {isa = PBXBuildFile; fileRef = 05A23E161D84D9BC00DA705C /* KiwiGraphics.framework */; };
+		05B72B161D85200D00F0448B /* Canary.framework in Resources */ = {isa = PBXBuildFile; fileRef = 05E92A3C1D84E0D200265B26 /* Canary.framework */; };
 		05E92A371D84E0AB00265B26 /* KGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92A321D84E0AB00265B26 /* KGLine.swift */; };
 		05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92A331D84E0AB00265B26 /* KGPointExtension.swift */; };
 		05E92A391D84E0AB00265B26 /* KGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92A341D84E0AB00265B26 /* KGRectExtension.swift */; };
@@ -29,6 +31,13 @@
 			remoteGlobalIDString = 05A23E151D84D9BC00DA705C;
 			remoteInfo = KiwiGraphics;
 		};
+		05B72B131D851F7800F0448B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A23E0D1D84D9BC00DA705C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0595664E1D84E2C300DA0C8C;
+			remoteInfo = Install;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +50,8 @@
 		05A23E161D84D9BC00DA705C /* KiwiGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KiwiGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A23E191D84D9BC00DA705C /* KiwiGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiGraphics.h; sourceTree = "<group>"; };
 		05A23E1A1D84D9BC00DA705C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B72B0D1D851F6E00F0448B /* UnitTest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B72B0F1D851F6E00F0448B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E92A321D84E0AB00265B26 /* KGLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGLine.swift; path = Primitives/KGLine.swift; sourceTree = "<group>"; };
 		05E92A331D84E0AB00265B26 /* KGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGPointExtension.swift; path = Primitives/KGPointExtension.swift; sourceTree = "<group>"; };
 		05E92A341D84E0AB00265B26 /* KGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGRectExtension.swift; path = Primitives/KGRectExtension.swift; sourceTree = "<group>"; };
@@ -55,6 +66,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				05E92A3D1D84E0D200265B26 /* Canary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B72B0A1D851F6E00F0448B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				05E92A301D84DABB00265B26 /* Source */,
+				05B72B081D851F2300F0448B /* UnitTest */,
 				05A23E181D84D9BC00DA705C /* KiwiGraphics */,
 				05A23E171D84D9BC00DA705C /* Products */,
 			);
@@ -86,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				05A23E161D84D9BC00DA705C /* KiwiGraphics.framework */,
+				05B72B0D1D851F6E00F0448B /* UnitTest.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +118,23 @@
 				05A23E1A1D84D9BC00DA705C /* Info.plist */,
 			);
 			path = KiwiGraphics;
+			sourceTree = "<group>";
+		};
+		05B72B081D851F2300F0448B /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				05B72B0E1D851F6E00F0448B /* UnitTestBundle */,
+			);
+			name = UnitTest;
+			path = ../UnitTest;
+			sourceTree = SOURCE_ROOT;
+		};
+		05B72B0E1D851F6E00F0448B /* UnitTestBundle */ = {
+			isa = PBXGroup;
+			children = (
+				05B72B0F1D851F6E00F0448B /* Info.plist */,
+			);
+			path = UnitTestBundle;
 			sourceTree = "<group>";
 		};
 		05E92A301D84DABB00265B26 /* Source */ = {
@@ -173,6 +210,24 @@
 			productReference = 05A23E161D84D9BC00DA705C /* KiwiGraphics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		05B72B0C1D851F6E00F0448B /* UnitTestBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B72B101D851F6E00F0448B /* Build configuration list for PBXNativeTarget "UnitTestBundle" */;
+			buildPhases = (
+				05B72B091D851F6E00F0448B /* Sources */,
+				05B72B0A1D851F6E00F0448B /* Frameworks */,
+				05B72B0B1D851F6E00F0448B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05B72B141D851F7800F0448B /* PBXTargetDependency */,
+			);
+			name = UnitTestBundle;
+			productName = UnitTestBundle;
+			productReference = 05B72B0D1D851F6E00F0448B /* UnitTest.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +248,11 @@
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
+					05B72B0C1D851F6E00F0448B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TR2DNF3P93;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 05A23E101D84D9BC00DA705C /* Build configuration list for PBXProject "KiwiGraphics" */;
@@ -209,6 +269,7 @@
 			targets = (
 				05A23E151D84D9BC00DA705C /* KiwiGraphics */,
 				0595664E1D84E2C300DA0C8C /* Install */,
+				05B72B0C1D851F6E00F0448B /* UnitTestBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +279,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B72B0B1D851F6E00F0448B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B72B161D85200D00F0448B /* Canary.framework in Resources */,
+				05B72B151D85200300F0448B /* KiwiGraphics.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +311,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05B72B091D851F6E00F0448B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -248,6 +325,11 @@
 			isa = PBXTargetDependency;
 			target = 05A23E151D84D9BC00DA705C /* KiwiGraphics */;
 			targetProxy = 059566531D84E31C00DA0C8C /* PBXContainerItemProxy */;
+		};
+		05B72B141D851F7800F0448B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0595664E1D84E2C300DA0C8C /* Install */;
+			targetProxy = 05B72B131D851F7800F0448B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -430,6 +512,36 @@
 			};
 			name = Release;
 		};
+		05B72B111D851F6E00F0448B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				INFOPLIST_FILE = ../UnitTest/UnitTestBundle/Info.plist;
+				INSTALL_PATH = "$(HOME)/Tools/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.UnitTestBundle";
+				PRODUCT_NAME = UnitTest;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		05B72B121D851F6E00F0448B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				INFOPLIST_FILE = ../UnitTest/UnitTestBundle/Info.plist;
+				INSTALL_PATH = "$(HOME)/Tools/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.UnitTestBundle";
+				PRODUCT_NAME = UnitTest;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -440,6 +552,7 @@
 				059566511D84E2C300DA0C8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05A23E101D84D9BC00DA705C /* Build configuration list for PBXProject "KiwiGraphics" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +568,15 @@
 			buildConfigurations = (
 				05A23E1F1D84D9BC00DA705C /* Debug */,
 				05A23E201D84D9BC00DA705C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05B72B101D851F6E00F0448B /* Build configuration list for PBXNativeTarget "UnitTestBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B72B111D851F6E00F0448B /* Debug */,
+				05B72B121D851F6E00F0448B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
