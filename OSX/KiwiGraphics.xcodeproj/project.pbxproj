@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053526481D86FEC10073BE74 /* KGConrtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526471D86FEC10073BE74 /* KGConrtext.swift */; };
+		0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526491D870F2A0073BE74 /* KGEclipse.swift */; };
 		059566491D84E27B00DA0C8C /* KGLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566441D84E27B00DA0C8C /* KGLayer.swift */; };
 		0595664A1D84E27B00DA0C8C /* KGLayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566451D84E27B00DA0C8C /* KGLayerCell.swift */; };
 		0595664B1D84E27B00DA0C8C /* KGLayerCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566461D84E27B00DA0C8C /* KGLayerCellTable.swift */; };
@@ -75,6 +77,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		053526471D86FEC10073BE74 /* KGConrtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGConrtext.swift; sourceTree = "<group>"; };
+		053526491D870F2A0073BE74 /* KGEclipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGEclipse.swift; path = Primitives/KGEclipse.swift; sourceTree = "<group>"; };
 		053DEEA61D853ED9008FDA9F /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		059566441D84E27B00DA0C8C /* KGLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGLayer.swift; path = Layer/KGLayer.swift; sourceTree = "<group>"; };
 		059566451D84E27B00DA0C8C /* KGLayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGLayerCell.swift; path = Layer/KGLayerCell.swift; sourceTree = "<group>"; };
@@ -130,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053526461D86FCEA0073BE74 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				053526471D86FEC10073BE74 /* KGConrtext.swift */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
 		059566431D84E26500DA0C8C /* Layer */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +222,7 @@
 				05A23E191D84D9BC00DA705C /* KiwiGraphics.h */,
 				05E92A311D84E09300265B26 /* Primitives */,
 				059566431D84E26500DA0C8C /* Layer */,
+				053526461D86FCEA0073BE74 /* Graphics */,
 			);
 			name = Source;
 			path = ../Source;
@@ -220,6 +233,7 @@
 			children = (
 				05E92A321D84E0AB00265B26 /* KGLine.swift */,
 				059B83331D85404500E118F6 /* KGCircle.swift */,
+				053526491D870F2A0073BE74 /* KGEclipse.swift */,
 				05E92A331D84E0AB00265B26 /* KGPointExtension.swift */,
 				05E92A341D84E0AB00265B26 /* KGRectExtension.swift */,
 				05E92A351D84E0AB00265B26 /* KGSizeExtension.swift */,
@@ -423,8 +437,10 @@
 				0595664B1D84E27B00DA0C8C /* KGLayerCellTable.swift in Sources */,
 				05E92A391D84E0AB00265B26 /* KGRectExtension.swift in Sources */,
 				059B83341D85404500E118F6 /* KGCircle.swift in Sources */,
+				0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */,
 				059566491D84E27B00DA0C8C /* KGLayer.swift in Sources */,
 				05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */,
+				053526481D86FEC10073BE74 /* KGConrtext.swift in Sources */,
 				0595664C1D84E27B00DA0C8C /* KGLayerIndex.swift in Sources */,
 				0595664A1D84E27B00DA0C8C /* KGLayerCell.swift in Sources */,
 				05E92A3A1D84E0AB00265B26 /* KGSizeExtension.swift in Sources */,
@@ -758,6 +774,7 @@
 				059B83451D85512500E118F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05A23E101D84D9BC00DA705C /* Build configuration list for PBXProject "KiwiGraphics" */ = {
 			isa = XCConfigurationList;

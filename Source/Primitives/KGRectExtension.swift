@@ -10,6 +10,12 @@ import Canary
 
 extension CGRect : CNSerializerProtocol
 {
+	public var center: CGPoint {
+		let x = self.origin.x + (self.size.width  / 2)
+		let y = self.origin.y + (self.size.height / 2)
+		return CGPoint(x: x, y:y)
+	}
+
 	public var description: String {
 		let ostr = origin.description
 		let sstr = size.description
