@@ -9,14 +9,22 @@ import Foundation
 import CoreGraphics
 
 public struct KGCircle {
-	var		center:		CGPoint
-	var		radius:		CGFloat
+	var		mCenter:	CGPoint
+	var		mRadius:	CGFloat
 	private var	mBounds:	CGRect
 
 	public init(center c: CGPoint, radius r: CGFloat){
-		center	= c
-		radius	= r
+		mCenter	= c
+		mRadius	= r
 		mBounds = KGCircle.updateBounds(center: c, radius: r)
+	}
+
+	public var center: CGPoint {
+		get { return mCenter }
+	}
+
+	public var radius: CGFloat {
+		get { return mRadius }
 	}
 
 	public var bounds: CGRect {
@@ -24,8 +32,8 @@ public struct KGCircle {
 	}
 
 	public var description: String {
-		let cstr = center.description
-		let rstr = NSString(format: "%.2lf", radius)
+		let cstr = mCenter.description
+		let rstr = NSString(format: "%.2lf", mRadius)
 		return "{center:\(cstr) radius:\(rstr)}"
 	}
 

@@ -10,7 +10,6 @@ import Cocoa
 extension CGContext
 {
 	public func draw(eclipse: KGEclipse) {
-		self.saveGState()
 		self.addEllipse(in: eclipse.bounds)
 		self.clip()
 		let center = eclipse.center
@@ -20,7 +19,14 @@ extension CGContext
 		                        endCenter:   center,
 		                        endRadius:   eclipse.outerRadius,
 		                        options:     .drawsAfterEndLocation)
+	}
 
-		self.restoreGState()
+	public func draw(hexagon hx: KGHexagon) {
+		let vertexes   = hx.vertexes
+		let vertexnum = vertexes.count
+		self.move(to: vertexes[0])
+		for i in 1..<vertexnum {
+			self.addLine(to: vertexes[i])
+		}
 	}
 }

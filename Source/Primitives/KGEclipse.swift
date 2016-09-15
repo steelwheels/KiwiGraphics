@@ -12,17 +12,29 @@ public struct KGEclipse
 {
 	static let mGradient = allocateGradient()
 
-	public var center:		CGPoint
-	public var innerRadius:		CGFloat
-	public var outerRadius:		CGFloat
+	public var mCenter:		CGPoint
+	public var mInnerRadius:	CGFloat
+	public var mOuterRadius:	CGFloat
 
 	private var mBounds:		CGRect
 
 	public init(center c:CGPoint, innerRadius ir: CGFloat, outerRadius or: CGFloat) {
-		center		= c
-		innerRadius	= ir
-		outerRadius	= or
-		mBounds		= KGEclipse.calcBounds(center:center, outerRadius: or)
+		mCenter		= c
+		mInnerRadius	= ir
+		mOuterRadius	= or
+		mBounds		= KGEclipse.calcBounds(center: mCenter, outerRadius: or)
+	}
+
+	public var center: CGPoint {
+		get { return mCenter }
+	}
+
+	public var innerRadius: CGFloat {
+		get { return mInnerRadius }
+	}
+
+	public var outerRadius: CGFloat {
+		get { return mOuterRadius }
 	}
 
 	public var bounds: CGRect {
