@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0505BD441D8EB5C800C74D8F /* KGColorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0505BD431D8EB5C800C74D8F /* KGColorTable.swift */; };
 		053526481D86FEC10073BE74 /* KGConrtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526471D86FEC10073BE74 /* KGConrtext.swift */; };
 		0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526491D870F2A0073BE74 /* KGEclipse.swift */; };
 		059566491D84E27B00DA0C8C /* KGLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566441D84E27B00DA0C8C /* KGLayer.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0505BD431D8EB5C800C74D8F /* KGColorTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGColorTable.swift; sourceTree = "<group>"; };
 		053526471D86FEC10073BE74 /* KGConrtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGConrtext.swift; sourceTree = "<group>"; };
 		053526491D870F2A0073BE74 /* KGEclipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGEclipse.swift; path = Primitives/KGEclipse.swift; sourceTree = "<group>"; };
 		053DEEA61D853ED9008FDA9F /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0505BD421D8EB5B200C74D8F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				0505BD431D8EB5C800C74D8F /* KGColorTable.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		053526461D86FCEA0073BE74 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +236,7 @@
 			children = (
 				05A23E191D84D9BC00DA705C /* KiwiGraphics.h */,
 				05E92A311D84E09300265B26 /* Primitives */,
+				0505BD421D8EB5B200C74D8F /* Color */,
 				053526461D86FCEA0073BE74 /* Graphics */,
 				059566431D84E26500DA0C8C /* Layer */,
 			);
@@ -455,6 +466,7 @@
 				05E92A3B1D84E0AB00265B26 /* KGVelocity.swift in Sources */,
 				0595664D1D84E27B00DA0C8C /* KGLayerMapper.swift in Sources */,
 				05E92A371D84E0AB00265B26 /* KGLine.swift in Sources */,
+				0505BD441D8EB5C800C74D8F /* KGColorTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

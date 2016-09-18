@@ -5,28 +5,30 @@
  *   Copyright (C) 2016 Steel Wheels Project
  */
 
-import Cocoa
+import CoreGraphics
 
 extension CGContext
 {
-	public func draw(eclipse: KGEclipse) {
-		self.addEllipse(in: eclipse.bounds)
+	public func draw(eclipse ec: KGEclipse) {
+		self.addEllipse(in: ec.bounds)
 		self.clip()
-		let center = eclipse.center
-		self.drawRadialGradient(eclipse.gradient,
+		let center = ec.center
+		self.drawRadialGradient(ec.gradient,
 		                        startCenter: center,
-		                        startRadius: eclipse.innerRadius,
+		                        startRadius: ec.innerRadius,
 		                        endCenter:   center,
-		                        endRadius:   eclipse.outerRadius,
+		                        endRadius:   ec.outerRadius,
 		                        options:     .drawsAfterEndLocation)
 	}
 
 	public func draw(hexagon hx: KGHexagon) {
-		let vertexes   = hx.vertexes
+		let vertexes  = hx.vertexes
 		let vertexnum = vertexes.count
 		self.move(to: vertexes[0])
 		for i in 1..<vertexnum {
 			self.addLine(to: vertexes[i])
 		}
+		self.addLine(to: vertexes[0])
+		self.strokePath()
 	}
 }

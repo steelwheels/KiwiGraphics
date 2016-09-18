@@ -10,6 +10,12 @@ import Canary
 
 extension CGPoint : CNSerializerProtocol
 {
+	public func move(dx x: CGFloat, dy y: CGFloat) -> CGPoint {
+		let newx = self.x + x
+		let newy = self.y + y
+		return CGPoint(x: newx, y: newy)
+	}
+
 	public func dot(_ src: CGPoint) -> CGFloat {
 		return (self.x * src.x) + (self.y * src.y)
 	}
