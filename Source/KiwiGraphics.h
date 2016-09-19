@@ -20,5 +20,6 @@ FOUNDATION_EXPORT double KiwiGraphicsVersionNumber;
 FOUNDATION_EXPORT const unsigned char KiwiGraphicsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <KiwiGraphics/PublicHeader.h>
+#import <Canary/Canary.h>
 
 

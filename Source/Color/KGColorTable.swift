@@ -11,10 +11,21 @@ import CoreGraphics
 
 public class KGColorTable
 {
+	#if os(iOS)
+		public typealias KGColor = UIColor
+	#else
+		public typealias KGColor = NSColor
+	#endif
+
 	static let sharedTable = KGColorTable()
 
-	private static func rgb(_ r:CGFloat, _ g:CGFloat, _ b:CGFloat) -> CGColor {
-		return CGColor(red: r, green: g, blue: b, alpha: 1.0)
+	private static func rgb(_ r:CGFloat, _ g:CGFloat, _ b:CGFloat) -> KGColor {
+		#if os(iOS)
+		return UIColor(red: r, green: g, blue: b, alpha: 1.0)
+		#else
+		return NSColor(red: r, green: g, blue: b, alpha: 1.0)
+		#endif
+
 	}
 
 	public static let snow			= rgb(1.00, 0.98, 0.98)

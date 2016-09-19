@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0507E3821D8D444C00167E6A /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0507E3811D8D444C00167E6A /* Canary.framework */; };
+		054E1BCA1D8F619B005931EA /* KGColorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054E1BC91D8F619B005931EA /* KGColorTable.swift */; };
 		057174891D8CC12A00F7F057 /* KiwiGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 057174871D8CC12A00F7F057 /* KiwiGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05E06C2E1D8CC2B100504AE6 /* KGCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E06C261D8CC2B100504AE6 /* KGCircle.swift */; };
 		05E06C2F1D8CC2B100504AE6 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E06C271D8CC2B100504AE6 /* KGEclipse.swift */; };
@@ -23,11 +23,11 @@
 		05E06C3E1D8CC2BD00504AE6 /* KGLayerIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E06C391D8CC2BD00504AE6 /* KGLayerIndex.swift */; };
 		05E06C3F1D8CC2BD00504AE6 /* KGLayerMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E06C3A1D8CC2BD00504AE6 /* KGLayerMapper.swift */; };
 		05E06C411D8CC2C800504AE6 /* KGConrtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E06C401D8CC2C800504AE6 /* KGConrtext.swift */; };
+		05EFFD221D8F60B800C81AB8 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EFFD211D8F60B800C81AB8 /* Canary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0507E3811D8D444C00167E6A /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = ../../../local/Frameworks/Canary.framework; sourceTree = "<group>"; };
-		0507E3861D8D640D00167E6A /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = ../../../local/Frameworks/Canary.framework; sourceTree = "<group>"; };
+		054E1BC91D8F619B005931EA /* KGColorTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGColorTable.swift; sourceTree = "<group>"; };
 		057174841D8CC12A00F7F057 /* KiwiGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KiwiGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		057174871D8CC12A00F7F057 /* KiwiGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiGraphics.h; sourceTree = "<group>"; };
 		057174881D8CC12A00F7F057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +45,7 @@
 		05E06C391D8CC2BD00504AE6 /* KGLayerIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGLayerIndex.swift; sourceTree = "<group>"; };
 		05E06C3A1D8CC2BD00504AE6 /* KGLayerMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGLayerMapper.swift; sourceTree = "<group>"; };
 		05E06C401D8CC2C800504AE6 /* KGConrtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGConrtext.swift; sourceTree = "<group>"; };
+		05EFFD211D8F60B800C81AB8 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = ../../../local/Frameworks/Canary.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0507E3821D8D444C00167E6A /* Canary.framework in Frameworks */,
+				05EFFD221D8F60B800C81AB8 /* Canary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +63,17 @@
 		0507E3801D8D444C00167E6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0507E3811D8D444C00167E6A /* Canary.framework */,
+				05EFFD211D8F60B800C81AB8 /* Canary.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		054E1BC81D8F617C005931EA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				054E1BC91D8F619B005931EA /* KGColorTable.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		0571747A1D8CC12A00F7F057 = {
@@ -88,7 +97,6 @@
 		057174861D8CC12A00F7F057 /* KiwiGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				0507E3861D8D640D00167E6A /* Canary.framework */,
 				057174881D8CC12A00F7F057 /* Info.plist */,
 			);
 			path = KiwiGraphics;
@@ -99,6 +107,7 @@
 			children = (
 				057174871D8CC12A00F7F057 /* KiwiGraphics.h */,
 				05E06C251D8CC28600504AE6 /* Primitives */,
+				054E1BC81D8F617C005931EA /* Color */,
 				05E06C241D8CC27E00504AE6 /* Layer */,
 				05E06C231D8CC27300504AE6 /* Graphics */,
 			);
@@ -236,6 +245,7 @@
 				05E06C3B1D8CC2BD00504AE6 /* KGLayer.swift in Sources */,
 				05E06C3D1D8CC2BD00504AE6 /* KGLayerCellTable.swift in Sources */,
 				05E06C301D8CC2B100504AE6 /* KGHexagon.swift in Sources */,
+				054E1BCA1D8F619B005931EA /* KGColorTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +354,7 @@
 		0571748D1D8CC12A00F7F057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -356,7 +367,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/local/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(HOME)/local/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.KiwiGraphics";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -368,6 +379,7 @@
 		0571748E1D8CC12A00F7F057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -380,7 +392,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/local/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(HOME)/local/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.KiwiGraphics";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
