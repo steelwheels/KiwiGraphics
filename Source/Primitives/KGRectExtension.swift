@@ -16,6 +16,24 @@ extension CGRect : CNSerializerProtocol
 		return CGPoint(x: x, y:y)
 	}
 
+	public func splitByHolizontally() -> (CGRect, CGRect) {
+		let width   = self.size.width
+		let height  = self.size.height / 2.0
+		let origin0 = self.origin
+		let origin1 = CGPoint(x: origin0.x, y: origin0.y + height)
+		let size    = CGSize(width: width, height: height)
+		return (CGRect(origin: origin0, size: size), CGRect(origin: origin1, size: size))
+	}
+
+	public func splitByVertically() -> (CGRect, CGRect) {
+		let width   = self.size.width / 2.0
+		let height  = self.size.height
+		let origin0 = self.origin
+		let origin1 = CGPoint(x: origin0.x + width, y: origin0.y)
+		let size    = CGSize(width: width, height: height)
+		return (CGRect(origin: origin0, size: size), CGRect(origin: origin1, size: size))
+	}
+
 	public var description: String {
 		let ostr = origin.description
 		let sstr = size.description

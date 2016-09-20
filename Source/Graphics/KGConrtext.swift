@@ -13,7 +13,7 @@ extension CGContext
 		self.addEllipse(in: ec.bounds)
 		self.clip()
 		let center = ec.center
-		self.drawRadialGradient(ec.gradient,
+		self.drawRadialGradient(KGGradient.gradient,
 		                        startCenter: center,
 		                        startRadius: ec.innerRadius,
 		                        endCenter:   center,
@@ -21,14 +21,20 @@ extension CGContext
 		                        options:     .drawsAfterEndLocation)
 	}
 
-	public func draw(hexagon hx: KGHexagon) {
-		let vertexes  = hx.vertexes
-		let vertexnum = vertexes.count
-		self.move(to: vertexes[0])
-		for i in 1..<vertexnum {
-			self.addLine(to: vertexes[i])
+	public func draw(hexagon hx: KGHexagon, withGradient wg: Bool = false){
+		var vertexes  = hx.vertexes
+		vertexes.append(vertexes[0])
+		self.addLines(between: vertexes)
+		if wg {
+			self.clip()
+			self.drawLinearGradient(KGGradient.gradient,
+			                        start: vertexes[5],
+			                        end:   vertexes[2],
+			                        options: .drawsAfterEndLocation)
+		} else {
+			self.strokePath()
 		}
-		self.addLine(to: vertexes[0])
-		self.strokePath()
 	}
 }
+
+
