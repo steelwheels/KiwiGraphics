@@ -1,6 +1,6 @@
 /**
- * @file	KGLayerMapper.swift
- * @brief	Define KGLayerMapper data structure
+ * @file	KGPartitionMapper.swift
+ * @brief	Define KGPartitionMapper data structure
  * @par Reference
  *	http://marupeke296.com/COL_2D_No8_QuadTree.html
  * @par Copyright
@@ -15,9 +15,9 @@ internal func hexString(_ value: UInt32) -> String {
 	return NSString(format: "0x%08x", value) as String
 }
 
-public struct KGLayerMapper
+public struct KGPartitionMapper
 {
-	public static func mapBounds(bounds b: CGRect,in layer: KGLayer) -> KGLayerIndex {
+	public static func mapBounds(bounds b: CGRect,in layer: KGPartitionLayer) -> KGPartitionIndex {
 		/* Calculate morton index */
 		let field    = layer.bounds
 		let res      = CGFloat(layer.resolution) /* Deepest resolution */
@@ -26,18 +26,18 @@ public struct KGLayerMapper
 		return spaceidx
 	}
 
-	private static func boundsToIndex(bounds b: CGRect, unitSize u:CGSize, partitionDepth depth: Int) -> KGLayerIndex {
+	private static func boundsToIndex(bounds b: CGRect, unitSize u:CGSize, partitionDepth depth: Int) -> KGPartitionIndex {
 		let x0 = b.origin.x
 		let y0 = b.origin.y
 		let x1 = x0 + b.size.width
 		let y1 = y0 + b.size.height
 
-		let ltidx  = KGLayerMapper.positionToMortonIndex(x: x0, y: y0, unitSize: u)
-		let rbidx  = KGLayerMapper.positionToMortonIndex(x: x1, y: y1, unitSize: u)
+		let ltidx  = KGPartitionMapper.positionToMortonIndex(x: x0, y: y0, unitSize: u)
+		let rbidx  = KGPartitionMapper.positionToMortonIndex(x: x1, y: y1, unitSize: u)
 
 		if DO_DEBUG {
-			let ltstr = KGLayerMapper.index2string(index: ltidx, depth: depth)
-			let rbstr = KGLayerMapper.index2string(index: rbidx, depth: depth)
+			let ltstr = KGPartitionMapper.index2string(index: ltidx, depth: depth)
+			let rbstr = KGPartitionMapper.index2string(index: rbidx, depth: depth)
 			print("ltidx=\(hexString(ltidx)):\(ltstr), rbidx=\(hexString(rbidx)):\(rbstr)")
 		}
 		
@@ -45,14 +45,14 @@ public struct KGLayerMapper
 		let spaceidx = mergeIndexes(leftTopIndex: ltidx, rightBottomIndex: rbidx, partitionDepth: depth)
 
 		if DO_DEBUG {
-			let comstr = KGLayerMapper.index2string(index: spaceidx.index, depth: depth)
+			let comstr = KGPartitionMapper.index2string(index: spaceidx.index, depth: depth)
 			print("depth=\(spaceidx.depth) comidx=\(hexString(spaceidx.index)):\(comstr)")
 		}
 
 		return spaceidx
 	}
 
-	private static func mergeIndexes(leftTopIndex ltidx:UInt32, rightBottomIndex rbidx:UInt32, partitionDepth pdepth: Int) -> KGLayerIndex {
+	private static func mergeIndexes(leftTopIndex ltidx:UInt32, rightBottomIndex rbidx:UInt32, partitionDepth pdepth: Int) -> KGPartitionIndex {
 		let xoridx	= ltidx ^ rbidx
 		var depth	= pdepth
 		var newidx	= UInt32(0)
@@ -66,7 +66,7 @@ public struct KGLayerMapper
 			newdepth = newdepth + 1
 			depth    = depth - 1
 		}
-		return KGLayerIndex(depth: newdepth-1, index: newidx)
+		return KGPartitionIndex(depth: newdepth-1, index: newidx)
 	}
 
 	private static func positionToMortonIndex(x xpos:CGFloat, y ypos:CGFloat, unitSize u:CGSize) -> UInt32 {
@@ -76,8 +76,8 @@ public struct KGLayerMapper
 			print("uwidth=\(u.width), uheight=\(u.height) xpos=\(xpos), ypos=\(ypos) -> xidx=\(xidx), yidx=\(yidx)")
 		}
 
-		let xbits  = KGLayerMapper.bitSeparate(bits: xidx)
-		let ybits  = KGLayerMapper.bitSeparate(bits: yidx)
+		let xbits  = KGPartitionMapper.bitSeparate(bits: xidx)
+		let ybits  = KGPartitionMapper.bitSeparate(bits: yidx)
 		let result = xbits | (ybits << 1)
 		if DO_DEBUG {
 			print("xbits=\(hexString(xbits)), ybits=\(hexString(ybits)), result=\(hexString(result))")

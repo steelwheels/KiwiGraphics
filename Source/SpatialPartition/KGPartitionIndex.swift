@@ -1,6 +1,6 @@
 /**
- * @file	KGLayerIndex.swift
- * @brief	Define KGLayerIndex data structure
+ * @file	KGPartitionIndex.swift
+ * @brief	Define KGPartitionIndex data structure
  * @par Reference
  *	http://marupeke296.com/COL_2D_No8_QuadTree.html
  * @par Copyright
@@ -9,7 +9,7 @@
 
 import Foundation
 
-public struct KGLayerIndex {
+public struct KGPartitionIndex {
 	public var depth	: Int
 	public var index	: UInt32
 
@@ -25,12 +25,12 @@ public struct KGLayerIndex {
 	}
 }
 
-public func == (left: KGLayerIndex, right: KGLayerIndex) -> Bool
+public func == (left: KGPartitionIndex, right: KGPartitionIndex) -> Bool
 {
 	return (left.depth == right.depth) && (left.index == right.index)
 }
 
-public func != (left: KGLayerIndex, right: KGLayerIndex) -> Bool
+public func != (left: KGPartitionIndex, right: KGPartitionIndex) -> Bool
 {
 	return (left.depth != right.depth) || (left.index != right.index)
 }

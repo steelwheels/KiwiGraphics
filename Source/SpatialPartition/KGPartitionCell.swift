@@ -1,6 +1,6 @@
 /**
- * @file	KGLayerCell.swift
- * @brief	Define KGLayerCell data structure
+ * @file	KGPartitionCell.swift
+ * @brief	Define KGPartitionCell data structure
  * @par Reference
  *	http://marupeke296.com/COL_2D_No8_QuadTree.html
  * @par Copyright
@@ -10,7 +10,7 @@
 import Foundation
 import Canary
 
-final public class KGLayerCell: CNSerializerProtocol
+final public class KGPartitionCell: CNSerializerProtocol
 {
 	private var mBounds: CGRect
 
@@ -29,10 +29,10 @@ final public class KGLayerCell: CNSerializerProtocol
 		return dict
 	}
 
-	static public func unserialize(dictionary dict: Dictionary<String, AnyObject>) -> KGLayerCell? {
+	static public func unserialize(dictionary dict: Dictionary<String, AnyObject>) -> KGPartitionCell? {
 		if let bdict = dict["bounds"] as? Dictionary<String, AnyObject> {
 			if let bval = CGRect.unserialize(dictionary: bdict) {
-				return KGLayerCell(bounds: bval)
+				return KGPartitionCell(bounds: bval)
 			}
 		}
 		return nil

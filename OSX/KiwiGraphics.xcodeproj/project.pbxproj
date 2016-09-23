@@ -11,14 +11,14 @@
 		053526481D86FEC10073BE74 /* KGConrtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526471D86FEC10073BE74 /* KGConrtext.swift */; };
 		0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526491D870F2A0073BE74 /* KGEclipse.swift */; };
 		057B0B401D900EA500E4CD7E /* KGGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B0B3F1D900EA500E4CD7E /* KGGradient.swift */; };
-		059566491D84E27B00DA0C8C /* KGLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566441D84E27B00DA0C8C /* KGLayer.swift */; };
-		0595664A1D84E27B00DA0C8C /* KGLayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566451D84E27B00DA0C8C /* KGLayerCell.swift */; };
-		0595664B1D84E27B00DA0C8C /* KGLayerCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566461D84E27B00DA0C8C /* KGLayerCellTable.swift */; };
-		0595664C1D84E27B00DA0C8C /* KGLayerIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566471D84E27B00DA0C8C /* KGLayerIndex.swift */; };
-		0595664D1D84E27B00DA0C8C /* KGLayerMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566481D84E27B00DA0C8C /* KGLayerMapper.swift */; };
+		059566491D84E27B00DA0C8C /* KGPartitionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566441D84E27B00DA0C8C /* KGPartitionLayer.swift */; };
+		0595664A1D84E27B00DA0C8C /* KGPartitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566451D84E27B00DA0C8C /* KGPartitionCell.swift */; };
+		0595664B1D84E27B00DA0C8C /* KGPartitionCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566461D84E27B00DA0C8C /* KGPartitionCellTable.swift */; };
+		0595664C1D84E27B00DA0C8C /* KGPartitionIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566471D84E27B00DA0C8C /* KGPartitionIndex.swift */; };
+		0595664D1D84E27B00DA0C8C /* KGPartitionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566481D84E27B00DA0C8C /* KGPartitionMapper.swift */; };
 		059B832E1D853F6900E118F6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059B832D1D853F6900E118F6 /* main.swift */; };
-		059B83311D853F7200E118F6 /* UTLayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059B832F1D853F7200E118F6 /* UTLayerCell.swift */; };
-		059B83321D853F7200E118F6 /* UTLayerMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059B83301D853F7200E118F6 /* UTLayerMapper.swift */; };
+		059B83311D853F7200E118F6 /* UTPartitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059B832F1D853F7200E118F6 /* UTPartitionCell.swift */; };
+		059B83321D853F7200E118F6 /* UTPartitionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059B83301D853F7200E118F6 /* UTPartitionMapper.swift */; };
 		059B83341D85404500E118F6 /* KGCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059B83331D85404500E118F6 /* KGCircle.swift */; };
 		059B833D1D8545FF00E118F6 /* Canary.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 059B833C1D8545FF00E118F6 /* Canary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		059B833F1D85461300E118F6 /* KiwiGraphics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 059B833E1D85461300E118F6 /* KiwiGraphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -86,15 +86,15 @@
 		053526491D870F2A0073BE74 /* KGEclipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGEclipse.swift; path = Primitives/KGEclipse.swift; sourceTree = "<group>"; };
 		053DEEA61D853ED9008FDA9F /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		057B0B3F1D900EA500E4CD7E /* KGGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGGradient.swift; path = Primitives/KGGradient.swift; sourceTree = "<group>"; };
-		059566441D84E27B00DA0C8C /* KGLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGLayer.swift; path = Layer/KGLayer.swift; sourceTree = "<group>"; };
-		059566451D84E27B00DA0C8C /* KGLayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGLayerCell.swift; path = Layer/KGLayerCell.swift; sourceTree = "<group>"; };
-		059566461D84E27B00DA0C8C /* KGLayerCellTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGLayerCellTable.swift; path = Layer/KGLayerCellTable.swift; sourceTree = "<group>"; };
-		059566471D84E27B00DA0C8C /* KGLayerIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGLayerIndex.swift; path = Layer/KGLayerIndex.swift; sourceTree = "<group>"; };
-		059566481D84E27B00DA0C8C /* KGLayerMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGLayerMapper.swift; path = Layer/KGLayerMapper.swift; sourceTree = "<group>"; };
+		059566441D84E27B00DA0C8C /* KGPartitionLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionLayer.swift; sourceTree = "<group>"; };
+		059566451D84E27B00DA0C8C /* KGPartitionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCell.swift; sourceTree = "<group>"; };
+		059566461D84E27B00DA0C8C /* KGPartitionCellTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCellTable.swift; sourceTree = "<group>"; };
+		059566471D84E27B00DA0C8C /* KGPartitionIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionIndex.swift; sourceTree = "<group>"; };
+		059566481D84E27B00DA0C8C /* KGPartitionMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionMapper.swift; sourceTree = "<group>"; };
 		059566521D84E2F800DA0C8C /* install.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = install.mk; path = ../Script/install.mk; sourceTree = "<group>"; };
 		059B832D1D853F6900E118F6 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		059B832F1D853F7200E118F6 /* UTLayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTLayerCell.swift; sourceTree = "<group>"; };
-		059B83301D853F7200E118F6 /* UTLayerMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTLayerMapper.swift; sourceTree = "<group>"; };
+		059B832F1D853F7200E118F6 /* UTPartitionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTPartitionCell.swift; sourceTree = "<group>"; };
+		059B83301D853F7200E118F6 /* UTPartitionMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTPartitionMapper.swift; sourceTree = "<group>"; };
 		059B83331D85404500E118F6 /* KGCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGCircle.swift; path = Primitives/KGCircle.swift; sourceTree = "<group>"; };
 		059B833C1D8545FF00E118F6 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = ../../../../Library/Frameworks/Canary.framework; sourceTree = "<group>"; };
 		059B833E1D85461300E118F6 /* KiwiGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiwiGraphics.framework; path = ../../../../Library/Frameworks/KiwiGraphics.framework; sourceTree = "<group>"; };
@@ -158,16 +158,16 @@
 			path = Graphics;
 			sourceTree = "<group>";
 		};
-		059566431D84E26500DA0C8C /* Layer */ = {
+		059566431D84E26500DA0C8C /* SpatialPartition */ = {
 			isa = PBXGroup;
 			children = (
-				059566441D84E27B00DA0C8C /* KGLayer.swift */,
-				059566451D84E27B00DA0C8C /* KGLayerCell.swift */,
-				059566461D84E27B00DA0C8C /* KGLayerCellTable.swift */,
-				059566471D84E27B00DA0C8C /* KGLayerIndex.swift */,
-				059566481D84E27B00DA0C8C /* KGLayerMapper.swift */,
+				059566441D84E27B00DA0C8C /* KGPartitionLayer.swift */,
+				059566451D84E27B00DA0C8C /* KGPartitionCell.swift */,
+				059566461D84E27B00DA0C8C /* KGPartitionCellTable.swift */,
+				059566471D84E27B00DA0C8C /* KGPartitionIndex.swift */,
+				059566481D84E27B00DA0C8C /* KGPartitionMapper.swift */,
 			);
-			name = Layer;
+			path = SpatialPartition;
 			sourceTree = "<group>";
 		};
 		059B832C1D853F1000E118F6 /* UnitTest */ = {
@@ -175,8 +175,8 @@
 			children = (
 				059B833E1D85461300E118F6 /* KiwiGraphics.framework */,
 				059B833C1D8545FF00E118F6 /* Canary.framework */,
-				059B832F1D853F7200E118F6 /* UTLayerCell.swift */,
-				059B83301D853F7200E118F6 /* UTLayerMapper.swift */,
+				059B832F1D853F7200E118F6 /* UTPartitionCell.swift */,
+				059B83301D853F7200E118F6 /* UTPartitionMapper.swift */,
 				05F803C51D89A6940015744B /* UTHexagon.swift */,
 				059B832D1D853F6900E118F6 /* main.swift */,
 				059B83481D85514200E118F6 /* unit_test.mk */,
@@ -240,7 +240,7 @@
 				05E92A311D84E09300265B26 /* Primitives */,
 				0505BD421D8EB5B200C74D8F /* Color */,
 				053526461D86FCEA0073BE74 /* Graphics */,
-				059566431D84E26500DA0C8C /* Layer */,
+				059566431D84E26500DA0C8C /* SpatialPartition */,
 			);
 			name = Source;
 			path = ../Source;
@@ -446,8 +446,8 @@
 			files = (
 				059B832E1D853F6900E118F6 /* main.swift in Sources */,
 				05F803C61D89A6940015744B /* UTHexagon.swift in Sources */,
-				059B83321D853F7200E118F6 /* UTLayerMapper.swift in Sources */,
-				059B83311D853F7200E118F6 /* UTLayerCell.swift in Sources */,
+				059B83321D853F7200E118F6 /* UTPartitionMapper.swift in Sources */,
+				059B83311D853F7200E118F6 /* UTPartitionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,20 +455,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0595664B1D84E27B00DA0C8C /* KGLayerCellTable.swift in Sources */,
+				0595664B1D84E27B00DA0C8C /* KGPartitionCellTable.swift in Sources */,
 				05E92A391D84E0AB00265B26 /* KGRectExtension.swift in Sources */,
 				059B83341D85404500E118F6 /* KGCircle.swift in Sources */,
 				0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */,
 				05E629401D89999B00CF5C30 /* KGHexagon.swift in Sources */,
-				059566491D84E27B00DA0C8C /* KGLayer.swift in Sources */,
+				059566491D84E27B00DA0C8C /* KGPartitionLayer.swift in Sources */,
 				05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */,
 				053526481D86FEC10073BE74 /* KGConrtext.swift in Sources */,
-				0595664C1D84E27B00DA0C8C /* KGLayerIndex.swift in Sources */,
-				0595664A1D84E27B00DA0C8C /* KGLayerCell.swift in Sources */,
+				0595664C1D84E27B00DA0C8C /* KGPartitionIndex.swift in Sources */,
+				0595664A1D84E27B00DA0C8C /* KGPartitionCell.swift in Sources */,
 				05E92A3A1D84E0AB00265B26 /* KGSizeExtension.swift in Sources */,
 				057B0B401D900EA500E4CD7E /* KGGradient.swift in Sources */,
 				05E92A3B1D84E0AB00265B26 /* KGVelocity.swift in Sources */,
-				0595664D1D84E27B00DA0C8C /* KGLayerMapper.swift in Sources */,
+				0595664D1D84E27B00DA0C8C /* KGPartitionMapper.swift in Sources */,
 				05E92A371D84E0AB00265B26 /* KGLine.swift in Sources */,
 				0505BD441D8EB5C800C74D8F /* KGColorTable.swift in Sources */,
 			);

@@ -1,6 +1,6 @@
 /**
- * @file	KGLayer.swift
- * @brief	Define KGLayer data structure
+ * @file	KGPartitionLayer.swift
+ * @brief	Define KGPartitionLayer data structure
  * @par Reference
  *	http://marupeke296.com/COL_2D_No8_QuadTree.html
  * @par Copyright
@@ -11,7 +11,7 @@ import Foundation
 import Canary
 
 
-public struct KGLayer: CNSerializerProtocol
+public struct KGPartitionLayer: CNSerializerProtocol
 {
 	public let partitionResolution: Int	= 2		/* Partitioned into "r" x "r" spaces		*/
 
@@ -46,7 +46,7 @@ public struct KGLayer: CNSerializerProtocol
 		return dict
 	}
 
-	static public func unserialize(dictionary d: Dictionary<String, AnyObject>) -> KGLayer? {
+	static public func unserialize(dictionary d: Dictionary<String, AnyObject>) -> KGPartitionLayer? {
 		var bounds: CGRect
 		if let bdict = d["bounds"] as? Dictionary<String, AnyObject> {
 			if let bval = CGRect.unserialize(dictionary: bdict) {
@@ -63,6 +63,6 @@ public struct KGLayer: CNSerializerProtocol
 		} else {
 			return nil
 		}
-		return KGLayer(bounds: bounds, partitionDepth: depth)
+		return KGPartitionLayer(bounds: bounds, partitionDepth: depth)
 	}
 }

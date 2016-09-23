@@ -12,7 +12,7 @@ addObject {center:{x:50.00, y:50.00} radius:1.00}
  -> index: (depth:2, index:12) -> OK
 addObject {center:{x:50.00, y:60.00} radius:1.00}
  -> index: (depth:1, index:3) -> OK
-UTLayerMapper : RESULT OK
+UTPartitionMapper : RESULT OK
 depth: 0
 - cell no: 0/1
 -- index: (depth:0, index:0)
@@ -272,7 +272,7 @@ depth: 3
 - cell no: 63/64
 -- index: (depth:3, index:63)
 --- cell {x:70.00, y:70.00}
-UTLayerCell : RESULT OK
+UTPartitionCell : RESULT OK
 vertexes: {x:0.00, y:10.00} {x:8.66, y:5.00} {x:8.66, y:-5.00} {x:0.00, y:-10.00} {x:-8.66, y:-5.00} {x:-8.66, y:5.00} 
 UTHexagon : RESULT OK
 [SUMMARY] OK

@@ -1,5 +1,5 @@
 //
-//  UTLayerCell.swift
+//  UTPartitionCell.swift
 //  KiwiGraphics
 //
 //  Created by Tomoo Hamada on 2016/09/10.
@@ -10,11 +10,11 @@ import Foundation
 import Canary
 import KiwiGraphics
 
-public func UTLayerCell() -> Bool
+public func UTPartitionCell() -> Bool
 {
 	var result = true
 
-	let table = KGLayerCellTable(size: CGSize(width:80.0, height:80.0), depth: 4)
+	let table = KGPartitionCellTable(size: CGSize(width:80.0, height:80.0), depth: 4)
 
 	for depth in 0..<4 {
 		print("depth: \(depth)")
@@ -22,7 +22,7 @@ public func UTLayerCell() -> Bool
 		let cellnum    = resolution * resolution
 		for i in 0..<cellnum {
 			print("- cell no: \(i)/\(cellnum)")
-			let index = KGLayerIndex(depth: depth, index: UInt32(i))
+			let index = KGPartitionIndex(depth: depth, index: UInt32(i))
 			let res   = cellTest(cellTable: table, cellIndex: index)
 
 			result = result && res
@@ -32,7 +32,7 @@ public func UTLayerCell() -> Bool
 	return result
 }
 
-private func cellTest(cellTable table: KGLayerCellTable, cellIndex index: KGLayerIndex) -> Bool
+private func cellTest(cellTable table: KGPartitionCellTable, cellIndex index: KGPartitionIndex) -> Bool
 {
 	print("-- index: \(index.description)")
 	let cell = table.cell(atIndex: index)

@@ -1,6 +1,6 @@
 /**
- * @file	KGLayerCellTable.swift
- * @brief	Define KGLayerCellTable data structure
+ * @file	KGPartitionCellTable.swift
+ * @brief	Define KGPartitionCellTable data structure
  * @par Reference
  *	http://marupeke296.com/COL_2D_No8_QuadTree.html
  * @par Copyright
@@ -10,27 +10,27 @@
 import Foundation
 import Canary
 
-public struct KGLayerCellTable: CNSerializerProtocol
+public struct KGPartitionCellTable: CNSerializerProtocol
 {
 	private var mSize	: CGSize
 	private var mDepth	: Int
-	private var mSpaceTable	: Array<KGLayerCell>
+	private var mSpaceTable	: Array<KGPartitionCell>
 
 	public init(size s:CGSize, depth d:Int){
 		mSize	= s
 		mDepth  = d
 
 		/* Layer 0 */
-		mSpaceTable = [KGLayerCellTable.allocateCell(origin: CGPoint(x:0.0, y:0.0), size:s)]
+		mSpaceTable = [KGPartitionCellTable.allocateCell(origin: CGPoint(x:0.0, y:0.0), size:s)]
 		/* Layer 1, 2, ... */
 		let origin = CGPoint(x: 0.0, y: 0.0)
 		for curd in 1..<d {
-			mSpaceTable.append(contentsOf: KGLayerCellTable.allocateSpaces(origin: origin, size: s, depth:  curd))
+			mSpaceTable.append(contentsOf: KGPartitionCellTable.allocateSpaces(origin: origin, size: s, depth:  curd))
 		}
 	}
 
-	private static func allocateSpaces(origin o:CGPoint, size s:CGSize, depth d: Int) -> Array<KGLayerCell> {
-		var result: Array<KGLayerCell> = []
+	private static func allocateSpaces(origin o:CGPoint, size s:CGSize, depth d: Int) -> Array<KGPartitionCell> {
+		var result: Array<KGPartitionCell> = []
 		let w0 = s.width  / 2.0
 		let h0 = s.height / 2.0
 		let s0 = CGSize(width: w0, height: h0)
@@ -55,22 +55,22 @@ public struct KGLayerCellTable: CNSerializerProtocol
 		return result
 	}
 
-	private static func allocateCell(origin o:CGPoint, size s:CGSize) -> KGLayerCell {
+	private static func allocateCell(origin o:CGPoint, size s:CGSize) -> KGPartitionCell {
 		let bounds = CGRect(origin: o, size: s)
-		return KGLayerCell(bounds: bounds)
+		return KGPartitionCell(bounds: bounds)
 	}
 
-	public func cell(atIndex idx: KGLayerIndex) -> KGLayerCell {
+	public func cell(atIndex idx: KGPartitionIndex) -> KGPartitionCell {
 		let addr = cellAddress(atIndex: idx)
 		return mSpaceTable[addr]
 	}
 
-	public mutating func setCell(atIndex idx:KGLayerIndex, cell c:KGLayerCell){
+	public mutating func setCell(atIndex idx:KGPartitionIndex, cell c:KGPartitionCell){
 		let addr = cellAddress(atIndex: idx)
 		mSpaceTable[addr] = c
 	}
 
-	private func cellAddress(atIndex idx: KGLayerIndex) -> Int {
+	private func cellAddress(atIndex idx: KGPartitionIndex) -> Int {
 		let base = (pow(base: 4, power: UInt(idx.depth)) - 1) / 3
 		let addr = base + Int(idx.index)
 		assert(addr<mSpaceTable.count, "Invalid index")
@@ -85,7 +85,7 @@ public struct KGLayerCellTable: CNSerializerProtocol
 		return dict
 	}
 
-	static public func unserialize(dictionary dict: Dictionary<String, AnyObject>) -> KGLayerCellTable? {
+	static public func unserialize(dictionary dict: Dictionary<String, AnyObject>) -> KGPartitionCellTable? {
 		var size: CGSize
 		if let sdict = dict["size"] as? Dictionary<String, AnyObject> {
 			if let sval = CGSize.unserialize(dictionary: sdict) {
@@ -102,6 +102,6 @@ public struct KGLayerCellTable: CNSerializerProtocol
 		} else {
 			return nil
 		}
-		return KGLayerCellTable(size: size, depth: depth)
+		return KGPartitionCellTable(size: size, depth: depth)
 	}
 }
