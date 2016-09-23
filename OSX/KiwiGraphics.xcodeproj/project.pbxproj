@@ -278,7 +278,7 @@
 /* Begin PBXLegacyTarget section */
 		0595664E1D84E2C300DA0C8C /* Install */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "-f ../Script/install.mk";
+			buildArgumentsString = "-f ../Script/install_osx.mk";
 			buildConfigurationList = 0595664F1D84E2C300DA0C8C /* Build configuration list for PBXLegacyTarget "Install" */;
 			buildPhases = (
 			);
