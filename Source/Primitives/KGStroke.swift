@@ -15,6 +15,10 @@ public class KGStroke
 		mStrokePoints = [pt]
 	}
 
+	public var strokes: Array<CGPoint> {
+		get { return mStrokePoints }
+	}
+
 	public func addPoint(point pt: CGPoint){
 		let count = mStrokePoints.count
 		if count > 0 {
@@ -25,6 +29,22 @@ public class KGStroke
 			}
 		} else {
 			mStrokePoints.append(pt)
+		}
+	}
+
+	public var description: String {
+		get {
+			var result: String = "["
+			var is1st: Bool	= true
+			for point in mStrokePoints {
+				if is1st {
+					is1st = false
+				} else {
+					result = result + ", "
+				}
+				result = result + point.description
+			}
+			return result + "]"
 		}
 	}
 
