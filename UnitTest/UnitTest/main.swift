@@ -24,8 +24,9 @@ internal func unitTest(name n:String, result r: Bool) -> Bool {
 let res0 = unitTest(name: "UTPartitionMapper",	result: UTPartitionMapper())
 let res1 = unitTest(name: "UTPartitionCell",	result: UTPartitionCell())
 let res2 = unitTest(name: "UTHexagon",		result: UTHexagon())
+let res3 = unitTest(name: "UTIntersect",	result: UTIntersect())
 
-if res0 && res1 && res2 {
+if res0 && res1 && res2 && res3 {
 	print("[SUMMARY] OK")
 } else {
 	print("[SUMMARY] NG")

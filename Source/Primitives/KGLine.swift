@@ -15,5 +15,11 @@ public struct KGLine {
 		fromPoint = fp
 		toPoint	  = tp
 	}
+
+	public var description: String {
+		let fdesc = fromPoint.description
+		let tdesc = toPoint.description
+		return "{from:\(fdesc) to:\(tdesc))"
+	}
 }
 
