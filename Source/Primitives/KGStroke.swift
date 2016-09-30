@@ -15,7 +15,7 @@ public class KGStroke
 		mStrokePoints = [pt]
 	}
 
-	public var strokes: Array<CGPoint> {
+	public var points: Array<CGPoint> {
 		get { return mStrokePoints }
 	}
 
@@ -47,10 +47,7 @@ public class KGStroke
 		if count >= 2 {
 			let pt0    = mStrokePoints[count-1]
 			let pt1    = mStrokePoints[count-2]
-			let origin = CGPoint(x: min(pt0.x, pt1.x), y: min(pt0.y, pt1.y))
-			let width  = abs(pt0.x - pt1.x)
-			let height = abs(pt0.y - pt1.y)
-			return CGRect(origin: origin, size: CGSize(width: width, height: height))
+			return CGRect.pointsToRect(fromPoint: pt0, toPoint: pt1)
 		} else {
 			return CGRect(x: 0.0, y: 0.0, width: 0.0, height: 0.0)
 		}

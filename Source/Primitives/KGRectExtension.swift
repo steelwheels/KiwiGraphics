@@ -34,6 +34,25 @@ extension CGRect : CNSerializerProtocol
 		return (CGRect(origin: origin0, size: size), CGRect(origin: origin1, size: size))
 	}
 
+	public static func pointsToRect(fromPoint fp:CGPoint, toPoint tp:CGPoint) -> CGRect {
+		var x, y, width, height: CGFloat
+		if fp.x >= tp.x {
+			x     = tp.x
+			width = fp.x - tp.x
+		} else {
+			x     = fp.x
+			width = tp.x - fp.x
+		}
+		if fp.y >= tp.y {
+			y      = tp.y
+			height = fp.y - tp.y
+		} else {
+			y      = fp.y
+			height = tp.y - fp.y
+		}
+		return CGRect(x: x, y: y, width: width, height: height)
+	}
+
 	public var description: String {
 		let ostr = origin.description
 		let sstr = size.description
@@ -72,3 +91,4 @@ extension CGRect : CNSerializerProtocol
 		return CGRect(origin: origin, size: size)
 	}
 }
+
