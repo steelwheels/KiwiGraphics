@@ -9,14 +9,14 @@
 
 import CoreGraphics
 
+#if os(iOS)
+	public typealias KGColor = UIColor
+#else
+	public typealias KGColor = NSColor
+#endif
+
 public class KGColorTable
 {
-	#if os(iOS)
-		public typealias KGColor = UIColor
-	#else
-		public typealias KGColor = NSColor
-	#endif
-
 	static let sharedTable = KGColorTable()
 
 	private static func rgb(_ r:CGFloat, _ g:CGFloat, _ b:CGFloat) -> KGColor {

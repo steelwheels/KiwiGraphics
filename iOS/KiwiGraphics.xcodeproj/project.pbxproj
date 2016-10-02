@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050374D31DA1302500CA86DC /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050374D21DA1302500CA86DC /* KGStroke.swift */; };
+		050374D51DA1303B00CA86DC /* KGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050374D41DA1303B00CA86DC /* KGImage.swift */; };
 		054C53441D9AC61400950BAA /* KGPartitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C533F1D9AC61400950BAA /* KGPartitionCell.swift */; };
 		054C53451D9AC61400950BAA /* KGPartitionCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53401D9AC61400950BAA /* KGPartitionCellTable.swift */; };
 		054C53461D9AC61400950BAA /* KGPartitionIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53411D9AC61400950BAA /* KGPartitionIndex.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050374D21DA1302500CA86DC /* KGStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGStroke.swift; sourceTree = "<group>"; };
+		050374D41DA1303B00CA86DC /* KGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGImage.swift; sourceTree = "<group>"; };
 		054C533F1D9AC61400950BAA /* KGPartitionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCell.swift; sourceTree = "<group>"; };
 		054C53401D9AC61400950BAA /* KGPartitionCellTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCellTable.swift; sourceTree = "<group>"; };
 		054C53411D9AC61400950BAA /* KGPartitionIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionIndex.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 		05BEA33F1D91500A00BFC35E /* Primitives */ = {
 			isa = PBXGroup;
 			children = (
+				050374D21DA1302500CA86DC /* KGStroke.swift */,
 				05BEA3431D91504300BFC35E /* KGCircle.swift */,
 				05BEA3441D91504300BFC35E /* KGEclipse.swift */,
 				05BEA3451D91504300BFC35E /* KGGradient.swift */,
@@ -141,6 +146,7 @@
 		05BEA3411D91502100BFC35E /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				050374D41DA1303B00CA86DC /* KGImage.swift */,
 				05BEA34B1D91504300BFC35E /* KGVelocity.swift */,
 				05BEA3571D91506500BFC35E /* KGConrtext.swift */,
 				054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */,
@@ -268,10 +274,12 @@
 				054C53451D9AC61400950BAA /* KGPartitionCellTable.swift in Sources */,
 				054C534A1D9AC6C500950BAA /* KGIntersectDetector.swift in Sources */,
 				054C53461D9AC61400950BAA /* KGPartitionIndex.swift in Sources */,
+				050374D51DA1303B00CA86DC /* KGImage.swift in Sources */,
 				054C53441D9AC61400950BAA /* KGPartitionCell.swift in Sources */,
 				054C53481D9AC61400950BAA /* KGPartitionMapper.swift in Sources */,
 				05BEA3511D91504300BFC35E /* KGPointExtension.swift in Sources */,
 				05BEA3501D91504300BFC35E /* KGLine.swift in Sources */,
+				050374D31DA1302500CA86DC /* KGStroke.swift in Sources */,
 				05BEA3531D91504300BFC35E /* KGSizeExtension.swift in Sources */,
 				05BEA3581D91506500BFC35E /* KGConrtext.swift in Sources */,
 				05BEA34C1D91504300BFC35E /* KGCircle.swift in Sources */,

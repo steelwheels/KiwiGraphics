@@ -275,4 +275,11 @@ depth: 3
 UTPartitionCell : RESULT OK
 vertexes: {x:0.00, y:10.00} {x:8.66, y:5.00} {x:8.66, y:-5.00} {x:0.00, y:-10.00} {x:-8.66, y:-5.00} {x:-8.66, y:5.00} 
 UTHexagon : RESULT OK
+TEST: l0:{from:{x:5.00, y:0.00} to:{x:5.00, y:10.00}), l1:{from:{x:0.00, y:5.00} to:{x:10.00, y:5.00})
+ -> Detect at {x:5.00, y:5.00}
+TEST: l0:{from:{x:5.00, y:0.00} to:{x:5.00, y:10.00}), l1:{from:{x:0.00, y:0.00} to:{x:10.00, y:10.00})
+ -> Detect at {x:5.00, y:5.00}
+TEST: l0:{from:{x:0.00, y:0.00} to:{x:10.00, y:10.00}), l1:{from:{x:0.00, y:1.00} to:{x:10.00, y:11.00})
+ -> Not detect
+UTIntersect : RESULT OK
 [SUMMARY] OK

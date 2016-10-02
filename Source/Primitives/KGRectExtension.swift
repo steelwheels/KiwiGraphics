@@ -8,6 +8,12 @@
 import Foundation
 import Canary
 
+#if os(iOS)
+	public typealias CNRect = CGRect
+#else
+	public typealias CNRect = NSRect
+#endif
+
 extension CGRect : CNSerializerProtocol
 {
 	public var center: CGPoint {
