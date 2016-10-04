@@ -9,9 +9,9 @@ import Foundation
 import Canary
 
 #if os(iOS)
-	public typealias CNRect = CGRect
+	public typealias KGRect = CGRect
 #else
-	public typealias CNRect = NSRect
+	public typealias KGRect = NSRect
 #endif
 
 extension CGRect : CNSerializerProtocol
