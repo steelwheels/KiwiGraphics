@@ -35,6 +35,21 @@ extension CGContext
 			self.strokePath()
 		}
 	}
+
+	public typealias KGDrawEdgeCallback = (_ context: CGContext, _ from: CGPoint, _ to: CGPoint) -> Void
+	
+	public func draw(vertices vs: KGVertices, edgeDrawer drawer: KGDrawEdgeCallback, edges: Array<(Int, Int)>){
+		let vertices = vs.vertices
+		let count = vertices.count
+		for (f, t) in edges {
+			if f < count && t < count {
+				drawer(self, vertices[f], vertices[t])
+			} else {
+				NSLog("Invalid vertex index")
+			}
+		}
+		self.strokePath()
+	}
 }
 
 

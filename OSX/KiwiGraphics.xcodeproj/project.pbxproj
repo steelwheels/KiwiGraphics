@@ -12,6 +12,7 @@
 		050A74661D9AD100004B177C /* UTIntersect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A74651D9AD100004B177C /* UTIntersect.swift */; };
 		053526481D86FEC10073BE74 /* KGConrtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526471D86FEC10073BE74 /* KGConrtext.swift */; };
 		0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526491D870F2A0073BE74 /* KGEclipse.swift */; };
+		053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA1C91DA8F74D00C32991 /* KGVertices.swift */; };
 		055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DFA5E1D978C240029BA0A /* KGStroke.swift */; };
 		056DDBC51D968A27007A8677 /* KGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DDBC41D968A27007A8677 /* KGImage.swift */; };
 		057B0B401D900EA500E4CD7E /* KGGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B0B3F1D900EA500E4CD7E /* KGGradient.swift */; };
@@ -90,6 +91,7 @@
 		050A74651D9AD100004B177C /* UTIntersect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTIntersect.swift; sourceTree = "<group>"; };
 		053526471D86FEC10073BE74 /* KGConrtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGConrtext.swift; sourceTree = "<group>"; };
 		053526491D870F2A0073BE74 /* KGEclipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGEclipse.swift; path = Primitives/KGEclipse.swift; sourceTree = "<group>"; };
+		053BA1C91DA8F74D00C32991 /* KGVertices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGVertices.swift; path = Primitives/KGVertices.swift; sourceTree = "<group>"; };
 		053DEEA61D853ED9008FDA9F /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055DFA5E1D978C240029BA0A /* KGStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGStroke.swift; path = ../Primitives/KGStroke.swift; sourceTree = "<group>"; };
 		056DDBC41D968A27007A8677 /* KGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGImage.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				059B83331D85404500E118F6 /* KGCircle.swift */,
 				053526491D870F2A0073BE74 /* KGEclipse.swift */,
 				05E6293F1D89999B00CF5C30 /* KGHexagon.swift */,
+				053BA1C91DA8F74D00C32991 /* KGVertices.swift */,
 				057B0B3F1D900EA500E4CD7E /* KGGradient.swift */,
 				05E92A331D84E0AB00265B26 /* KGPointExtension.swift */,
 				05E92A341D84E0AB00265B26 /* KGRectExtension.swift */,
@@ -474,6 +477,7 @@
 				0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */,
 				05E629401D89999B00CF5C30 /* KGHexagon.swift in Sources */,
 				059566491D84E27B00DA0C8C /* KGPartitionLayer.swift in Sources */,
+				053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */,
 				05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */,
 				055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */,
 				053526481D86FEC10073BE74 /* KGConrtext.swift in Sources */,

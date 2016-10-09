@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		050374D31DA1302500CA86DC /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050374D21DA1302500CA86DC /* KGStroke.swift */; };
 		050374D51DA1303B00CA86DC /* KGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050374D41DA1303B00CA86DC /* KGImage.swift */; };
+		053A5A771DAA2A48004E5CDA /* KGVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A5A761DAA2A48004E5CDA /* KGVertices.swift */; };
 		054C53441D9AC61400950BAA /* KGPartitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C533F1D9AC61400950BAA /* KGPartitionCell.swift */; };
 		054C53451D9AC61400950BAA /* KGPartitionCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53401D9AC61400950BAA /* KGPartitionCellTable.swift */; };
 		054C53461D9AC61400950BAA /* KGPartitionIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53411D9AC61400950BAA /* KGPartitionIndex.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		050374D21DA1302500CA86DC /* KGStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGStroke.swift; sourceTree = "<group>"; };
 		050374D41DA1303B00CA86DC /* KGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGImage.swift; sourceTree = "<group>"; };
+		053A5A761DAA2A48004E5CDA /* KGVertices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGVertices.swift; sourceTree = "<group>"; };
 		054C533F1D9AC61400950BAA /* KGPartitionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCell.swift; sourceTree = "<group>"; };
 		054C53401D9AC61400950BAA /* KGPartitionCellTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCellTable.swift; sourceTree = "<group>"; };
 		054C53411D9AC61400950BAA /* KGPartitionIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionIndex.swift; sourceTree = "<group>"; };
@@ -125,8 +127,9 @@
 				050374D21DA1302500CA86DC /* KGStroke.swift */,
 				05BEA3431D91504300BFC35E /* KGCircle.swift */,
 				05BEA3441D91504300BFC35E /* KGEclipse.swift */,
-				05BEA3451D91504300BFC35E /* KGGradient.swift */,
+				053A5A761DAA2A48004E5CDA /* KGVertices.swift */,
 				05BEA3461D91504300BFC35E /* KGHexagon.swift */,
+				05BEA3451D91504300BFC35E /* KGGradient.swift */,
 				05BEA3471D91504300BFC35E /* KGLine.swift */,
 				05BEA3481D91504300BFC35E /* KGPointExtension.swift */,
 				05BEA3491D91504300BFC35E /* KGRectExtension.swift */,
@@ -277,6 +280,7 @@
 				050374D51DA1303B00CA86DC /* KGImage.swift in Sources */,
 				054C53441D9AC61400950BAA /* KGPartitionCell.swift in Sources */,
 				054C53481D9AC61400950BAA /* KGPartitionMapper.swift in Sources */,
+				053A5A771DAA2A48004E5CDA /* KGVertices.swift in Sources */,
 				05BEA3511D91504300BFC35E /* KGPointExtension.swift in Sources */,
 				05BEA3501D91504300BFC35E /* KGLine.swift in Sources */,
 				050374D31DA1302500CA86DC /* KGStroke.swift in Sources */,
