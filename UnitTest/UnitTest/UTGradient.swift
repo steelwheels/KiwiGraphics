@@ -11,8 +11,8 @@ import KiwiGraphics
 
 public func UTGradient() -> Bool
 {
-	let _ = KGGradient(base: CGColor.white, doDebug: true)
-	let _ = KGGradient(base: KGColorTable.white.cgColor, doDebug: true)
+	let _ = KGGradientTable.sharedGradientTable.gradient(forColor: CGColor.white, doDebug: true)
+	let _ = KGGradientTable.sharedGradientTable.gradient(forColor: KGColorTable.white.cgColor, doDebug: true)
 
 	return true
 }

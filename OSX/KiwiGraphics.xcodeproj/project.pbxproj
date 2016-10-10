@@ -15,7 +15,7 @@
 		053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA1C91DA8F74D00C32991 /* KGVertices.swift */; };
 		055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DFA5E1D978C240029BA0A /* KGStroke.swift */; };
 		056DDBC51D968A27007A8677 /* KGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DDBC41D968A27007A8677 /* KGImage.swift */; };
-		057B0B401D900EA500E4CD7E /* KGGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B0B3F1D900EA500E4CD7E /* KGGradient.swift */; };
+		057B0B401D900EA500E4CD7E /* KGGradientTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B0B3F1D900EA500E4CD7E /* KGGradientTable.swift */; };
 		059566491D84E27B00DA0C8C /* KGPartitionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566441D84E27B00DA0C8C /* KGPartitionLayer.swift */; };
 		0595664A1D84E27B00DA0C8C /* KGPartitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566451D84E27B00DA0C8C /* KGPartitionCell.swift */; };
 		0595664B1D84E27B00DA0C8C /* KGPartitionCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566461D84E27B00DA0C8C /* KGPartitionCellTable.swift */; };
@@ -96,7 +96,7 @@
 		053DEEA61D853ED9008FDA9F /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055DFA5E1D978C240029BA0A /* KGStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGStroke.swift; path = ../Primitives/KGStroke.swift; sourceTree = "<group>"; };
 		056DDBC41D968A27007A8677 /* KGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGImage.swift; sourceTree = "<group>"; };
-		057B0B3F1D900EA500E4CD7E /* KGGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGGradient.swift; path = Primitives/KGGradient.swift; sourceTree = "<group>"; };
+		057B0B3F1D900EA500E4CD7E /* KGGradientTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGGradientTable.swift; path = Primitives/KGGradientTable.swift; sourceTree = "<group>"; };
 		059566441D84E27B00DA0C8C /* KGPartitionLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionLayer.swift; sourceTree = "<group>"; };
 		059566451D84E27B00DA0C8C /* KGPartitionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCell.swift; sourceTree = "<group>"; };
 		059566461D84E27B00DA0C8C /* KGPartitionCellTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCellTable.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 				053526491D870F2A0073BE74 /* KGEclipse.swift */,
 				05E6293F1D89999B00CF5C30 /* KGHexagon.swift */,
 				053BA1C91DA8F74D00C32991 /* KGVertices.swift */,
-				057B0B3F1D900EA500E4CD7E /* KGGradient.swift */,
+				057B0B3F1D900EA500E4CD7E /* KGGradientTable.swift */,
 				05E92A331D84E0AB00265B26 /* KGPointExtension.swift */,
 				05E92A341D84E0AB00265B26 /* KGRectExtension.swift */,
 				05E92A351D84E0AB00265B26 /* KGSizeExtension.swift */,
@@ -489,7 +489,7 @@
 				0595664A1D84E27B00DA0C8C /* KGPartitionCell.swift in Sources */,
 				05E92A3A1D84E0AB00265B26 /* KGSizeExtension.swift in Sources */,
 				056DDBC51D968A27007A8677 /* KGImage.swift in Sources */,
-				057B0B401D900EA500E4CD7E /* KGGradient.swift in Sources */,
+				057B0B401D900EA500E4CD7E /* KGGradientTable.swift in Sources */,
 				05E92A3B1D84E0AB00265B26 /* KGVelocity.swift in Sources */,
 				050A74641D9AD063004B177C /* KGIntersectDetector.swift in Sources */,
 				0595664D1D84E27B00DA0C8C /* KGPartitionMapper.swift in Sources */,
