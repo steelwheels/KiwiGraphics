@@ -9,11 +9,11 @@ import CoreGraphics
 
 extension CGContext
 {
-	public func draw(eclipse ec: KGEclipse) {
+	public func draw(eclipse ec: KGEclipse, withGradient gradient: CGGradient) {
 		self.addEllipse(in: ec.bounds)
 		self.clip()
 		let center = ec.center
-		self.drawRadialGradient(KGGradient.gradient,
+		self.drawRadialGradient(gradient,
 		                        startCenter: center,
 		                        startRadius: ec.innerRadius,
 		                        endCenter:   center,
@@ -21,13 +21,13 @@ extension CGContext
 		                        options:     .drawsAfterEndLocation)
 	}
 
-	public func draw(hexagon hx: KGHexagon, withGradient wg: Bool = false){
+	public func draw(hexagon hx: KGHexagon, withGradient gradient: CGGradient?){
 		var vertexes  = hx.vertexes
 		vertexes.append(vertexes[0])
 		self.addLines(between: vertexes)
-		if wg {
+		if let grad = gradient {
 			self.clip()
-			self.drawLinearGradient(KGGradient.gradient,
+			self.drawLinearGradient(grad,
 			                        start: vertexes[5],
 			                        end:   vertexes[2],
 			                        options: .drawsAfterEndLocation)

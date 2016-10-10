@@ -282,4 +282,21 @@ TEST: l0:{from:{x:5.00, y:0.00} to:{x:5.00, y:10.00}), l1:{from:{x:0.00, y:0.00}
 TEST: l0:{from:{x:0.00, y:0.00} to:{x:10.00, y:10.00}), l1:{from:{x:0.00, y:1.00} to:{x:10.00, y:11.00})
  -> Not detect
 UTIntersect : RESULT OK
+componentNum=2, count=5
+components:
+1.0 1.0 
+0.75 0.75 
+0.5 0.5 
+0.25 0.25 
+0.0 0.0 
+locations: [0.0, 0.25, 0.5, 0.75, 1.0]
+componentNum=4, count=5
+components:
+1.0 1.0 1.0 1.0 
+0.75 0.75 0.75 0.75 
+0.5 0.5 0.5 0.5 
+0.25 0.25 0.25 0.25 
+0.0 0.0 0.0 0.0 
+locations: [0.0, 0.25, 0.5, 0.75, 1.0]
+UTGradient : RESULT OK
 [SUMMARY] OK

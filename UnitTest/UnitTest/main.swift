@@ -25,6 +25,7 @@ let res0 = unitTest(name: "UTPartitionMapper",	result: UTPartitionMapper())
 let res1 = unitTest(name: "UTPartitionCell",	result: UTPartitionCell())
 let res2 = unitTest(name: "UTHexagon",		result: UTHexagon())
 let res3 = unitTest(name: "UTIntersect",	result: UTIntersect())
+let res4 = unitTest(name: "UTGradient",		result: UTGradient())
 
 if res0 && res1 && res2 && res3 {
 	print("[SUMMARY] OK")

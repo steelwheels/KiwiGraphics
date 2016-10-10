@@ -37,6 +37,7 @@
 		05E92A3A1D84E0AB00265B26 /* KGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92A351D84E0AB00265B26 /* KGSizeExtension.swift */; };
 		05E92A3B1D84E0AB00265B26 /* KGVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92A361D84E0AB00265B26 /* KGVelocity.swift */; };
 		05E92A3D1D84E0D200265B26 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E92A3C1D84E0D200265B26 /* Canary.framework */; };
+		05ED35EF1DABAEC3002976E7 /* UTGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ED35EE1DABAEC3002976E7 /* UTGradient.swift */; };
 		05F803C61D89A6940015744B /* UTHexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F803C51D89A6940015744B /* UTHexagon.swift */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		05E92A351D84E0AB00265B26 /* KGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGSizeExtension.swift; path = Primitives/KGSizeExtension.swift; sourceTree = "<group>"; };
 		05E92A361D84E0AB00265B26 /* KGVelocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGVelocity.swift; sourceTree = "<group>"; };
 		05E92A3C1D84E0D200265B26 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = ../../../../Library/Frameworks/Canary.framework; sourceTree = "<group>"; };
+		05ED35EE1DABAEC3002976E7 /* UTGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTGradient.swift; sourceTree = "<group>"; };
 		05F803C51D89A6940015744B /* UTHexagon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTHexagon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 				059B83301D853F7200E118F6 /* UTPartitionMapper.swift */,
 				05F803C51D89A6940015744B /* UTHexagon.swift */,
 				050A74651D9AD100004B177C /* UTIntersect.swift */,
+				05ED35EE1DABAEC3002976E7 /* UTGradient.swift */,
 				059B832D1D853F6900E118F6 /* main.swift */,
 				059B83481D85514200E118F6 /* unit_test.mk */,
 			);
@@ -459,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05ED35EF1DABAEC3002976E7 /* UTGradient.swift in Sources */,
 				059B832E1D853F6900E118F6 /* main.swift in Sources */,
 				05F803C61D89A6940015744B /* UTHexagon.swift in Sources */,
 				059B83321D853F7200E118F6 /* UTPartitionMapper.swift in Sources */,
