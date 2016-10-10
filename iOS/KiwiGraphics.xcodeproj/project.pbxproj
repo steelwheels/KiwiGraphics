@@ -19,7 +19,7 @@
 		058F9F011D914FA600D9DA3A /* KiwiGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 058F9EFF1D914FA600D9DA3A /* KiwiGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05BEA34C1D91504300BFC35E /* KGCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3431D91504300BFC35E /* KGCircle.swift */; };
 		05BEA34D1D91504300BFC35E /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3441D91504300BFC35E /* KGEclipse.swift */; };
-		05BEA34E1D91504300BFC35E /* KGGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3451D91504300BFC35E /* KGGradient.swift */; };
+		05BEA34E1D91504300BFC35E /* KGGradientTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3451D91504300BFC35E /* KGGradientTable.swift */; };
 		05BEA34F1D91504300BFC35E /* KGHexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3461D91504300BFC35E /* KGHexagon.swift */; };
 		05BEA3501D91504300BFC35E /* KGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3471D91504300BFC35E /* KGLine.swift */; };
 		05BEA3511D91504300BFC35E /* KGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3481D91504300BFC35E /* KGPointExtension.swift */; };
@@ -57,7 +57,7 @@
 		058F9F001D914FA600D9DA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05BEA3431D91504300BFC35E /* KGCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGCircle.swift; sourceTree = "<group>"; };
 		05BEA3441D91504300BFC35E /* KGEclipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGEclipse.swift; sourceTree = "<group>"; };
-		05BEA3451D91504300BFC35E /* KGGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGGradient.swift; sourceTree = "<group>"; };
+		05BEA3451D91504300BFC35E /* KGGradientTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGGradientTable.swift; sourceTree = "<group>"; };
 		05BEA3461D91504300BFC35E /* KGHexagon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGHexagon.swift; sourceTree = "<group>"; };
 		05BEA3471D91504300BFC35E /* KGLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGLine.swift; sourceTree = "<group>"; };
 		05BEA3481D91504300BFC35E /* KGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPointExtension.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				05BEA3441D91504300BFC35E /* KGEclipse.swift */,
 				053A5A761DAA2A48004E5CDA /* KGVertices.swift */,
 				05BEA3461D91504300BFC35E /* KGHexagon.swift */,
-				05BEA3451D91504300BFC35E /* KGGradient.swift */,
+				05BEA3451D91504300BFC35E /* KGGradientTable.swift */,
 				05BEA3471D91504300BFC35E /* KGLine.swift */,
 				05BEA3481D91504300BFC35E /* KGPointExtension.swift */,
 				05BEA3491D91504300BFC35E /* KGRectExtension.swift */,
@@ -288,7 +288,7 @@
 				05BEA3581D91506500BFC35E /* KGConrtext.swift in Sources */,
 				05BEA34C1D91504300BFC35E /* KGCircle.swift in Sources */,
 				05BEA3561D91505400BFC35E /* KGColorTable.swift in Sources */,
-				05BEA34E1D91504300BFC35E /* KGGradient.swift in Sources */,
+				05BEA34E1D91504300BFC35E /* KGGradientTable.swift in Sources */,
 				054C53471D9AC61400950BAA /* KGPartitionLayer.swift in Sources */,
 				05BEA34F1D91504300BFC35E /* KGHexagon.swift in Sources */,
 				05BEA3521D91504300BFC35E /* KGRectExtension.swift in Sources */,
