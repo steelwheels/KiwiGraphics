@@ -21,7 +21,7 @@ public struct KGVertices
 
 	public init(veritces vs: Array<CGPoint>){
 		if vs.count > 0 {
-			mVertices = [ vs[0] ]
+			mVertices = vs
 			mBounds   = KGVertices.allocateBoundRect(vertices: vs)
 		} else {
 			mVertices = []
