@@ -20,9 +20,24 @@ import Cocoa
 	public typealias KGImage = NSImage
 #endif
 
+public typealias KGImageDrawer = (_ size: CGSize, _ context: CGContext) -> Void
+
 #if os(OSX)
 
-extension NSImage {
+extension NSImage
+{
+	public class func generate(size:CGSize, drawFunc: KGImageDrawer) -> NSImage {
+		let newimg = NSImage(size: size)
+		newimg.lockFocus()
+		if let context: CGContext = NSGraphicsContext.current()?.cgContext {
+			drawFunc(size, context)
+		} else {
+			fatalError("No context")
+		}
+		newimg.unlockFocus()
+		return newimg
+	}
+
 	public var toCGImage: CGImage {
 		var imageRect = NSRect(x: 0, y: 0, width: size.width, height: size.height)
 		#if swift(>=3.0)

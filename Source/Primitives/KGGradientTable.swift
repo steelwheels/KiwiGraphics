@@ -36,7 +36,7 @@ private func KGAllocateGradient(baseColor color:CGColor, doDebug dd: Bool = fals
 	if let source = color.components {
 		let count  = Int(5)
 		var rate   = CGFloat(1.0)
-		let rdiff  = rate / CGFloat(count)
+		let rdiff  = rate / CGFloat(count-1)
 
 		var components: Array<CGFloat> = []
 		var locations:  Array<CGFloat> = []
