@@ -17,7 +17,7 @@ public struct KGGlyph
 
 	public init(bounds b: CGRect){
 		mBounds		= KGGlyph.calcBounds(bounds: b)
-		mElementRadius	= mBounds.size.width * 0.075
+		mElementRadius	= mBounds.size.width * 0.04
 		mRadius		= (mBounds.size.width / 2.0) - mElementRadius
 		mVertices	= KGGlyph.allocateVertices(bounds: mBounds, glyphRadius: mRadius, elementRadius: mElementRadius)
 	}

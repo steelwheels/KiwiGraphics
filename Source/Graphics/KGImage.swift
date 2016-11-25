@@ -10,6 +10,7 @@
 import Foundation
 
 #if os(iOS)
+import UIKit
 #else
 import Cocoa
 #endif
@@ -53,6 +54,48 @@ extension NSImage
 	}
 }
 
+#endif
+
+#if os(iOS)
+
+extension UIImage
+{
+	public class func generate(size:CGSize, drawFunc: KGImageDrawer) -> UIImage {
+		var newimage: UIImage? = nil
+
+		UIGraphicsBeginImageContext(size)
+
+		if let context = UIGraphicsGetCurrentContext() {
+			context.saveGState()
+			#if os(iOS)
+				context.translateBy(x: 0.0, y: size.height)
+				context.scaleBy(x: 1.0, y: -1.0)
+			#endif
+			drawFunc(size, context)
+			newimage = UIGraphicsGetImageFromCurrentImageContext()
+			context.restoreGState()
+		}
+
+		UIGraphicsEndImageContext()
+
+		if let result = newimage {
+			return result
+		} else {
+			fatalError("Can not get current context")
+		}
+	}
+
+	public var toCGImage: CGImage {
+		if let cgimg = self.cgImage {
+			return cgimg
+		} else {
+			fatalError("Can not convert to CGImage")
+		}
+	}
+}
+
+#endif
+
 extension CGImage {
 	public var size: CGSize {
 		#if swift(>=3.0)
@@ -63,6 +106,7 @@ extension CGImage {
 		return CGSize(width: width, height: height)
 	}
 
+	#if os(OSX)
 	public var toNSImage: NSImage {
 		#if swift(>=3.0)
 			return NSImage(cgImage: self, size: size)
@@ -70,7 +114,7 @@ extension CGImage {
 			return NSImage(CGImage: self, size: size)
 		#endif
 	}
+	#endif
 }
 
-#endif
 
