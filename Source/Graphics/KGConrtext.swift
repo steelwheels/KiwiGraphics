@@ -21,6 +21,28 @@ extension CGContext
 		                        options:     .drawsAfterEndLocation)
 	}
 
+	public func draw(triangle tr: KGTriangle, withGradient gradient: CGGradient?){
+		let top   = tr.top
+		let left  = tr.left
+		let right = tr.right
+		self.move(to: top)
+		self.addLine(to: left)
+		self.addLine(to: right)
+		self.closePath()
+		if let grad = gradient {
+			let bx = (left.x + right.x) / 2.0
+			let by = (left.y + right.y) / 2.0
+			let bottom = CGPoint(x: bx, y: by)
+			self.clip()
+			self.drawLinearGradient(grad,
+			                        start: top,
+			                        end:   bottom,
+			                        options: .drawsAfterEndLocation)
+		} else {
+			self.strokePath()
+		}
+	}
+
 	public func draw(hexagon hx: KGHexagon, withGradient gradient: CGGradient?){
 		var vertexes  = hx.vertexes
 		vertexes.append(vertexes[0])

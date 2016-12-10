@@ -14,7 +14,10 @@
 		0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526491D870F2A0073BE74 /* KGEclipse.swift */; };
 		053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA1C91DA8F74D00C32991 /* KGVertices.swift */; };
 		055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DFA5E1D978C240029BA0A /* KGStroke.swift */; };
+		055E33C91DFC127900BA0582 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
+		055E33CA1DFC127900BA0582 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
 		056DDBC51D968A27007A8677 /* KGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DDBC41D968A27007A8677 /* KGImage.swift */; };
+		056FCB7E1DFC147B001C1FC6 /* KGTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056FCB7D1DFC147B001C1FC6 /* KGTriangle.swift */; };
 		057B0B401D900EA500E4CD7E /* KGGradientTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B0B3F1D900EA500E4CD7E /* KGGradientTable.swift */; };
 		059484501DAD3F10005697A5 /* KGGlyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0594844F1DAD3F10005697A5 /* KGGlyph.swift */; };
 		059566491D84E27B00DA0C8C /* KGPartitionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566441D84E27B00DA0C8C /* KGPartitionLayer.swift */; };
@@ -31,6 +34,10 @@
 		059B83401D85483500E118F6 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059B833C1D8545FF00E118F6 /* Canary.framework */; };
 		059B83411D85483900E118F6 /* KiwiGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059B833E1D85461300E118F6 /* KiwiGraphics.framework */; };
 		05A23E1B1D84D9BC00DA705C /* KiwiGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 05A23E191D84D9BC00DA705C /* KiwiGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05B698291DFBB5710088A8E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B698281DFBB5710088A8E6 /* AppDelegate.swift */; };
+		05B6982B1DFBB5710088A8E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6982A1DFBB5710088A8E6 /* ViewController.swift */; };
+		05B6982D1DFBB5710088A8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B6982C1DFBB5710088A8E6 /* Assets.xcassets */; };
+		05B698301DFBB5710088A8E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B6982E1DFBB5710088A8E6 /* Main.storyboard */; };
 		05E629401D89999B00CF5C30 /* KGHexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6293F1D89999B00CF5C30 /* KGHexagon.swift */; };
 		05E92A371D84E0AB00265B26 /* KGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92A321D84E0AB00265B26 /* KGLine.swift */; };
 		05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92A331D84E0AB00265B26 /* KGPointExtension.swift */; };
@@ -64,6 +71,13 @@
 			remoteGlobalIDString = 053DEEA51D853ED9008FDA9F;
 			remoteInfo = UnitTest;
 		};
+		05B698351DFBB57E0088A8E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A23E0D1D84D9BC00DA705C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0595664E1D84E2C300DA0C8C;
+			remoteInfo = Install;
+		};
 		05B72B131D851F7800F0448B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05A23E0D1D84D9BC00DA705C /* Project object */;
@@ -96,7 +110,9 @@
 		053BA1C91DA8F74D00C32991 /* KGVertices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGVertices.swift; path = Primitives/KGVertices.swift; sourceTree = "<group>"; };
 		053DEEA61D853ED9008FDA9F /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055DFA5E1D978C240029BA0A /* KGStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGStroke.swift; path = ../Primitives/KGStroke.swift; sourceTree = "<group>"; };
+		055E33C81DFC127900BA0582 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = ../../../Library/Frameworks/Canary.framework; sourceTree = "<group>"; };
 		056DDBC41D968A27007A8677 /* KGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGImage.swift; sourceTree = "<group>"; };
+		056FCB7D1DFC147B001C1FC6 /* KGTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGTriangle.swift; path = Primitives/KGTriangle.swift; sourceTree = "<group>"; };
 		057B0B3F1D900EA500E4CD7E /* KGGradientTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGGradientTable.swift; path = Primitives/KGGradientTable.swift; sourceTree = "<group>"; };
 		0594844F1DAD3F10005697A5 /* KGGlyph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGGlyph.swift; path = Primitives/KGGlyph.swift; sourceTree = "<group>"; };
 		059566441D84E27B00DA0C8C /* KGPartitionLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionLayer.swift; sourceTree = "<group>"; };
@@ -115,6 +131,12 @@
 		05A23E161D84D9BC00DA705C /* KiwiGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KiwiGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A23E191D84D9BC00DA705C /* KiwiGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiGraphics.h; sourceTree = "<group>"; };
 		05A23E1A1D84D9BC00DA705C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B698261DFBB5710088A8E6 /* UTImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B698281DFBB5710088A8E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05B6982A1DFBB5710088A8E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05B6982C1DFBB5710088A8E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05B6982F1DFBB5710088A8E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05B698311DFBB5710088A8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B72B0D1D851F6E00F0448B /* UnitTest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B72B0F1D851F6E00F0448B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E6293F1D89999B00CF5C30 /* KGHexagon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGHexagon.swift; path = Primitives/KGHexagon.swift; sourceTree = "<group>"; };
@@ -142,7 +164,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				055E33C91DFC127900BA0582 /* Canary.framework in Frameworks */,
 				05E92A3D1D84E0D200265B26 /* Canary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B698231DFBB5710088A8E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055E33CA1DFC127900BA0582 /* Canary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +205,14 @@
 				055DFA5E1D978C240029BA0A /* KGStroke.swift */,
 			);
 			path = Graphics;
+			sourceTree = "<group>";
+		};
+		055E33C71DFC110800BA0582 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				05B698271DFBB5710088A8E6 /* UTImageView */,
+			);
+			path = OSX;
 			sourceTree = "<group>";
 		};
 		059566431D84E26500DA0C8C /* SpatialPartition */ = {
@@ -212,6 +251,7 @@
 				05B72B081D851F2300F0448B /* UnitTest */,
 				05A23E181D84D9BC00DA705C /* KiwiGraphics */,
 				05A23E171D84D9BC00DA705C /* Products */,
+				055E33C81DFC127900BA0582 /* Canary.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +261,7 @@
 				05A23E161D84D9BC00DA705C /* KiwiGraphics.framework */,
 				05B72B0D1D851F6E00F0448B /* UnitTest.bundle */,
 				053DEEA61D853ED9008FDA9F /* UnitTest */,
+				05B698261DFBB5710088A8E6 /* UTImageView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,9 +276,22 @@
 			path = KiwiGraphics;
 			sourceTree = "<group>";
 		};
+		05B698271DFBB5710088A8E6 /* UTImageView */ = {
+			isa = PBXGroup;
+			children = (
+				05B698281DFBB5710088A8E6 /* AppDelegate.swift */,
+				05B6982A1DFBB5710088A8E6 /* ViewController.swift */,
+				05B6982C1DFBB5710088A8E6 /* Assets.xcassets */,
+				05B6982E1DFBB5710088A8E6 /* Main.storyboard */,
+				05B698311DFBB5710088A8E6 /* Info.plist */,
+			);
+			path = UTImageView;
+			sourceTree = "<group>";
+		};
 		05B72B081D851F2300F0448B /* UnitTest */ = {
 			isa = PBXGroup;
 			children = (
+				055E33C71DFC110800BA0582 /* OSX */,
 				05B72B0E1D851F6E00F0448B /* UnitTestBundle */,
 				059B832C1D853F1000E118F6 /* UnitTest */,
 			);
@@ -270,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				05E92A321D84E0AB00265B26 /* KGLine.swift */,
+				056FCB7D1DFC147B001C1FC6 /* KGTriangle.swift */,
 				059B83331D85404500E118F6 /* KGCircle.swift */,
 				053526491D870F2A0073BE74 /* KGEclipse.swift */,
 				05E6293F1D89999B00CF5C30 /* KGHexagon.swift */,
@@ -365,6 +420,24 @@
 			productReference = 05A23E161D84D9BC00DA705C /* KiwiGraphics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		05B698251DFBB5710088A8E6 /* UTImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B698341DFBB5710088A8E6 /* Build configuration list for PBXNativeTarget "UTImageView" */;
+			buildPhases = (
+				05B698221DFBB5710088A8E6 /* Sources */,
+				05B698231DFBB5710088A8E6 /* Frameworks */,
+				05B698241DFBB5710088A8E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05B698361DFBB57E0088A8E6 /* PBXTargetDependency */,
+			);
+			name = UTImageView;
+			productName = UTImageView;
+			productReference = 05B698261DFBB5710088A8E6 /* UTImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
 		05B72B0C1D851F6E00F0448B /* UnitTestBundle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05B72B101D851F6E00F0448B /* Build configuration list for PBXNativeTarget "UnitTestBundle" */;
@@ -390,7 +463,7 @@
 		05A23E0D1D84D9BC00DA705C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Steel Wheels Project";
 				TargetAttributes = {
@@ -415,6 +488,11 @@
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
+					05B698251DFBB5710088A8E6 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TR2DNF3P93;
+						ProvisioningStyle = Automatic;
+					};
 					05B72B0C1D851F6E00F0448B = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TR2DNF3P93;
@@ -428,6 +506,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 05A23E0C1D84D9BC00DA705C;
 			productRefGroup = 05A23E171D84D9BC00DA705C /* Products */;
@@ -439,6 +518,7 @@
 				05B72B0C1D851F6E00F0448B /* UnitTestBundle */,
 				053DEEA51D853ED9008FDA9F /* UnitTest */,
 				059B83421D85512500E118F6 /* UnitTestCheck */,
+				05B698251DFBB5710088A8E6 /* UTImageView */,
 			);
 		};
 /* End PBXProject section */
@@ -448,6 +528,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B698241DFBB5710088A8E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B6982D1DFBB5710088A8E6 /* Assets.xcassets in Resources */,
+				05B698301DFBB5710088A8E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0595664B1D84E27B00DA0C8C /* KGPartitionCellTable.swift in Sources */,
+				056FCB7E1DFC147B001C1FC6 /* KGTriangle.swift in Sources */,
 				059484501DAD3F10005697A5 /* KGGlyph.swift in Sources */,
 				05E92A391D84E0AB00265B26 /* KGRectExtension.swift in Sources */,
 				059B83341D85404500E118F6 /* KGCircle.swift in Sources */,
@@ -499,6 +589,15 @@
 				0595664D1D84E27B00DA0C8C /* KGPartitionMapper.swift in Sources */,
 				05E92A371D84E0AB00265B26 /* KGLine.swift in Sources */,
 				0505BD441D8EB5C800C74D8F /* KGColorTable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B698221DFBB5710088A8E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B6982B1DFBB5710088A8E6 /* ViewController.swift in Sources */,
+				05B698291DFBB5710088A8E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,12 +626,28 @@
 			target = 053DEEA51D853ED9008FDA9F /* UnitTest */;
 			targetProxy = 059B83461D85512F00E118F6 /* PBXContainerItemProxy */;
 		};
+		05B698361DFBB57E0088A8E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0595664E1D84E2C300DA0C8C /* Install */;
+			targetProxy = 05B698351DFBB57E0088A8E6 /* PBXContainerItemProxy */;
+		};
 		05B72B141D851F7800F0448B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0595664E1D84E2C300DA0C8C /* Install */;
 			targetProxy = 05B72B131D851F7800F0448B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05B6982E1DFBB5710088A8E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05B6982F1DFBB5710088A8E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		053DEEAA1D853ED9008FDA9F /* Debug */ = {
@@ -768,6 +883,50 @@
 			};
 			name = Release;
 		};
+		05B698321DFBB5710088A8E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INFOPLIST_FILE = ../UnitTest/OSX/UTImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(HOME)/Library/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.UTImageView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		05B698331DFBB5710088A8E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INFOPLIST_FILE = ../UnitTest/OSX/UTImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(HOME)/Library/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.UTImageView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		05B72B111D851F6E00F0448B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -842,6 +1001,15 @@
 			buildConfigurations = (
 				05A23E1F1D84D9BC00DA705C /* Debug */,
 				05A23E201D84D9BC00DA705C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05B698341DFBB5710088A8E6 /* Build configuration list for PBXNativeTarget "UTImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B698321DFBB5710088A8E6 /* Debug */,
+				05B698331DFBB5710088A8E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
