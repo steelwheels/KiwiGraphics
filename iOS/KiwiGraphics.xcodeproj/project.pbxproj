@@ -64,7 +64,7 @@
 		054C53411D9AC61400950BAA /* KGPartitionIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionIndex.swift; sourceTree = "<group>"; };
 		054C53421D9AC61400950BAA /* KGPartitionLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionLayer.swift; sourceTree = "<group>"; };
 		054C53431D9AC61400950BAA /* KGPartitionMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionMapper.swift; sourceTree = "<group>"; };
-		054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGIntersectDetector.swift; sourceTree = "<group>"; };
+		054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGIntersectDetector.swift; path = ../Graphics/KGIntersectDetector.swift; sourceTree = "<group>"; };
 		05625EC91DFC27D60005AB97 /* KGTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGTriangle.swift; sourceTree = "<group>"; };
 		05625ED11DFC2FB90005AB97 /* UTImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05625ED31DFC2FB90005AB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -216,7 +216,6 @@
 				050374D41DA1303B00CA86DC /* KGImage.swift */,
 				05BEA34B1D91504300BFC35E /* KGVelocity.swift */,
 				05BEA3571D91506500BFC35E /* KGConrtext.swift */,
-				054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -224,6 +223,7 @@
 		05BEA3421D91502C00BFC35E /* SpatialPartition */ = {
 			isa = PBXGroup;
 			children = (
+				054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */,
 				054C533F1D9AC61400950BAA /* KGPartitionCell.swift */,
 				054C53401D9AC61400950BAA /* KGPartitionCellTable.swift */,
 				054C53411D9AC61400950BAA /* KGPartitionIndex.swift */,
