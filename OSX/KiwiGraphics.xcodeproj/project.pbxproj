@@ -16,6 +16,7 @@
 		055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DFA5E1D978C240029BA0A /* KGStroke.swift */; };
 		055E33C91DFC127900BA0582 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
 		055E33CA1DFC127900BA0582 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
+		055E4CA41E0697E000C687B4 /* KGFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E4CA31E0697E000C687B4 /* KGFont.swift */; };
 		056DDBC51D968A27007A8677 /* KGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DDBC41D968A27007A8677 /* KGImage.swift */; };
 		056FCB7E1DFC147B001C1FC6 /* KGTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056FCB7D1DFC147B001C1FC6 /* KGTriangle.swift */; };
 		057B0B401D900EA500E4CD7E /* KGGradientTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B0B3F1D900EA500E4CD7E /* KGGradientTable.swift */; };
@@ -111,6 +112,7 @@
 		053DEEA61D853ED9008FDA9F /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055DFA5E1D978C240029BA0A /* KGStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGStroke.swift; path = ../Primitives/KGStroke.swift; sourceTree = "<group>"; };
 		055E33C81DFC127900BA0582 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = ../../../Library/Frameworks/Canary.framework; sourceTree = "<group>"; };
+		055E4CA31E0697E000C687B4 /* KGFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGFont.swift; path = ../Primitives/KGFont.swift; sourceTree = "<group>"; };
 		056DDBC41D968A27007A8677 /* KGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGImage.swift; sourceTree = "<group>"; };
 		056FCB7D1DFC147B001C1FC6 /* KGTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGTriangle.swift; path = Primitives/KGTriangle.swift; sourceTree = "<group>"; };
 		057B0B3F1D900EA500E4CD7E /* KGGradientTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGGradientTable.swift; path = Primitives/KGGradientTable.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				053526471D86FEC10073BE74 /* KGConrtext.swift */,
 				056DDBC41D968A27007A8677 /* KGImage.swift */,
 				055DFA5E1D978C240029BA0A /* KGStroke.swift */,
+				055E4CA31E0697E000C687B4 /* KGFont.swift */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -464,7 +467,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Steel Wheels Project";
 				TargetAttributes = {
 					053DEEA51D853ED9008FDA9F = {
@@ -574,6 +577,7 @@
 				059B83341D85404500E118F6 /* KGCircle.swift in Sources */,
 				0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */,
 				05E629401D89999B00CF5C30 /* KGHexagon.swift in Sources */,
+				055E4CA41E0697E000C687B4 /* KGFont.swift in Sources */,
 				059566491D84E27B00DA0C8C /* KGPartitionLayer.swift in Sources */,
 				053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */,
 				05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */,
@@ -748,6 +752,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -800,6 +805,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

@@ -16,6 +16,7 @@
 		054C53471D9AC61400950BAA /* KGPartitionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53421D9AC61400950BAA /* KGPartitionLayer.swift */; };
 		054C53481D9AC61400950BAA /* KGPartitionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53431D9AC61400950BAA /* KGPartitionMapper.swift */; };
 		054C534A1D9AC6C500950BAA /* KGIntersectDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */; };
+		055E4CA61E06B0B500C687B4 /* KGFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E4CA51E06B0B500C687B4 /* KGFont.swift */; };
 		05625ECA1DFC27D60005AB97 /* KGTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05625EC91DFC27D60005AB97 /* KGTriangle.swift */; };
 		05625ED41DFC2FB90005AB97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05625ED31DFC2FB90005AB97 /* AppDelegate.swift */; };
 		05625ED61DFC2FB90005AB97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05625ED51DFC2FB90005AB97 /* ViewController.swift */; };
@@ -65,6 +66,7 @@
 		054C53421D9AC61400950BAA /* KGPartitionLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionLayer.swift; sourceTree = "<group>"; };
 		054C53431D9AC61400950BAA /* KGPartitionMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionMapper.swift; sourceTree = "<group>"; };
 		054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGIntersectDetector.swift; path = ../Graphics/KGIntersectDetector.swift; sourceTree = "<group>"; };
+		055E4CA51E06B0B500C687B4 /* KGFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGFont.swift; sourceTree = "<group>"; };
 		05625EC91DFC27D60005AB97 /* KGTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGTriangle.swift; sourceTree = "<group>"; };
 		05625ED11DFC2FB90005AB97 /* UTImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05625ED31DFC2FB90005AB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		05BEA33F1D91500A00BFC35E /* Primitives */ = {
 			isa = PBXGroup;
 			children = (
+				055E4CA51E06B0B500C687B4 /* KGFont.swift */,
 				05BEA3431D91504300BFC35E /* KGCircle.swift */,
 				05625EC91DFC27D60005AB97 /* KGTriangle.swift */,
 				050374D21DA1302500CA86DC /* KGStroke.swift */,
@@ -400,6 +403,7 @@
 				05BEA34C1D91504300BFC35E /* KGCircle.swift in Sources */,
 				05BEA3561D91505400BFC35E /* KGColorTable.swift in Sources */,
 				05BEA34E1D91504300BFC35E /* KGGradientTable.swift in Sources */,
+				055E4CA61E06B0B500C687B4 /* KGFont.swift in Sources */,
 				054C53471D9AC61400950BAA /* KGPartitionLayer.swift in Sources */,
 				05BEA34F1D91504300BFC35E /* KGHexagon.swift in Sources */,
 				05BEA3521D91504300BFC35E /* KGRectExtension.swift in Sources */,

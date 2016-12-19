@@ -14,6 +14,18 @@ import Canary
 	public typealias KGRect = NSRect
 #endif
 
+public enum KGHolizontalAlignment {
+	case left
+	case center
+	case right
+}
+
+public enum KGVerticalAlignment {
+	case top
+	case middle
+	case bottom
+}
+
 extension CGRect : CNSerializerProtocol
 {
 	public var center: CGPoint {
@@ -97,4 +109,25 @@ extension CGRect : CNSerializerProtocol
 		return CGRect(origin: origin, size: size)
 	}
 }
+
+public func KGAlignRect(holizontalAlignment halign: KGHolizontalAlignment,
+                        verticalAlignment   valign: KGVerticalAlignment,
+                        targetSize	    target: CGSize,
+                        in		    bounds: CGRect) -> CGRect
+{
+	let offx: CGFloat
+	switch halign {
+	case .left:	offx = 0.0
+	case .center:	offx = bounds.origin.x +  bounds.size.width - target.width
+	case .right:	offx = bounds.origin.x + (bounds.size.width - target.width) / 2.0
+	}
+	let offy: CGFloat
+	switch valign {
+	case .top:	offy = bounds.origin.y +  bounds.size.height - target.height
+	case .middle:	offy = bounds.origin.y + (bounds.size.height - target.height) / 2.0
+	case .bottom:	offy = 0.0
+	}
+	return CGRect(x: offx, y: offy, width: target.width, height: target.height)
+}
+
 
