@@ -117,15 +117,15 @@ public func KGAlignRect(holizontalAlignment halign: KGHolizontalAlignment,
 {
 	let offx: CGFloat
 	switch halign {
-	case .left:	offx = 0.0
-	case .center:	offx = bounds.origin.x +  bounds.size.width - target.width
-	case .right:	offx = bounds.origin.x + (bounds.size.width - target.width) / 2.0
+	case .left:	offx = bounds.origin.x
+	case .center:	offx = bounds.origin.x + (bounds.size.width - target.width) / 2.0
+	case .right:	offx = bounds.origin.x +  bounds.size.width - target.width
 	}
 	let offy: CGFloat
 	switch valign {
 	case .top:	offy = bounds.origin.y +  bounds.size.height - target.height
 	case .middle:	offy = bounds.origin.y + (bounds.size.height - target.height) / 2.0
-	case .bottom:	offy = 0.0
+	case .bottom:	offy = bounds.origin.y
 	}
 	return CGRect(x: offx, y: offy, width: target.width, height: target.height)
 }
