@@ -9,11 +9,11 @@ import CoreGraphics
 
 extension CGContext
 {
-	public func draw(eclipse ec: KGEclipse, withGradient gradient: CGGradient) {
+	public func draw(eclipse ec: KGEclipse, withGradient Gradient: CGGradient) {
 		self.addEllipse(in: ec.bounds)
 		self.clip()
 		let center = ec.center
-		self.drawRadialGradient(gradient,
+		self.drawRadialGradient(Gradient,
 		                        startCenter: center,
 		                        startRadius: ec.innerRadius,
 		                        endCenter:   center,
@@ -21,7 +21,7 @@ extension CGContext
 		                        options:     .drawsAfterEndLocation)
 	}
 
-	public func draw(triangle tr: KGTriangle, withGradient gradient: CGGradient?){
+	public func draw(triangle tr: KGTriangle, withGradient Gradient: CGGradient?){
 		let top   = tr.top
 		let left  = tr.left
 		let right = tr.right
@@ -29,7 +29,7 @@ extension CGContext
 		self.addLine(to: left)
 		self.addLine(to: right)
 		self.closePath()
-		if let grad = gradient {
+		if let grad = Gradient {
 			let bx = (left.x + right.x) / 2.0
 			let by = (left.y + right.y) / 2.0
 			let bottom = CGPoint(x: bx, y: by)
@@ -43,11 +43,11 @@ extension CGContext
 		}
 	}
 
-	public func draw(hexagon hx: KGHexagon, withGradient gradient: CGGradient?){
+	public func draw(hexagon hx: KGHexagon, withGradient Gradient: CGGradient?){
 		var vertexes  = hx.vertexes
 		vertexes.append(vertexes[0])
 		self.addLines(between: vertexes)
-		if let grad = gradient {
+		if let grad = Gradient {
 			self.clip()
 			self.drawLinearGradient(grad,
 			                        start: vertexes[5],

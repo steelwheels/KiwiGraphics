@@ -18,14 +18,14 @@ public class KGGradientTable
 		mGradientTable = [:]
 	}
 
-	public func gradient(forColor color: CGColor, doDebug dd: Bool = false) -> CGGradient {
+	public func Gradient(forColor color: CGColor, doDebug dd: Bool = false) -> CGGradient {
 		let key:String = "\(color.components)"
-		if let gradient = mGradientTable[key] {
-			return gradient
+		if let Gradient = mGradientTable[key] {
+			return Gradient
 		} else {
-			let newgradient = KGAllocateGradient(baseColor: color, doDebug: dd)
-			mGradientTable[key] = newgradient
-			return newgradient
+			let newGradient = KGAllocateGradient(baseColor: color, doDebug: dd)
+			mGradientTable[key] = newGradient
+			return newGradient
 		}
 	}
 }
@@ -34,15 +34,16 @@ private func KGAllocateGradient(baseColor color:CGColor, doDebug dd: Bool = fals
 {
 	let num    = color.numberOfComponents
 	if let source = color.components {
-		let count  = Int(5)
-		var rate   = CGFloat(1.0)
-		let rdiff  = rate / CGFloat(count-1)
+		let count             = Int(5)
+		let rates: [CGFloat]  = [1.00, 0.84, 0.68, 0.50, 0.00]
 
+		var rate   = CGFloat(1.0)
+		let rdiff  = rate / CGFloat(count)
 		var components: Array<CGFloat> = []
 		var locations:  Array<CGFloat> = []
-		for _ in 0..<count {
+		for i in 0..<count {
 			for j in 0..<num {
-				components.append(source[j] * rate)
+				components.append(source[j] * rates[i])
 			}
 			locations.insert(rate, at: 0)
 			rate -= rdiff
@@ -53,11 +54,11 @@ private func KGAllocateGradient(baseColor color:CGColor, doDebug dd: Bool = fals
 		}
 
 		let colorspace = CGColorSpaceCreateDeviceRGB()
-		if let gradient = CGGradient(colorSpace: colorspace, colorComponents: components, locations: locations, count: count){
-			return gradient
+		if let Gradient = CGGradient(colorSpace: colorspace, colorComponents: components, locations: locations, count: count){
+			return Gradient
 		}
 	}
-	fatalError("Can not allocate gradient")
+	fatalError("Can not allocate Gradient")
 }
 
 private func dumpForDebug(componentNum num: Int, count cnt:Int, components comp: Array<CGFloat>, locations loc: Array<CGFloat>) {

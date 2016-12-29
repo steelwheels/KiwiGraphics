@@ -35,7 +35,7 @@
 		05BEA3531D91504300BFC35E /* KGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA34A1D91504300BFC35E /* KGSizeExtension.swift */; };
 		05BEA3541D91504300BFC35E /* KGVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA34B1D91504300BFC35E /* KGVelocity.swift */; };
 		05BEA3561D91505400BFC35E /* KGColorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3551D91505400BFC35E /* KGColorTable.swift */; };
-		05BEA3581D91506500BFC35E /* KGConrtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3571D91506500BFC35E /* KGConrtext.swift */; };
+		05BEA3581D91506500BFC35E /* KGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3571D91506500BFC35E /* KGContext.swift */; };
 		05D34D111D93F5FB00C4C833 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D34D101D93F5FB00C4C833 /* Canary.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +90,7 @@
 		05BEA34A1D91504300BFC35E /* KGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGSizeExtension.swift; sourceTree = "<group>"; };
 		05BEA34B1D91504300BFC35E /* KGVelocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGVelocity.swift; sourceTree = "<group>"; };
 		05BEA3551D91505400BFC35E /* KGColorTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGColorTable.swift; sourceTree = "<group>"; };
-		05BEA3571D91506500BFC35E /* KGConrtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGConrtext.swift; sourceTree = "<group>"; };
+		05BEA3571D91506500BFC35E /* KGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGContext.swift; sourceTree = "<group>"; };
 		05D34D101D93F5FB00C4C833 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = /Users/tomoo/local/Frameworks/Canary.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -218,7 +218,7 @@
 			children = (
 				050374D41DA1303B00CA86DC /* KGImage.swift */,
 				05BEA34B1D91504300BFC35E /* KGVelocity.swift */,
-				05BEA3571D91506500BFC35E /* KGConrtext.swift */,
+				05BEA3571D91506500BFC35E /* KGContext.swift */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -399,7 +399,7 @@
 				05BEA3501D91504300BFC35E /* KGLine.swift in Sources */,
 				050374D31DA1302500CA86DC /* KGStroke.swift in Sources */,
 				05BEA3531D91504300BFC35E /* KGSizeExtension.swift in Sources */,
-				05BEA3581D91506500BFC35E /* KGConrtext.swift in Sources */,
+				05BEA3581D91506500BFC35E /* KGContext.swift in Sources */,
 				05BEA34C1D91504300BFC35E /* KGCircle.swift in Sources */,
 				05BEA3561D91505400BFC35E /* KGColorTable.swift in Sources */,
 				05BEA34E1D91504300BFC35E /* KGGradientTable.swift in Sources */,

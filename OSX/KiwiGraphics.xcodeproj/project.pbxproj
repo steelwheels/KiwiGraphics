@@ -10,7 +10,7 @@
 		0505BD441D8EB5C800C74D8F /* KGColorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0505BD431D8EB5C800C74D8F /* KGColorTable.swift */; };
 		050A74641D9AD063004B177C /* KGIntersectDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A74631D9AD063004B177C /* KGIntersectDetector.swift */; };
 		050A74661D9AD100004B177C /* UTIntersect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A74651D9AD100004B177C /* UTIntersect.swift */; };
-		053526481D86FEC10073BE74 /* KGConrtext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526471D86FEC10073BE74 /* KGConrtext.swift */; };
+		053526481D86FEC10073BE74 /* KGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526471D86FEC10073BE74 /* KGContext.swift */; };
 		0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526491D870F2A0073BE74 /* KGEclipse.swift */; };
 		053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA1C91DA8F74D00C32991 /* KGVertices.swift */; };
 		055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DFA5E1D978C240029BA0A /* KGStroke.swift */; };
@@ -106,7 +106,7 @@
 		0505BD431D8EB5C800C74D8F /* KGColorTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGColorTable.swift; sourceTree = "<group>"; };
 		050A74631D9AD063004B177C /* KGIntersectDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGIntersectDetector.swift; sourceTree = "<group>"; };
 		050A74651D9AD100004B177C /* UTIntersect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTIntersect.swift; sourceTree = "<group>"; };
-		053526471D86FEC10073BE74 /* KGConrtext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGConrtext.swift; sourceTree = "<group>"; };
+		053526471D86FEC10073BE74 /* KGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGContext.swift; sourceTree = "<group>"; };
 		053526491D870F2A0073BE74 /* KGEclipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGEclipse.swift; path = Primitives/KGEclipse.swift; sourceTree = "<group>"; };
 		053BA1C91DA8F74D00C32991 /* KGVertices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGVertices.swift; path = Primitives/KGVertices.swift; sourceTree = "<group>"; };
 		053DEEA61D853ED9008FDA9F /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,7 +202,7 @@
 			children = (
 				050A74631D9AD063004B177C /* KGIntersectDetector.swift */,
 				05E92A361D84E0AB00265B26 /* KGVelocity.swift */,
-				053526471D86FEC10073BE74 /* KGConrtext.swift */,
+				053526471D86FEC10073BE74 /* KGContext.swift */,
 				056DDBC41D968A27007A8677 /* KGImage.swift */,
 				055DFA5E1D978C240029BA0A /* KGStroke.swift */,
 				055E4CA31E0697E000C687B4 /* KGFont.swift */,
@@ -582,7 +582,7 @@
 				053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */,
 				05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */,
 				055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */,
-				053526481D86FEC10073BE74 /* KGConrtext.swift in Sources */,
+				053526481D86FEC10073BE74 /* KGContext.swift in Sources */,
 				0595664C1D84E27B00DA0C8C /* KGPartitionIndex.swift in Sources */,
 				0595664A1D84E27B00DA0C8C /* KGPartitionCell.swift in Sources */,
 				05E92A3A1D84E0AB00265B26 /* KGSizeExtension.swift in Sources */,
