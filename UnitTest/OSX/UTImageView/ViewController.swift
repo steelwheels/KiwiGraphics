@@ -15,7 +15,7 @@ class ViewController: NSViewController
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+        
 		// Do any additional setup after loading the view.
 		let bounds    = mImageView.bounds
 		let triangle0 = KGTriangle(bounds: bounds)

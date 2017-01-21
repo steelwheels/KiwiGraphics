@@ -13,12 +13,17 @@
 		053526481D86FEC10073BE74 /* KGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526471D86FEC10073BE74 /* KGContext.swift */; };
 		0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526491D870F2A0073BE74 /* KGEclipse.swift */; };
 		053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA1C91DA8F74D00C32991 /* KGVertices.swift */; };
+		054831D11E3273B600061154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054831D01E3273B600061154 /* AppDelegate.swift */; };
+		054831D31E3273B600061154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054831D21E3273B600061154 /* ViewController.swift */; };
+		054831D51E3273B600061154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054831D41E3273B600061154 /* Assets.xcassets */; };
+		054831D81E3273B600061154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054831D61E3273B600061154 /* Main.storyboard */; };
+		05568AA21E3301AF0059F67E /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
 		055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DFA5E1D978C240029BA0A /* KGStroke.swift */; };
 		055E33C91DFC127900BA0582 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
 		055E33CA1DFC127900BA0582 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
-		055E4CA41E0697E000C687B4 /* KGFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E4CA31E0697E000C687B4 /* KGFont.swift */; };
 		056DDBC51D968A27007A8677 /* KGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DDBC41D968A27007A8677 /* KGImage.swift */; };
 		056FCB7E1DFC147B001C1FC6 /* KGTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056FCB7D1DFC147B001C1FC6 /* KGTriangle.swift */; };
+		0572AE1C1E2FDD8C0098C383 /* KGFontTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572AE1B1E2FDD8C0098C383 /* KGFontTable.swift */; };
 		057B0B401D900EA500E4CD7E /* KGGradientTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B0B3F1D900EA500E4CD7E /* KGGradientTable.swift */; };
 		059484501DAD3F10005697A5 /* KGGlyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0594844F1DAD3F10005697A5 /* KGGlyph.swift */; };
 		059566491D84E27B00DA0C8C /* KGPartitionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059566441D84E27B00DA0C8C /* KGPartitionLayer.swift */; };
@@ -58,6 +63,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 05B72B0C1D851F6E00F0448B;
 			remoteInfo = UnitTestBundle;
+		};
+		054831DD1E3273ED00061154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A23E0D1D84D9BC00DA705C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0595664E1D84E2C300DA0C8C;
+			remoteInfo = Install;
 		};
 		059566531D84E31C00DA0C8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -111,11 +123,17 @@
 		053526491D870F2A0073BE74 /* KGEclipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGEclipse.swift; path = Primitives/KGEclipse.swift; sourceTree = "<group>"; };
 		053BA1C91DA8F74D00C32991 /* KGVertices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGVertices.swift; path = Primitives/KGVertices.swift; sourceTree = "<group>"; };
 		053DEEA61D853ED9008FDA9F /* UnitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		054831CE1E3273B500061154 /* UTFontTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTFontTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		054831D01E3273B600061154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		054831D21E3273B600061154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		054831D41E3273B600061154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		054831D71E3273B600061154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		054831D91E3273B600061154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		055DFA5E1D978C240029BA0A /* KGStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGStroke.swift; path = ../Primitives/KGStroke.swift; sourceTree = "<group>"; };
 		055E33C81DFC127900BA0582 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = ../../../Library/Frameworks/Canary.framework; sourceTree = "<group>"; };
-		055E4CA31E0697E000C687B4 /* KGFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGFont.swift; path = ../Primitives/KGFont.swift; sourceTree = "<group>"; };
 		056DDBC41D968A27007A8677 /* KGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGImage.swift; sourceTree = "<group>"; };
 		056FCB7D1DFC147B001C1FC6 /* KGTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGTriangle.swift; path = Primitives/KGTriangle.swift; sourceTree = "<group>"; };
+		0572AE1B1E2FDD8C0098C383 /* KGFontTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGFontTable.swift; path = Font/KGFontTable.swift; sourceTree = "<group>"; };
 		057B0B3F1D900EA500E4CD7E /* KGGradientTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGGradientTable.swift; path = Primitives/KGGradientTable.swift; sourceTree = "<group>"; };
 		0594844F1DAD3F10005697A5 /* KGGlyph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGGlyph.swift; path = Primitives/KGGlyph.swift; sourceTree = "<group>"; };
 		059566441D84E27B00DA0C8C /* KGPartitionLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionLayer.swift; sourceTree = "<group>"; };
@@ -164,6 +182,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		054831CB1E3273B500061154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05568AA21E3301AF0059F67E /* Canary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05A23E121D84D9BC00DA705C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,17 +234,37 @@
 				053526471D86FEC10073BE74 /* KGContext.swift */,
 				056DDBC41D968A27007A8677 /* KGImage.swift */,
 				055DFA5E1D978C240029BA0A /* KGStroke.swift */,
-				055E4CA31E0697E000C687B4 /* KGFont.swift */,
 			);
 			path = Graphics;
+			sourceTree = "<group>";
+		};
+		054831CF1E3273B600061154 /* UTFontTable */ = {
+			isa = PBXGroup;
+			children = (
+				054831D01E3273B600061154 /* AppDelegate.swift */,
+				054831D21E3273B600061154 /* ViewController.swift */,
+				054831D41E3273B600061154 /* Assets.xcassets */,
+				054831D61E3273B600061154 /* Main.storyboard */,
+				054831D91E3273B600061154 /* Info.plist */,
+			);
+			path = UTFontTable;
 			sourceTree = "<group>";
 		};
 		055E33C71DFC110800BA0582 /* OSX */ = {
 			isa = PBXGroup;
 			children = (
+				054831CF1E3273B600061154 /* UTFontTable */,
 				05B698271DFBB5710088A8E6 /* UTImageView */,
 			);
 			path = OSX;
+			sourceTree = "<group>";
+		};
+		0572AE1A1E2FDD5C0098C383 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0572AE1B1E2FDD8C0098C383 /* KGFontTable.swift */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 		059566431D84E26500DA0C8C /* SpatialPartition */ = {
@@ -268,6 +314,7 @@
 				05B72B0D1D851F6E00F0448B /* UnitTest.bundle */,
 				053DEEA61D853ED9008FDA9F /* UnitTest */,
 				05B698261DFBB5710088A8E6 /* UTImageView.app */,
+				054831CE1E3273B500061154 /* UTFontTable.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,6 +365,7 @@
 			children = (
 				05A23E191D84D9BC00DA705C /* KiwiGraphics.h */,
 				05E92A311D84E09300265B26 /* Primitives */,
+				0572AE1A1E2FDD5C0098C383 /* Font */,
 				0505BD421D8EB5B200C74D8F /* Color */,
 				053526461D86FCEA0073BE74 /* Graphics */,
 				059566431D84E26500DA0C8C /* SpatialPartition */,
@@ -408,6 +456,24 @@
 			productReference = 053DEEA61D853ED9008FDA9F /* UnitTest */;
 			productType = "com.apple.product-type.tool";
 		};
+		054831CD1E3273B500061154 /* UTFontTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054831DC1E3273B600061154 /* Build configuration list for PBXNativeTarget "UTFontTable" */;
+			buildPhases = (
+				054831CA1E3273B500061154 /* Sources */,
+				054831CB1E3273B500061154 /* Frameworks */,
+				054831CC1E3273B500061154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				054831DE1E3273ED00061154 /* PBXTargetDependency */,
+			);
+			name = UTFontTable;
+			productName = UTFontTable;
+			productReference = 054831CE1E3273B500061154 /* UTFontTable.app */;
+			productType = "com.apple.product-type.application";
+		};
 		05A23E151D84D9BC00DA705C /* KiwiGraphics */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05A23E1E1D84D9BC00DA705C /* Build configuration list for PBXNativeTarget "KiwiGraphics" */;
@@ -469,12 +535,17 @@
 		05A23E0D1D84D9BC00DA705C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Steel Wheels Project";
 				TargetAttributes = {
 					053DEEA51D853ED9008FDA9F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TR2DNF3P93;
+						ProvisioningStyle = Automatic;
+					};
+					054831CD1E3273B500061154 = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TR2DNF3P93;
 						ProvisioningStyle = Automatic;
 					};
@@ -525,11 +596,21 @@
 				053DEEA51D853ED9008FDA9F /* UnitTest */,
 				059B83421D85512500E118F6 /* UnitTestCheck */,
 				05B698251DFBB5710088A8E6 /* UTImageView */,
+				054831CD1E3273B500061154 /* UTFontTable */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		054831CC1E3273B500061154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054831D51E3273B600061154 /* Assets.xcassets in Resources */,
+				054831D81E3273B600061154 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05A23E141D84D9BC00DA705C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,6 +650,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		054831CA1E3273B500061154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054831D31E3273B600061154 /* ViewController.swift in Sources */,
+				054831D11E3273B600061154 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05A23E111D84D9BC00DA705C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -580,8 +670,8 @@
 				059B83341D85404500E118F6 /* KGCircle.swift in Sources */,
 				0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */,
 				05E629401D89999B00CF5C30 /* KGHexagon.swift in Sources */,
-				055E4CA41E0697E000C687B4 /* KGFont.swift in Sources */,
 				059566491D84E27B00DA0C8C /* KGPartitionLayer.swift in Sources */,
+				0572AE1C1E2FDD8C0098C383 /* KGFontTable.swift in Sources */,
 				053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */,
 				05A0B47B1E1D1DB7002584E9 /* KGColorPreference.swift in Sources */,
 				05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */,
@@ -624,6 +714,11 @@
 			target = 05B72B0C1D851F6E00F0448B /* UnitTestBundle */;
 			targetProxy = 053DEEAD1D853EE8008FDA9F /* PBXContainerItemProxy */;
 		};
+		054831DE1E3273ED00061154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0595664E1D84E2C300DA0C8C /* Install */;
+			targetProxy = 054831DD1E3273ED00061154 /* PBXContainerItemProxy */;
+		};
 		059566541D84E31C00DA0C8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 05A23E151D84D9BC00DA705C /* KiwiGraphics */;
@@ -647,6 +742,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		054831D61E3273B600061154 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				054831D71E3273B600061154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		05B6982E1DFBB5710088A8E6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -683,6 +786,44 @@
 				);
 				INSTALL_PATH = "$(HOME)/Tools/bin";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../bundles/$(PRODUCT_NAME).bundle/Contents/Frameworks $(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		054831DA1E3273B600061154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = ../UnitTest/OSX/UTFontTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(HOME)/Library/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.UTFontTable";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		054831DB1E3273B600061154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = ../UnitTest/OSX/UTFontTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(HOME)/Library/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "steel-wheels-project.UTFontTable";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -975,6 +1116,15 @@
 			buildConfigurations = (
 				053DEEAA1D853ED9008FDA9F /* Debug */,
 				053DEEAB1D853ED9008FDA9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		054831DC1E3273B600061154 /* Build configuration list for PBXNativeTarget "UTFontTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054831DA1E3273B600061154 /* Debug */,
+				054831DB1E3273B600061154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
