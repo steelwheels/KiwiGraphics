@@ -15,8 +15,8 @@ public struct KGGlyph
 	private var mRadius		: CGFloat
 	private var mVertices		: Array<CGPoint>
 
-	public init(bounds b: CGRect){
-		mBounds		= KGGlyph.calcBounds(bounds: b)
+	public init(bounds b: CGRect, maxSize ms: CGFloat){
+		mBounds		= KGGlyph.calcBounds(bounds: b, maxSize: ms)
 		mElementRadius	= mBounds.size.width * 0.04
 		mRadius		= (mBounds.size.width / 2.0) - mElementRadius
 		mVertices	= KGGlyph.allocateVertices(bounds: mBounds, glyphRadius: mRadius, elementRadius: mElementRadius)
@@ -38,8 +38,8 @@ public struct KGGlyph
 		get { return mVertices }
 	}
 
-	private static func calcBounds(bounds b: CGRect) -> CGRect {
-		let width = min(b.size.width, b.size.height)
+	private static func calcBounds(bounds b: CGRect, maxSize ms: CGFloat) -> CGRect {
+		let width = min(min(b.size.width, b.size.height), ms)
 		let diffx = b.size.width  - width
 		let diffy = b.size.height - width
 		let orgx  = b.origin.x + diffx / 2.0

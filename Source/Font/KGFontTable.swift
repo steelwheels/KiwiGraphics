@@ -24,7 +24,7 @@ public class KGFontTable
 
 	public static let sharedFontTable = KGFontTable()
 
-	private let titleSize:		CGFloat		= 20
+	private let titleSize:		CGFloat		= 22
 	private let headlineSize:	CGFloat		= 16
 	private let bodySize:		CGFloat		= 14
 	private let captionSize:	CGFloat		= 12
