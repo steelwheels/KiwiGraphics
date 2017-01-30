@@ -45,6 +45,7 @@
 		05B6982B1DFBB5710088A8E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6982A1DFBB5710088A8E6 /* ViewController.swift */; };
 		05B6982D1DFBB5710088A8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B6982C1DFBB5710088A8E6 /* Assets.xcassets */; };
 		05B698301DFBB5710088A8E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B6982E1DFBB5710088A8E6 /* Main.storyboard */; };
+		05E43F891E3DE61B0044B4C6 /* UTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E43F881E3DE61B0044B4C6 /* UTImageView.swift */; };
 		05E629401D89999B00CF5C30 /* KGHexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6293F1D89999B00CF5C30 /* KGHexagon.swift */; };
 		05E92A371D84E0AB00265B26 /* KGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92A321D84E0AB00265B26 /* KGLine.swift */; };
 		05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E92A331D84E0AB00265B26 /* KGPointExtension.swift */; };
@@ -161,6 +162,7 @@
 		05B698311DFBB5710088A8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B72B0D1D851F6E00F0448B /* UnitTest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B72B0F1D851F6E00F0448B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E43F881E3DE61B0044B4C6 /* UTImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTImageView.swift; sourceTree = "<group>"; };
 		05E6293F1D89999B00CF5C30 /* KGHexagon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGHexagon.swift; path = Primitives/KGHexagon.swift; sourceTree = "<group>"; };
 		05E92A321D84E0AB00265B26 /* KGLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGLine.swift; path = Primitives/KGLine.swift; sourceTree = "<group>"; };
 		05E92A331D84E0AB00265B26 /* KGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGPointExtension.swift; path = Primitives/KGPointExtension.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 			children = (
 				05B698281DFBB5710088A8E6 /* AppDelegate.swift */,
 				05B6982A1DFBB5710088A8E6 /* ViewController.swift */,
+				05E43F881E3DE61B0044B4C6 /* UTImageView.swift */,
 				05B6982C1DFBB5710088A8E6 /* Assets.xcassets */,
 				05B6982E1DFBB5710088A8E6 /* Main.storyboard */,
 				05B698311DFBB5710088A8E6 /* Info.plist */,
@@ -676,6 +679,7 @@
 				05A0B47B1E1D1DB7002584E9 /* KGColorPreference.swift in Sources */,
 				05E92A381D84E0AB00265B26 /* KGPointExtension.swift in Sources */,
 				055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */,
+				05E43F891E3DE61B0044B4C6 /* UTImageView.swift in Sources */,
 				053526481D86FEC10073BE74 /* KGContext.swift in Sources */,
 				0595664C1D84E27B00DA0C8C /* KGPartitionIndex.swift in Sources */,
 				0595664A1D84E27B00DA0C8C /* KGPartitionCell.swift in Sources */,

@@ -11,6 +11,7 @@
 		050374D51DA1303B00CA86DC /* KGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050374D41DA1303B00CA86DC /* KGImage.swift */; };
 		05054D3C1E325D210016B85A /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D34D101D93F5FB00C4C833 /* Canary.framework */; };
 		05054D3D1E325DC00016B85A /* KiwiGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058F9EFC1D914FA600D9DA3A /* KiwiGraphics.framework */; };
+		051725881E3FA44100D81BAD /* UTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056EC28B1E3DE7E000C7A462 /* UTImageView.swift */; };
 		051B51741E2FDD3E00EC465B /* KGFontTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051B51721E2FDD3E00EC465B /* KGFontTable.swift */; };
 		053A5A771DAA2A48004E5CDA /* KGVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A5A761DAA2A48004E5CDA /* KGVertices.swift */; };
 		054C53441D9AC61400950BAA /* KGPartitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C533F1D9AC61400950BAA /* KGPartitionCell.swift */; };
@@ -91,6 +92,7 @@
 		05625EDD1DFC2FB90005AB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05625EDF1DFC2FB90005AB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		056A08981D9586CB00C0E826 /* install_ios.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = install_ios.mk; path = ../Script/install_ios.mk; sourceTree = "<group>"; };
+		056EC28B1E3DE7E000C7A462 /* UTImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTImageView.swift; sourceTree = "<group>"; };
 		058F9EFC1D914FA600D9DA3A /* KiwiGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KiwiGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		058F9EFF1D914FA600D9DA3A /* KiwiGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiGraphics.h; sourceTree = "<group>"; };
 		058F9F001D914FA600D9DA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				05625ED31DFC2FB90005AB97 /* AppDelegate.swift */,
 				05625ED51DFC2FB90005AB97 /* ViewController.swift */,
+				056EC28B1E3DE7E000C7A462 /* UTImageView.swift */,
 				05625ED71DFC2FB90005AB97 /* Main.storyboard */,
 				05625EDA1DFC2FB90005AB97 /* Assets.xcassets */,
 				05625EDC1DFC2FB90005AB97 /* LaunchScreen.storyboard */,
@@ -468,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05625ED61DFC2FB90005AB97 /* ViewController.swift in Sources */,
+				051725881E3FA44100D81BAD /* UTImageView.swift in Sources */,
 				05625ED41DFC2FB90005AB97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

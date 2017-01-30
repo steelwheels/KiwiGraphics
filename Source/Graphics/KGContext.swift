@@ -9,6 +9,16 @@ import CoreGraphics
 
 extension CGContext
 {
+	public static var currentContext: CGContext? {
+		get {
+			#if os(iOS)
+				return UIGraphicsGetCurrentContext()
+			#else
+				return NSGraphicsContext.current()?.cgContext
+			#endif
+		}
+	}
+
 	public func draw(eclipse ec: KGEclipse, withGradient Gradient: CGGradient) {
 		self.addEllipse(in: ec.bounds)
 		self.clip()

@@ -21,20 +21,16 @@ import Cocoa
 	public typealias KGImage = NSImage
 #endif
 
-public typealias KGImageDrawer = (_ size: CGSize, _ context: CGContext) -> Void
+public typealias KGImageDrawer = (_ context: CGContext, _ size: CGSize) -> Void
 
 #if os(OSX)
 
 extension NSImage
 {
-	public class func generate(size:CGSize, drawFunc: KGImageDrawer) -> NSImage {
+	public class func generate(context: CGContext, size:CGSize, drawFunc: KGImageDrawer) -> NSImage {
 		let newimg = NSImage(size: size)
 		newimg.lockFocus()
-		if let context: CGContext = NSGraphicsContext.current()?.cgContext {
-			drawFunc(size, context)
-		} else {
-			fatalError("No context")
-		}
+		drawFunc(context, size)
 		newimg.unlockFocus()
 		return newimg
 	}
@@ -60,21 +56,13 @@ extension NSImage
 
 extension UIImage
 {
-	public class func generate(size:CGSize, drawFunc: KGImageDrawer) -> UIImage {
+	public class func generate(context: CGContext, size:CGSize, drawFunc: KGImageDrawer) -> UIImage {
 		var newimage: UIImage? = nil
 
 		UIGraphicsBeginImageContext(size)
 
-		if let context = UIGraphicsGetCurrentContext() {
-			context.saveGState()
-			#if os(iOS)
-				context.translateBy(x: 0.0, y: size.height)
-				context.scaleBy(x: 1.0, y: -1.0)
-			#endif
-			drawFunc(size, context)
-			newimage = UIGraphicsGetImageFromCurrentImageContext()
-			context.restoreGState()
-		}
+		drawFunc(context, size)
+		newimage = UIGraphicsGetImageFromCurrentImageContext()
 
 		UIGraphicsEndImageContext()
 
