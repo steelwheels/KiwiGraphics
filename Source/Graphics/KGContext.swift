@@ -53,11 +53,11 @@ extension CGContext
 		}
 	}
 
-	public func draw(hexagon hx: KGHexagon, withGradient Gradient: CGGradient?){
+	public func draw(hexagon hx: KGHexagon, withGradient gradient: CGGradient?){
 		var vertexes  = hx.vertexes
 		vertexes.append(vertexes[0])
 		self.addLines(between: vertexes)
-		if let grad = Gradient {
+		if let grad = gradient {
 			self.clip()
 			self.drawLinearGradient(grad,
 			                        start: vertexes[5],

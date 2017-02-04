@@ -18,7 +18,7 @@ public class KGGradientTable
 		mGradientTable = [:]
 	}
 
-	public func Gradient(forColor color: CGColor, doDebug dd: Bool = false) -> CGGradient {
+	public func gradient(forColor color: CGColor, doDebug dd: Bool = false) -> CGGradient {
 		let key:String = "\(color.components)"
 		if let Gradient = mGradientTable[key] {
 			return Gradient
