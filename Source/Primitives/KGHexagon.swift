@@ -11,6 +11,7 @@ public struct KGHexagon
 {
 	private var mCenter:	CGPoint
 	private var mRadius:	CGFloat
+	private var mLineWidth:	CGFloat
 	private var mVertexes:	Array<CGPoint>
 	private var mBounds:	CGRect
 
@@ -22,6 +23,10 @@ public struct KGHexagon
 		get { return mRadius }
 	}
 
+	public var lineWidth: CGFloat {
+		get { return mLineWidth }
+	}
+	
 	public var vertexes: Array<CGPoint> {
 		get { return mVertexes }
 	}
@@ -30,18 +35,20 @@ public struct KGHexagon
 		get { return mBounds }
 	}
 	
-	public init(center c:CGPoint, radius r: CGFloat){
-		mCenter	  = c
-		mRadius	  = r
-		mVertexes = []
+	public init(center c:CGPoint, lineWidth l: CGFloat, radius r: CGFloat){
+		mCenter		= c
+		mLineWidth	= l
+		mRadius		= r
+		mVertexes	= []
 
 		/* calc vertexes */
-		let pi    = CGFloat.pi
-		var angle = pi / 2.0
-		let adiff = pi / 3.0
+		let pi		= CGFloat.pi
+		var angle	= pi / 2.0
+		let adiff	= pi / 3.0
+		let dradius	= mRadius - (mLineWidth / 2.0)
 		for _ in 0..<6 {
-			let x = mCenter.x + mRadius * cos(angle)
-			let y = mCenter.y + mRadius * sin(angle)
+			let x = mCenter.x + dradius * cos(angle)
+			let y = mCenter.y + dradius * sin(angle)
 			angle = angle - adiff
 			mVertexes.append(CGPoint(x: x, y: y))
 		}
@@ -52,6 +59,12 @@ public struct KGHexagon
 		let borigin = CGPoint(x: mCenter.x-dx, y: mCenter.y-dy)
 		let bsize   = CGSize(width: dx*2.0, height: dy*2.0)
 		mBounds = CGRect(origin: borigin, size: bsize)
+	}
+
+	public init(bounds bnds: CGRect, lineWidth l: CGFloat){
+		let center = bnds.center
+		let radius = min(bnds.size.width/2.0, bnds.size.height/2.0)
+		self.init(center: center, lineWidth: l, radius: radius)
 	}
 
 	public var description: String {

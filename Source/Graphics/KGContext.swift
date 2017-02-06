@@ -64,6 +64,7 @@ extension CGContext
 			                        end:   vertexes[2],
 			                        options: .drawsAfterEndLocation)
 		} else {
+			self.setLineWidth(hx.lineWidth)
 			self.strokePath()
 		}
 	}
