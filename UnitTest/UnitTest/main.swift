@@ -21,13 +21,14 @@ internal func unitTest(name n:String, result r: Bool) -> Bool {
 	return r
 }
 
-let res0 = unitTest(name: "UTPartitionMapper",	result: UTPartitionMapper())
-let res1 = unitTest(name: "UTPartitionCell",	result: UTPartitionCell())
-let res2 = unitTest(name: "UTHexagon",		result: UTHexagon())
-let res3 = unitTest(name: "UTIntersect",	result: UTIntersect())
-let res4 = unitTest(name: "UTGradient",		result: UTGradient())
+let res0 = unitTest(name: "UTPrimitive",	result: UTPrimitive())
+let res1 = unitTest(name: "UTPartitionMapper",	result: UTPartitionMapper())
+let res2 = unitTest(name: "UTPartitionCell",	result: UTPartitionCell())
+let res3 = unitTest(name: "UTHexagon",		result: UTHexagon())
+let res4 = unitTest(name: "UTIntersect",	result: UTIntersect())
+let res5 = unitTest(name: "UTGradient",		result: UTGradient())
 
-if res0 && res1 && res2 && res3 {
+if res0 && res1 && res2 && res3 && res4 && res5 {
 	print("[SUMMARY] OK")
 } else {
 	print("[SUMMARY] NG")

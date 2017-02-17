@@ -1,4 +1,6 @@
 [UnitTest for KiwiGraphics]
+{origin:{x:10.00, y:10.00} size:{width:10.00, height:10.00}} .centeringIn({origin:{x:10.00, y:10.00} size:{width:100.00, height:100.00}}) -> {origin:{x:55.00, y:55.00} size:{width:10.00, height:10.00}}
+UTPrimitive : RESULT OK
 SPACE = Optional("{\n  \"depth\" : 4,\n  \"bounds\" : {\n    \"origin\" : {\n      \"y\" : 0,\n      \"x\" : 0\n    },\n    \"size\" : {\n      \"width\" : 80,\n      \"height\" : 80\n    }\n  }\n}")
 addObject {center:{x:0.00, y:0.00} radius:1.00}
  -> index: (depth:3, index:0) -> OK
@@ -273,7 +275,7 @@ depth: 3
 -- index: (depth:3, index:63)
 --- cell {x:70.00, y:70.00}
 UTPartitionCell : RESULT OK
-vertexes: {x:0.00, y:10.00} {x:8.66, y:5.00} {x:8.66, y:-5.00} {x:0.00, y:-10.00} {x:-8.66, y:-5.00} {x:-8.66, y:5.00} 
+vertexes: {x:0.00, y:9.50} {x:8.23, y:4.75} {x:8.23, y:-4.75} {x:0.00, y:-9.50} {x:-8.23, y:-4.75} {x:-8.23, y:4.75} 
 UTHexagon : RESULT OK
 TEST: l0:{from:{x:5.00, y:0.00} to:{x:5.00, y:10.00}), l1:{from:{x:0.00, y:5.00} to:{x:10.00, y:5.00})
  -> Detect at {x:5.00, y:5.00}
@@ -285,18 +287,18 @@ UTIntersect : RESULT OK
 componentNum=2, count=5
 components:
 1.0 1.0 
-0.75 0.75 
+0.84 0.84 
+0.68 0.68 
 0.5 0.5 
-0.25 0.25 
 0.0 0.0 
-locations: [0.0, 0.25, 0.5, 0.75, 1.0]
+locations: [0.2, 0.4, 0.6, 0.8, 1.0]
 componentNum=4, count=5
 components:
 1.0 1.0 1.0 1.0 
-0.75 0.75 0.75 0.75 
+0.84 0.84 0.84 0.84 
+0.68 0.68 0.68 0.68 
 0.5 0.5 0.5 0.5 
-0.25 0.25 0.25 0.25 
 0.0 0.0 0.0 0.0 
-locations: [0.0, 0.25, 0.5, 0.75, 1.0]
+locations: [0.2, 0.4, 0.6, 0.8, 1.0]
 UTGradient : RESULT OK
 [SUMMARY] OK

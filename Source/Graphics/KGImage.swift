@@ -21,16 +21,16 @@ import Cocoa
 	public typealias KGImage = NSImage
 #endif
 
-public typealias KGImageDrawer = (_ context: CGContext, _ size: CGSize) -> Void
+public typealias KGImageDrawer = (_ context: CGContext, _ bounds: CGRect) -> Void
 
 #if os(OSX)
 
 extension NSImage
 {
-	public class func generate(context: CGContext, size:CGSize, drawFunc: KGImageDrawer) -> NSImage {
-		let newimg = NSImage(size: size)
+	public class func generate(context ctxt: CGContext, bounds bnds:CGRect, drawFunc dfunc: KGImageDrawer) -> NSImage {
+		let newimg = NSImage(size: bnds.size)
 		newimg.lockFocus()
-		drawFunc(context, size)
+		dfunc(ctxt, bnds)
 		newimg.unlockFocus()
 		return newimg
 	}
@@ -56,12 +56,12 @@ extension NSImage
 
 extension UIImage
 {
-	public class func generate(context: CGContext, size:CGSize, drawFunc: KGImageDrawer) -> UIImage {
+	public class func generate(context: CGContext, bounds bnds:CGRect, drawFunc: KGImageDrawer) -> UIImage {
 		var newimage: UIImage? = nil
 
-		UIGraphicsBeginImageContext(size)
+		UIGraphicsBeginImageContext(bnds.size)
 
-		drawFunc(context, size)
+		drawFunc(context, bnds)
 		newimage = UIGraphicsGetImageFromCurrentImageContext()
 
 		UIGraphicsEndImageContext()

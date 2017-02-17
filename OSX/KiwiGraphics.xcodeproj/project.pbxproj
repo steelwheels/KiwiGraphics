@@ -10,6 +10,7 @@
 		0505BD441D8EB5C800C74D8F /* KGColorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0505BD431D8EB5C800C74D8F /* KGColorTable.swift */; };
 		050A74641D9AD063004B177C /* KGIntersectDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A74631D9AD063004B177C /* KGIntersectDetector.swift */; };
 		050A74661D9AD100004B177C /* UTIntersect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A74651D9AD100004B177C /* UTIntersect.swift */; };
+		052B1EE11E5609240021D658 /* KGCoodinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052B1EE01E5609240021D658 /* KGCoodinate.swift */; };
 		053526481D86FEC10073BE74 /* KGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526471D86FEC10073BE74 /* KGContext.swift */; };
 		0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526491D870F2A0073BE74 /* KGEclipse.swift */; };
 		053BA1CA1DA8F74D00C32991 /* KGVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA1C91DA8F74D00C32991 /* KGVertices.swift */; };
@@ -18,6 +19,7 @@
 		054831D51E3273B600061154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054831D41E3273B600061154 /* Assets.xcassets */; };
 		054831D81E3273B600061154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054831D61E3273B600061154 /* Main.storyboard */; };
 		05568AA21E3301AF0059F67E /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
+		0557F2F51E54B2AD00DE9E56 /* UTPrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557F2F41E54B2AD00DE9E56 /* UTPrimitive.swift */; };
 		055DFA5F1D978C240029BA0A /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DFA5E1D978C240029BA0A /* KGStroke.swift */; };
 		055E33C91DFC127900BA0582 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
 		055E33CA1DFC127900BA0582 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E33C81DFC127900BA0582 /* Canary.framework */; };
@@ -120,6 +122,7 @@
 		0505BD431D8EB5C800C74D8F /* KGColorTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGColorTable.swift; sourceTree = "<group>"; };
 		050A74631D9AD063004B177C /* KGIntersectDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGIntersectDetector.swift; sourceTree = "<group>"; };
 		050A74651D9AD100004B177C /* UTIntersect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTIntersect.swift; sourceTree = "<group>"; };
+		052B1EE01E5609240021D658 /* KGCoodinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGCoodinate.swift; path = Primitives/KGCoodinate.swift; sourceTree = "<group>"; };
 		053526471D86FEC10073BE74 /* KGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGContext.swift; sourceTree = "<group>"; };
 		053526491D870F2A0073BE74 /* KGEclipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGEclipse.swift; path = Primitives/KGEclipse.swift; sourceTree = "<group>"; };
 		053BA1C91DA8F74D00C32991 /* KGVertices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGVertices.swift; path = Primitives/KGVertices.swift; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 		054831D41E3273B600061154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		054831D71E3273B600061154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		054831D91E3273B600061154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0557F2F41E54B2AD00DE9E56 /* UTPrimitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTPrimitive.swift; sourceTree = "<group>"; };
 		055DFA5E1D978C240029BA0A /* KGStroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGStroke.swift; path = ../Primitives/KGStroke.swift; sourceTree = "<group>"; };
 		055E33C81DFC127900BA0582 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = ../../../Library/Frameworks/Canary.framework; sourceTree = "<group>"; };
 		056DDBC41D968A27007A8677 /* KGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGImage.swift; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 			children = (
 				059B833E1D85461300E118F6 /* KiwiGraphics.framework */,
 				059B833C1D8545FF00E118F6 /* Canary.framework */,
+				0557F2F41E54B2AD00DE9E56 /* UTPrimitive.swift */,
 				059B832F1D853F7200E118F6 /* UTPartitionCell.swift */,
 				059B83301D853F7200E118F6 /* UTPartitionMapper.swift */,
 				05F803C51D89A6940015744B /* UTHexagon.swift */,
@@ -380,6 +385,7 @@
 		05E92A311D84E09300265B26 /* Primitives */ = {
 			isa = PBXGroup;
 			children = (
+				052B1EE01E5609240021D658 /* KGCoodinate.swift */,
 				05E92A321D84E0AB00265B26 /* KGLine.swift */,
 				056FCB7D1DFC147B001C1FC6 /* KGTriangle.swift */,
 				059B83331D85404500E118F6 /* KGCircle.swift */,
@@ -648,6 +654,7 @@
 				059B832E1D853F6900E118F6 /* main.swift in Sources */,
 				05F803C61D89A6940015744B /* UTHexagon.swift in Sources */,
 				059B83321D853F7200E118F6 /* UTPartitionMapper.swift in Sources */,
+				0557F2F51E54B2AD00DE9E56 /* UTPrimitive.swift in Sources */,
 				050A74661D9AD100004B177C /* UTIntersect.swift in Sources */,
 				059B83311D853F7200E118F6 /* UTPartitionCell.swift in Sources */,
 			);
@@ -682,6 +689,7 @@
 				05E43F891E3DE61B0044B4C6 /* UTImageView.swift in Sources */,
 				053526481D86FEC10073BE74 /* KGContext.swift in Sources */,
 				0595664C1D84E27B00DA0C8C /* KGPartitionIndex.swift in Sources */,
+				052B1EE11E5609240021D658 /* KGCoodinate.swift in Sources */,
 				0595664A1D84E27B00DA0C8C /* KGPartitionCell.swift in Sources */,
 				05E92A3A1D84E0AB00265B26 /* KGSizeExtension.swift in Sources */,
 				056DDBC51D968A27007A8677 /* KGImage.swift in Sources */,

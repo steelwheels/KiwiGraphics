@@ -13,10 +13,10 @@ public class UTImageView: UIImageView
 {
 	public override func draw(_ rect: CGRect) {
 		Swift.print("UTImageView.drawLayer")
-		let triangle0 = KGTriangle(bounds: bounds)
 		let context = CGContext.currentContext
-		let newimage0 = KGImage.generate(context: context!, size: bounds.size, drawFunc: {
-			(context: CGContext, size:CGSize) -> Void in
+		let newimage0 = KGImage.generate(context: context!, bounds: bounds, drawFunc: {
+			(context: CGContext, contentRect:CGRect) -> Void in
+			let triangle0 = KGTriangle(bounds: bounds)
 			context.draw(triangle: triangle0, withGradient: nil)
 		})
 		self.image = newimage0

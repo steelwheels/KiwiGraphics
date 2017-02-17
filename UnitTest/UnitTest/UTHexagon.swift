@@ -12,7 +12,7 @@ import KiwiGraphics
 public func UTHexagon() -> Bool
 {
 	var result = true
-	let h0 = KGHexagon(center: CGPoint(x:0.0, y:0.0), radius: 10.0)
+	let h0 = KGHexagon(center: CGPoint(x:0.0, y:0.0), lineWidth: 1.0, radius: 10.0)
 	if !dump(hexagon: h0) {
 		result = false
 	}

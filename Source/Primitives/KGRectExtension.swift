@@ -34,6 +34,22 @@ extension CGRect : CNSerializerProtocol
 		return CGPoint(x: x, y:y)
 	}
 
+	public func centeringIn(bounds bnds: CGRect) -> CGRect {
+		let dx = (bnds.size.width  - self.size.width ) / 2.0
+		let dy = (bnds.size.height - self.size.height) / 2.0
+		let neworigin = CGPoint(x: bnds.origin.x + dx, y: bnds.origin.y + dy)
+		return CGRect(origin: neworigin, size: self.size)
+	}
+
+	public func resize(size s:CGSize) -> CGRect {
+		return CGRect(origin: self.origin, size: s)
+	}
+
+	public func move(dx x: CGFloat, dy y: CGFloat) -> CGRect {
+		let neworigin = self.origin.move(dx: x, dy: y)
+		return CGRect(origin: neworigin, size: self.size)
+	}
+
 	public func splitByHolizontally() -> (CGRect, CGRect) {
 		let width   = self.size.width
 		let height  = self.size.height / 2.0
