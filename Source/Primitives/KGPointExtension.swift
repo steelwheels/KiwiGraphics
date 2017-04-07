@@ -1,14 +1,13 @@
 /**
- * @file	CNPointExtension.swift
+ * @file	KGPointExtension.swift
  * @brief	Extend CGPoint class
  * @par Copyright
  *   Copyright (C) 2016 Steel Wheels Project
  */
 
 import CoreGraphics
-import Canary
 
-extension CGPoint : CNSerializerProtocol
+extension CGPoint
 {
 	public func move(dx x: CGFloat, dy y: CGFloat) -> CGPoint {
 		let newx = self.x + x

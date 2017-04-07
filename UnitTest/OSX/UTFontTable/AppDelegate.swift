@@ -1,10 +1,9 @@
-//
-//  AppDelegate.swift
-//  UTFontTable
-//
-//  Created by Tomoo Hamada on 2017/01/21.
-//  Copyright © 2017年 Steel Wheels Project. All rights reserved.
-//
+/**
+ * @file	AppDelegate.swift
+ * @brief	AppDelegate for UTFontTable
+ * @par Copyright
+ *   Copyright (C) 2017 Steel Wheels Project
+ */
 
 import Cocoa
 

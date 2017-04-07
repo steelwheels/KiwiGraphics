@@ -1,10 +1,9 @@
-//
-//  main.swift
-//  UTModels
-//
-//  Created by Tomoo Hamada on 2016/09/04.
-//  Copyright © 2016年 Steel Wheels Project. All rights reserved.
-//
+/**
+ * @file	main.swift
+ * @brief	main function for unit test
+ * @par Copyright
+ *   Copyright (C) 2017 Steel Wheels Project
+ */
 
 import Foundation
 
@@ -22,13 +21,11 @@ internal func unitTest(name n:String, result r: Bool) -> Bool {
 }
 
 let res0 = unitTest(name: "UTPrimitive",	result: UTPrimitive())
-let res1 = unitTest(name: "UTPartitionMapper",	result: UTPartitionMapper())
-let res2 = unitTest(name: "UTPartitionCell",	result: UTPartitionCell())
-let res3 = unitTest(name: "UTHexagon",		result: UTHexagon())
-let res4 = unitTest(name: "UTIntersect",	result: UTIntersect())
-let res5 = unitTest(name: "UTGradient",		result: UTGradient())
+let res1 = unitTest(name: "UTHexagon",		result: UTHexagon())
+let res2 = unitTest(name: "UTIntersect",	result: UTIntersect())
+let res3 = unitTest(name: "UTGradient",		result: UTGradient())
 
-if res0 && res1 && res2 && res3 && res4 && res5 {
+if res0 && res1 && res2 && res3  {
 	print("[SUMMARY] OK")
 } else {
 	print("[SUMMARY] NG")

@@ -1,10 +1,9 @@
-//
-//  UTIntersect.swift
-//  KiwiGraphics
-//
-//  Created by Tomoo Hamada on 2016/09/28.
-//  Copyright © 2016年 Steel Wheels Project. All rights reserved.
-//
+/**
+ * @file	UTIntersect.m
+ * @brief	Unit test for KGLine
+ * @par Copyright
+ *   Copyright (C) 2017 Steel Wheels Project
+ */
 
 import Foundation
 import KiwiGraphics

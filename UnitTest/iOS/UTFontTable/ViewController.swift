@@ -1,10 +1,9 @@
-//
-//  ViewController.swift
-//  UTFontTable
-//
-//  Created by Tomoo Hamada on 2017/01/20.
-//  Copyright © 2017年 Steel Wheels Project. All rights reserved.
-//
+/**
+ * @file	ViewController.swift
+ * @brief	ViewController for UTFontTable
+ * @par Copyright
+ *   Copyright (C) 2017 Steel Wheels Project
+ */
 
 import UIKit
 import KiwiGraphics

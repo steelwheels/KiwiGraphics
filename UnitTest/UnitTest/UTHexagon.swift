@@ -1,10 +1,9 @@
-//
-//  UTHexagon.swift
-//  KiwiGraphics
-//
-//  Created by Tomoo Hamada on 2016/09/15.
-//  Copyright © 2016年 Steel Wheels Project. All rights reserved.
-//
+/**
+ * @file	UTHexagon.swift
+ * @brief	Unit test for KGHexagon
+ * @par Copyright
+ *   Copyright (C) 2017 Steel Wheels Project
+ */
 
 import Foundation
 import KiwiGraphics

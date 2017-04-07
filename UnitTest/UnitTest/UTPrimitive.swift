@@ -1,10 +1,9 @@
-//
-//  UTPrimitive.swift
-//  KiwiGraphics
-//
-//  Created by Tomoo Hamada on 2017/02/16.
-//  Copyright © 2017年 Steel Wheels Project. All rights reserved.
-//
+/**
+ * @file	UTPrimitive.swift
+ * @brief	Unit test for primitive functions
+ * @par Copyright
+ *   Copyright (C) 2017 Steel Wheels Project
+ */
 
 import Foundation
 
@@ -24,3 +23,4 @@ private func UTRectPrimitive() -> Bool
 
 	return true
 }
+

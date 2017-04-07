@@ -1,10 +1,9 @@
-//
-//  KiwiGraphics.h
-//  KiwiGraphics
-//
-//  Created by Tomoo Hamada on 2016/09/11.
-//  Copyright © 2016年 Steel Wheels Project. All rights reserved.
-//
+/**
+ * @file	KiwiGraphics.h
+ * @brief	Bridge for KiwiGraphics
+ * @par Copyright
+ *   Copyright (C) 2017 Steel Wheels Project
+ */
 
 #import "TargetConditionals.h"
 #if TARGET_OS_IPHONE
@@ -20,6 +19,4 @@ FOUNDATION_EXPORT double KiwiGraphicsVersionNumber;
 FOUNDATION_EXPORT const unsigned char KiwiGraphicsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <KiwiGraphics/PublicHeader.h>
-#import <Canary/Canary.h>
-
 

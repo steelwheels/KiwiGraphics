@@ -1,10 +1,9 @@
-//
-//  AppDelegate.swift
-//  UTImageView
-//
-//  Created by Tomoo Hamada on 2016/12/10.
-//  Copyright © 2016年 Steel Wheels Project. All rights reserved.
-//
+/**
+ * @file	AppDelegate.swift
+ * @brief	AppDelegate for UTImageView
+ * @par Copyright
+ *   Copyright (C) 2017 Steel Wheels Project
+ */
 
 import Cocoa
 

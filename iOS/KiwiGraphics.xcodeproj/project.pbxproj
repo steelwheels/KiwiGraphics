@@ -9,18 +9,11 @@
 /* Begin PBXBuildFile section */
 		050374D31DA1302500CA86DC /* KGStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050374D21DA1302500CA86DC /* KGStroke.swift */; };
 		050374D51DA1303B00CA86DC /* KGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050374D41DA1303B00CA86DC /* KGImage.swift */; };
-		05054D3C1E325D210016B85A /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D34D101D93F5FB00C4C833 /* Canary.framework */; };
 		05054D3D1E325DC00016B85A /* KiwiGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058F9EFC1D914FA600D9DA3A /* KiwiGraphics.framework */; };
 		05135FB91E57586E0050B383 /* KGCoodinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05135FB81E57586E0050B383 /* KGCoodinate.swift */; };
 		051725881E3FA44100D81BAD /* UTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056EC28B1E3DE7E000C7A462 /* UTImageView.swift */; };
 		051B51741E2FDD3E00EC465B /* KGFontTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051B51721E2FDD3E00EC465B /* KGFontTable.swift */; };
 		053A5A771DAA2A48004E5CDA /* KGVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A5A761DAA2A48004E5CDA /* KGVertices.swift */; };
-		054C53441D9AC61400950BAA /* KGPartitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C533F1D9AC61400950BAA /* KGPartitionCell.swift */; };
-		054C53451D9AC61400950BAA /* KGPartitionCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53401D9AC61400950BAA /* KGPartitionCellTable.swift */; };
-		054C53461D9AC61400950BAA /* KGPartitionIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53411D9AC61400950BAA /* KGPartitionIndex.swift */; };
-		054C53471D9AC61400950BAA /* KGPartitionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53421D9AC61400950BAA /* KGPartitionLayer.swift */; };
-		054C53481D9AC61400950BAA /* KGPartitionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53431D9AC61400950BAA /* KGPartitionMapper.swift */; };
-		054C534A1D9AC6C500950BAA /* KGIntersectDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */; };
 		05625ECA1DFC27D60005AB97 /* KGTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05625EC91DFC27D60005AB97 /* KGTriangle.swift */; };
 		05625ED41DFC2FB90005AB97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05625ED31DFC2FB90005AB97 /* AppDelegate.swift */; };
 		05625ED61DFC2FB90005AB97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05625ED51DFC2FB90005AB97 /* ViewController.swift */; };
@@ -40,7 +33,6 @@
 		05BEA3541D91504300BFC35E /* KGVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA34B1D91504300BFC35E /* KGVelocity.swift */; };
 		05BEA3561D91505400BFC35E /* KGColorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3551D91505400BFC35E /* KGColorTable.swift */; };
 		05BEA3581D91506500BFC35E /* KGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEA3571D91506500BFC35E /* KGContext.swift */; };
-		05D34D111D93F5FB00C4C833 /* Canary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D34D101D93F5FB00C4C833 /* Canary.framework */; };
 		05E1D1811E3129ED00A73FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1D1801E3129ED00A73FFC /* AppDelegate.swift */; };
 		05E1D1831E3129ED00A73FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1D1821E3129ED00A73FFC /* ViewController.swift */; };
 		05E1D1861E3129ED00A73FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E1D1841E3129ED00A73FFC /* Main.storyboard */; };
@@ -79,12 +71,6 @@
 		05135FB81E57586E0050B383 /* KGCoodinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGCoodinate.swift; sourceTree = "<group>"; };
 		051B51721E2FDD3E00EC465B /* KGFontTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGFontTable.swift; sourceTree = "<group>"; };
 		053A5A761DAA2A48004E5CDA /* KGVertices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGVertices.swift; sourceTree = "<group>"; };
-		054C533F1D9AC61400950BAA /* KGPartitionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCell.swift; sourceTree = "<group>"; };
-		054C53401D9AC61400950BAA /* KGPartitionCellTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionCellTable.swift; sourceTree = "<group>"; };
-		054C53411D9AC61400950BAA /* KGPartitionIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionIndex.swift; sourceTree = "<group>"; };
-		054C53421D9AC61400950BAA /* KGPartitionLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionLayer.swift; sourceTree = "<group>"; };
-		054C53431D9AC61400950BAA /* KGPartitionMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPartitionMapper.swift; sourceTree = "<group>"; };
-		054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGIntersectDetector.swift; path = ../Graphics/KGIntersectDetector.swift; sourceTree = "<group>"; };
 		05625EC91DFC27D60005AB97 /* KGTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGTriangle.swift; sourceTree = "<group>"; };
 		05625ED11DFC2FB90005AB97 /* UTImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05625ED31DFC2FB90005AB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,7 +96,6 @@
 		05BEA34B1D91504300BFC35E /* KGVelocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGVelocity.swift; sourceTree = "<group>"; };
 		05BEA3551D91505400BFC35E /* KGColorTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGColorTable.swift; sourceTree = "<group>"; };
 		05BEA3571D91506500BFC35E /* KGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGContext.swift; sourceTree = "<group>"; };
-		05D34D101D93F5FB00C4C833 /* Canary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Canary.framework; path = /Users/tomoo/local/Frameworks/Canary.framework; sourceTree = "<absolute>"; };
 		05E1D17E1E3129ED00A73FFC /* UTFontTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UTFontTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E1D1801E3129ED00A73FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E1D1821E3129ED00A73FFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05D34D111D93F5FB00C4C833 /* Canary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05054D3C1E325D210016B85A /* Canary.framework in Frameworks */,
 				05054D3D1E325DC00016B85A /* KiwiGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				056A08981D9586CB00C0E826 /* install_ios.mk */,
-				05D34D101D93F5FB00C4C833 /* Canary.framework */,
 				058F9F001D914FA600D9DA3A /* Info.plist */,
 			);
 			path = KiwiGraphics;
@@ -227,7 +209,6 @@
 				051B51701E2FDD1E00EC465B /* Font */,
 				05BEA3401D91501800BFC35E /* Color */,
 				05BEA3411D91502100BFC35E /* Graphics */,
-				05BEA3421D91502C00BFC35E /* SpatialPartition */,
 			);
 			name = Source;
 			path = ../Source;
@@ -270,19 +251,6 @@
 				05BEA3571D91506500BFC35E /* KGContext.swift */,
 			);
 			path = Graphics;
-			sourceTree = "<group>";
-		};
-		05BEA3421D91502C00BFC35E /* SpatialPartition */ = {
-			isa = PBXGroup;
-			children = (
-				054C53491D9AC6C500950BAA /* KGIntersectDetector.swift */,
-				054C533F1D9AC61400950BAA /* KGPartitionCell.swift */,
-				054C53401D9AC61400950BAA /* KGPartitionCellTable.swift */,
-				054C53411D9AC61400950BAA /* KGPartitionIndex.swift */,
-				054C53421D9AC61400950BAA /* KGPartitionLayer.swift */,
-				054C53431D9AC61400950BAA /* KGPartitionMapper.swift */,
-			);
-			path = SpatialPartition;
 			sourceTree = "<group>";
 		};
 		05E1D17F1E3129ED00A73FFC /* UTFontTable */ = {
@@ -483,15 +451,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				054C53451D9AC61400950BAA /* KGPartitionCellTable.swift in Sources */,
 				05625ECA1DFC27D60005AB97 /* KGTriangle.swift in Sources */,
 				05BE7AEC1DAD3C1400596B0F /* KGGlyph.swift in Sources */,
-				054C534A1D9AC6C500950BAA /* KGIntersectDetector.swift in Sources */,
-				054C53461D9AC61400950BAA /* KGPartitionIndex.swift in Sources */,
 				050374D51DA1303B00CA86DC /* KGImage.swift in Sources */,
 				05135FB91E57586E0050B383 /* KGCoodinate.swift in Sources */,
-				054C53441D9AC61400950BAA /* KGPartitionCell.swift in Sources */,
-				054C53481D9AC61400950BAA /* KGPartitionMapper.swift in Sources */,
 				051B51741E2FDD3E00EC465B /* KGFontTable.swift in Sources */,
 				053A5A771DAA2A48004E5CDA /* KGVertices.swift in Sources */,
 				05BEA3511D91504300BFC35E /* KGPointExtension.swift in Sources */,
@@ -503,7 +466,6 @@
 				05BEA34C1D91504300BFC35E /* KGCircle.swift in Sources */,
 				05BEA3561D91505400BFC35E /* KGColorTable.swift in Sources */,
 				05BEA34E1D91504300BFC35E /* KGGradientTable.swift in Sources */,
-				054C53471D9AC61400950BAA /* KGPartitionLayer.swift in Sources */,
 				05BEA34F1D91504300BFC35E /* KGHexagon.swift in Sources */,
 				05BEA3521D91504300BFC35E /* KGRectExtension.swift in Sources */,
 				05BEA34D1D91504300BFC35E /* KGEclipse.swift in Sources */,

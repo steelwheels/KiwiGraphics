@@ -1,10 +1,9 @@
-//
-//  UTGradient.swift
-//  KiwiGraphics
-//
-//  Created by Tomoo Hamada on 2016/10/10.
-//  Copyright © 2016年 Steel Wheels Project. All rights reserved.
-//
+/**
+ * @file	UTGradient.swift
+ * @brief	Unit test for KGGradientTable
+ * @par Copyright
+ *   Copyright (C) 2017 Steel Wheels Project
+ */
 
 import Foundation
 import KiwiGraphics
@@ -16,3 +15,4 @@ public func UTGradient() -> Bool
 
 	return true
 }
+

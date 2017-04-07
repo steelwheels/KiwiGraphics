@@ -89,13 +89,13 @@ public struct KGVelocity
 		let xstr = NSString(format: "%.2lf", Double(mX))
 		let ystr = NSString(format: "%.2lf", Double(mY))
 		let vstr = NSString(format: "%.2lf", Double(mV))
-		let astr = NSString(format: "%.2lf", Double(Double(mAngle) / M_PI))
+		let astr = NSString(format: "%.2lf", Double(Double(mAngle) / Double.pi))
 		return "((x:\(xstr), y:\(ystr))=(v:\(vstr), angle:\(astr)PI))"
 	}
 	
 	public var shortDescription: String {
 		let vstr = NSString(format: "%.2lf", Double(mV))
-		let astr = NSString(format: "%.2lf", Double(Double(mAngle) / M_PI))
+		let astr = NSString(format: "%.2lf", Double(Double(mAngle) / Double.pi))
 		return "(v:\(vstr), angle:\(astr)PI)"
 	}
 	

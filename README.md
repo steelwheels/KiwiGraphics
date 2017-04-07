@@ -1,14 +1,15 @@
 # KiwiGraphics
 ## Introduction
-KiwiGraphics contains some frameworks for graphic modeling and rendering.
+KiwiGraphics is the framework to define structures and classes for graphics.
+This is implemented for macOS and iOS.
 
 ## Copyright
 This software is produced by [Steel Wheels Project](https://sites.google.com/site/steelwheelsproject/) and distributed under
 [GNU LESSER GENERAL PUBLIC LICENSE Version 2.1](https://www.gnu.org/licenses/lgpl-2.1-standalone.html).
 
-## Frameworks
-### KGModels: Kiwi Graphics Model Framework
-The Kiwi Graphics Model Framework defines data structures for computer simulation and graphics.
+## Target
+* macOS: macOS Sierra (10.12.4) or lator
+* iOS: iOS 10.3 or lator
 
-### KGControls: Kiwi Graphics Control Framework
-The Kiwi Graphics Control Framework defines controls for computer graphics and user interface.
+## Links
+* [Steel Wheels Project Web Page ](https://github.com/steelwheels):Producer of this framework.
