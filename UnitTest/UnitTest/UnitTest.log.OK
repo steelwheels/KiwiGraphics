@@ -3,13 +3,6 @@
 UTPrimitive : RESULT OK
 vertexes: {x:0.00, y:9.50} {x:8.23, y:4.75} {x:8.23, y:-4.75} {x:0.00, y:-9.50} {x:-8.23, y:-4.75} {x:-8.23, y:4.75} 
 UTHexagon : RESULT OK
-TEST: l0:{from:{x:5.00, y:0.00} to:{x:5.00, y:10.00}), l1:{from:{x:0.00, y:5.00} to:{x:10.00, y:5.00})
- -> Detect at {x:5.00, y:5.00}
-TEST: l0:{from:{x:5.00, y:0.00} to:{x:5.00, y:10.00}), l1:{from:{x:0.00, y:0.00} to:{x:10.00, y:10.00})
- -> Detect at {x:5.00, y:5.00}
-TEST: l0:{from:{x:0.00, y:0.00} to:{x:10.00, y:10.00}), l1:{from:{x:0.00, y:1.00} to:{x:10.00, y:11.00})
- -> Not detect
-UTIntersect : RESULT OK
 componentNum=2, count=5
 components:
 1.0 1.0 

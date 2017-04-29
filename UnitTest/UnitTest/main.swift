@@ -22,10 +22,9 @@ internal func unitTest(name n:String, result r: Bool) -> Bool {
 
 let res0 = unitTest(name: "UTPrimitive",	result: UTPrimitive())
 let res1 = unitTest(name: "UTHexagon",		result: UTHexagon())
-let res2 = unitTest(name: "UTIntersect",	result: UTIntersect())
-let res3 = unitTest(name: "UTGradient",		result: UTGradient())
+let res2 = unitTest(name: "UTGradient",		result: UTGradient())
 
-if res0 && res1 && res2 && res3  {
+if res0 && res1 && res2  {
 	print("[SUMMARY] OK")
 } else {
 	print("[SUMMARY] NG")

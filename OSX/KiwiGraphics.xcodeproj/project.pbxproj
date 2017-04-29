@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0505BD441D8EB5C800C74D8F /* KGColorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0505BD431D8EB5C800C74D8F /* KGColorTable.swift */; };
-		050A74641D9AD063004B177C /* KGIntersectDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A74631D9AD063004B177C /* KGIntersectDetector.swift */; };
-		050A74661D9AD100004B177C /* UTIntersect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A74651D9AD100004B177C /* UTIntersect.swift */; };
 		052B1EE11E5609240021D658 /* KGCoodinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052B1EE01E5609240021D658 /* KGCoodinate.swift */; };
 		053526481D86FEC10073BE74 /* KGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526471D86FEC10073BE74 /* KGContext.swift */; };
 		0535264A1D870F2A0073BE74 /* KGEclipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053526491D870F2A0073BE74 /* KGEclipse.swift */; };
@@ -107,8 +105,6 @@
 
 /* Begin PBXFileReference section */
 		0505BD431D8EB5C800C74D8F /* KGColorTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGColorTable.swift; sourceTree = "<group>"; };
-		050A74631D9AD063004B177C /* KGIntersectDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGIntersectDetector.swift; sourceTree = "<group>"; };
-		050A74651D9AD100004B177C /* UTIntersect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTIntersect.swift; sourceTree = "<group>"; };
 		052B1EE01E5609240021D658 /* KGCoodinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGCoodinate.swift; path = Primitives/KGCoodinate.swift; sourceTree = "<group>"; };
 		053526471D86FEC10073BE74 /* KGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGContext.swift; sourceTree = "<group>"; };
 		053526491D870F2A0073BE74 /* KGEclipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGEclipse.swift; path = Primitives/KGEclipse.swift; sourceTree = "<group>"; };
@@ -208,7 +204,6 @@
 		053526461D86FCEA0073BE74 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				050A74631D9AD063004B177C /* KGIntersectDetector.swift */,
 				05E92A361D84E0AB00265B26 /* KGVelocity.swift */,
 				053526471D86FEC10073BE74 /* KGContext.swift */,
 				056DDBC41D968A27007A8677 /* KGImage.swift */,
@@ -252,7 +247,6 @@
 				059B833E1D85461300E118F6 /* KiwiGraphics.framework */,
 				0557F2F41E54B2AD00DE9E56 /* UTPrimitive.swift */,
 				05F803C51D89A6940015744B /* UTHexagon.swift */,
-				050A74651D9AD100004B177C /* UTIntersect.swift */,
 				05ED35EE1DABAEC3002976E7 /* UTGradient.swift */,
 				059B832D1D853F6900E118F6 /* main.swift */,
 				059B83481D85514200E118F6 /* unit_test.mk */,
@@ -609,7 +603,6 @@
 				059B832E1D853F6900E118F6 /* main.swift in Sources */,
 				05F803C61D89A6940015744B /* UTHexagon.swift in Sources */,
 				0557F2F51E54B2AD00DE9E56 /* UTPrimitive.swift in Sources */,
-				050A74661D9AD100004B177C /* UTIntersect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,7 +636,6 @@
 				056DDBC51D968A27007A8677 /* KGImage.swift in Sources */,
 				057B0B401D900EA500E4CD7E /* KGGradientTable.swift in Sources */,
 				05E92A3B1D84E0AB00265B26 /* KGVelocity.swift in Sources */,
-				050A74641D9AD063004B177C /* KGIntersectDetector.swift in Sources */,
 				05E92A371D84E0AB00265B26 /* KGLine.swift in Sources */,
 				0505BD441D8EB5C800C74D8F /* KGColorTable.swift in Sources */,
 			);

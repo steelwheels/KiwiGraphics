@@ -7,6 +7,12 @@
 
 import CoreGraphics
 
+#if os(iOS)
+	public typealias KGSize = CGSize
+#else
+	public typealias KGSize = NSSize
+#endif
+
 extension CGSize
 {	
 	public var description: String {
